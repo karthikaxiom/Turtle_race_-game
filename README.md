@@ -20,10 +20,10 @@ Clone or download the project.
 
 Run the script:
 
-bash
-Copy
-Edit
+```bash
 python main.py
+```
+
 Enter your bet:
 A prompt will ask which color turtle you think will win (choose from: red, orange, yellow, green, blue, purple).
 
