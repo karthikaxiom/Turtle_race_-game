@@ -5,13 +5,10 @@
 A fun and colorful turtle race game built using Python's turtle graphics module. Guess which turtle will win and cheer it on as it races across the screen! 🎉
 
 📦 Features
-Six turtles with different colors
-
-Randomized race — every run is unique
-
-User-friendly input to place your bet
-
-Instant win/lose result at the end
+- Six turtles with different colors
+- Randomized race — every run is unique
+- User-friendly input to place your bet
+- Instant win/lose result at the end
 
 🛠️ Requirements
 Python 3.6 or higher
