@@ -1,56 +1,51 @@
-﻿# Turtle_race_-game
- 🐢 Turtle Race Game
+# Turtle Race Game 🐢
 
- 
-A fun and colorful turtle race game built using Python's turtle graphics module. Guess which turtle will win and cheer it on as it races across the screen! 🎉
+A small Python `turtle` graphics game where six colored turtles race across the screen. Choose a turtle color before the race starts, then see whether your pick reaches the finish first.
 
-📦 Features
-- Six turtles with different colors
-- Randomized race — every run is unique
-- User-friendly input to place your bet
-- Instant win/lose result at the end
+## Features
 
-🛠️ Requirements
-Python 3.6 or higher
+- Six turtles: red, orange, yellow, green, blue, and purple
+- A pre-race color bet entered through a `turtle` text-input dialog
+- Random movement on every loop, giving each race a different outcome
+- A terminal message showing whether the selected turtle won or lost
+- A graphical race window that remains open until clicked after the race
 
-turtle module (comes pre-installed with Python)
+## How the Race Works
 
-🚀 How to Run
-Clone or download the project.
+The program creates six turtles at fixed vertical positions near the left side of an `800 × 400` window. During the race, each turtle advances by a random integer distance from `0` to `10` pixels per loop. The first turtle whose x-coordinate passes `370` is treated as the winner.
 
-Run the script:
+The entered bet is compared case-insensitively with the winning turtle's color before the result is printed.
+
+## Requirements
+
+- Python 3 with Tk support available for the graphical `turtle` window
+- No third-party Python packages are imported by `main.py`
+
+## Run Locally
+
+Clone or download the repository, then run:
 
 ```bash
 python main.py
 ```
 
-Enter your bet:
-A prompt will ask which color turtle you think will win (choose from: red, orange, yellow, green, blue, purple).
+When prompted, enter one of the available colors:
 
-Watch the race and see if your turtle wins! 🎯
+`red` · `orange` · `yellow` · `green` · `blue` · `purple`
 
-🎨 Available Turtle Colors
-- Red
-- Orange
-- Yellow
-- Green
-- Blue
-- Purple
+If the input dialog is cancelled, the race does not start and the window remains available to close with a click.
 
-🖼️ Screenshot
-<img width="1011" height="543" alt="Screenshot 2025-07-25 160810" src="https://github.com/user-attachments/assets/006caf17-8801-4bd9-900b-620bd7ce7a55" />
+## Screenshot
 
+<img width="1011" height="543" alt="Screenshot of the Turtle Race game" src="https://github.com/user-attachments/assets/006caf17-8801-4bd9-900b-620bd7ce7a55" />
 
-📌 Future Ideas
-Add restart button
+## Possible Extensions
 
-Add sound effects
+- Add a restart control
+- Add sound effects
+- Track scores across multiple races
+- Introduce optional speed-boost mechanics
 
-Multiplayer score tracking
+## License
 
-Turtle speed boosts
-
-📄 License
-This project is open source and free to use.
-
-
+No license file is currently included in this repository. Unless a license is added, normal copyright rules apply to reuse and redistribution.
