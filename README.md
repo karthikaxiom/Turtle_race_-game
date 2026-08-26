@@ -16,6 +16,16 @@ The program creates six turtles at fixed vertical positions near the left side o
 
 The entered bet is compared case-insensitively with the winning turtle's color before the result is printed.
 
+## Project Structure
+
+```text
+Turtle_race_-game/
+├── main.py      # game setup, betting prompt, race loop, and result handling
+└── README.md    # project documentation
+```
+
+The repository is intentionally compact: the complete game logic lives in `main.py`, while the README documents setup and behavior.
+
 ## Requirements
 
 - Python 3 with Tk support available for the graphical `turtle` window
