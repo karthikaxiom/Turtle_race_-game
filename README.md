@@ -32,6 +32,17 @@ The entered bet is compared case-insensitively with the winning turtle's color b
 - Random movement is generated with `random.randint(0, 10)` for each turtle on each loop.
 - Winner detection is based on the turtle's x-coordinate crossing the right-side threshold.
 
+## Learning Outcomes
+
+This compact project demonstrates several useful Python fundamentals in one runnable program:
+
+- creating and managing multiple objects in a list
+- iterating over objects inside a continuous game loop
+- pairing configuration values such as colors and screen positions
+- using random values to drive simple simulation behavior
+- accepting GUI input and comparing normalized user text
+- combining graphical output with terminal feedback
+
 ## Project Structure
 
 ```text
