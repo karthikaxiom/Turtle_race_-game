@@ -16,6 +16,14 @@ The program creates six turtles at fixed vertical positions near the left side o
 
 The entered bet is compared case-insensitively with the winning turtle's color before the result is printed.
 
+## Controls and Output
+
+- Enter a turtle color in the startup dialog to begin the race.
+- The race itself is automatic; no keyboard controls are required once it starts.
+- The result is printed to the terminal as either a win or loss message.
+- After the race finishes, click the graphics window to close it.
+- Cancelling the startup dialog leaves the race disabled.
+
 ## Project Structure
 
 ```text
