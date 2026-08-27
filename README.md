@@ -24,6 +24,14 @@ The entered bet is compared case-insensitively with the winning turtle's color b
 - After the race finishes, click the graphics window to close it.
 - Cancelling the startup dialog leaves the race disabled.
 
+## Implementation Notes
+
+- The project uses only Python's standard-library `turtle` and `random` modules.
+- Six turtle objects are stored in a list and updated sequentially inside the race loop.
+- Starting positions are defined explicitly with matching color and y-position lists.
+- Random movement is generated with `random.randint(0, 10)` for each turtle on each loop.
+- Winner detection is based on the turtle's x-coordinate crossing the right-side threshold.
+
 ## Project Structure
 
 ```text
