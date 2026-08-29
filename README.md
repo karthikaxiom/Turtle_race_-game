@@ -12,9 +12,9 @@ A small Python `turtle` graphics game where six colored turtles race across the 
 
 ## How the Race Works
 
-The program creates six turtles at fixed vertical positions near the left side of an `800 × 400` window. During the race, each turtle advances by a random integer distance from `0` to `10` pixels per loop. The first turtle whose x-coordinate passes `370` is treated as the winner.
+The program creates six turtles at fixed vertical positions near the left side of an `800 × 400` window. During the race, each turtle advances by a random integer distance from `0` to `10` pixels per loop. A turtle is recognized as a winner when its x-coordinate is already greater than `370` at the start of its turn in the loop.
 
-The entered bet is compared case-insensitively with the winning turtle's color before the result is printed.
+The entered bet is compared case-insensitively with the detected winner's color before the result is printed. Because the current implementation checks every turtle in the active pass before the outer race loop stops, more than one result can be printed if multiple turtles have already crossed the threshold by that pass.
 
 ## Controls and Output
 
