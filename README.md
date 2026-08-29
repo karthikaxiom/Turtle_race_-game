@@ -19,6 +19,7 @@ The entered bet is compared case-insensitively with the detected winner's color 
 ## Controls and Output
 
 - Enter a turtle color in the startup dialog to begin the race.
+- Any non-empty text starts the race; the current implementation does not reject unsupported color names, so an unsupported entry cannot match a winning turtle.
 - The race itself is automatic; no keyboard controls are required once it starts.
 - The result is printed to the terminal as either a win or loss message.
 - After the race finishes, click the graphics window to close it.
