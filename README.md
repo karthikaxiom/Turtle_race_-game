@@ -1,13 +1,13 @@
 # Turtle Race Game 🐢
 
-A small Python `turtle` graphics game where six colored turtles race across the screen. Choose a turtle color before the race starts, then see whether your pick reaches the finish first.
+A small Python `turtle` graphics game where six colored turtles race across the screen. Choose a turtle color before the race starts, then see whether your pick is reported among the detected winners.
 
 ## Features
 
 - Six turtles: red, orange, yellow, green, blue, and purple
 - A pre-race color bet entered through a `turtle` text-input dialog
 - Random movement on every loop, giving each race a different outcome
-- A terminal message showing whether the selected turtle won or lost
+- Terminal result messages showing whether the selected turtle matches each detected winner
 - A graphical race window that remains open until clicked after the race
 
 ## How the Race Works
