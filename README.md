@@ -64,11 +64,20 @@ The repository is intentionally compact: the complete game logic lives in `main.
 
 ## Run Locally
 
-Clone or download the repository, then run:
+Clone the repository and enter its directory:
+
+```bash
+git clone https://github.com/karthikaxiom/Turtle_race_-game.git
+cd Turtle_race_-game
+```
+
+Then run the game:
 
 ```bash
 python main.py
 ```
+
+Alternatively, download the repository as an archive, extract it, open a terminal in the extracted folder, and run the same Python command.
 
 When prompted, enter one of the available colors:
 
