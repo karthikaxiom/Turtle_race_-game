@@ -77,6 +77,12 @@ Then run the game:
 python main.py
 ```
 
+If your system uses `python3` as the Python 3 command instead of `python`, run:
+
+```bash
+python3 main.py
+```
+
 Alternatively, download the repository as an archive, extract it, open a terminal in the extracted folder, and run the same Python command.
 
 When prompted, enter one of the available colors:
