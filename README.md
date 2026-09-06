@@ -60,6 +60,7 @@ The repository is intentionally compact: the complete game logic lives in `main.
 ## Requirements
 
 - Python 3 with Tk support available for the graphical `turtle` window
+- A desktop environment capable of opening the graphical `turtle` window
 - No third-party Python packages are imported by `main.py`
 
 ## Run Locally
