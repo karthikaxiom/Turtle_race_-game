@@ -26,7 +26,7 @@ The entered bet is compared case-insensitively with the detected winner's color 
 - The race itself is automatic; no keyboard controls are required once it starts.
 - The result is printed to the terminal as either a win or loss message.
 - After the race finishes, click the graphics window to close it.
-- Cancelling the startup dialog leaves the race disabled.
+- Cancelling the startup dialog leaves the race disabled. The six turtle objects are still created after the dialog closes, but they do not race.
 
 ## Implementation Notes
 
