@@ -84,6 +84,8 @@ If your system uses `python3` as the Python 3 command instead of `python`, run:
 python3 main.py
 ```
 
+Run the script from a terminal if you want to see the game's win/loss messages, because the current implementation reports the result with `print(...)` rather than displaying it inside the graphics window.
+
 Alternatively, download the repository as an archive, extract it, open a terminal in the extracted folder, and run the same Python command.
 
 When prompted, enter one of the available colors:
