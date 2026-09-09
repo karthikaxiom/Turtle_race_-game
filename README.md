@@ -6,7 +6,7 @@ A small Python `turtle` graphics game where six colored turtles race across the 
 
 - Six turtles: red, orange, yellow, green, blue, and purple
 - A pre-race color bet entered through a `turtle` text-input dialog
-- Random movement on every loop, giving each race a different outcome
+- Random movement on every loop, allowing race outcomes to vary between runs
 - Terminal result messages showing whether the selected turtle matches each detected winner
 - A graphical race window that remains open until clicked after the race
 
