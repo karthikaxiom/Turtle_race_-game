@@ -8,7 +8,7 @@ A small Python `turtle` graphics game where six colored turtles race across the 
 - A pre-race color bet entered through a `turtle` text-input dialog
 - Random movement on every loop, allowing race outcomes to vary between runs
 - Terminal result messages showing whether the selected turtle matches each detected winner
-- A graphical race window that remains open until clicked after the race
+- A graphical window that remains open until clicked, whether the race finishes or the startup bet is cancelled
 
 ## How the Race Works
 
