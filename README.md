@@ -16,7 +16,7 @@ The program creates six turtles at fixed vertical positions near the left side o
 
 During the race, each turtle advances by a random integer distance from `0` to `10` pixels per loop. Because `0` is included in that range, a turtle can remain in the same position for a turn. A turtle is recognized as a winner when its x-coordinate is already greater than `370` at the start of its turn in the loop. Because the threshold check happens before that turn's movement, a turtle that first moves from `370` or less to beyond `370` is detected on its next turn through the loop.
 
-The entered bet is compared case-insensitively with the detected winner's color before the result is printed. Because the current implementation checks every turtle in the active pass before the outer race loop stops, more than one result can be printed if multiple turtles have already crossed the threshold by that pass. The movement call also runs after the winner check, so a turtle that is detected beyond the threshold still receives that turn's final random forward movement.
+The entered bet is compared case-insensitively with the detected winner's color before the result is printed. Because the current implementation checks every turtle in the active pass before the outer race loop stops, more than one result can be printed if multiple turtles have already crossed the threshold by that pass. Those same-pass results follow the turtles' fixed list order: red, orange, yellow, green, blue, then purple. The movement call also runs after the winner check, so a turtle that is detected beyond the threshold still receives that turn's final random forward movement.
 
 ## Controls and Output
 
