@@ -27,6 +27,7 @@ The entered bet is compared case-insensitively with the detected winner's color 
 - The result is printed to the terminal as either a win or loss message.
 - After the race finishes, click the graphics window to close it.
 - Cancelling the startup dialog leaves the race disabled. The six turtle objects are still created after the dialog closes, but they do not race.
+- Each launch runs one race at most; start the script again to play another race after the window has been closed.
 
 ## Implementation Notes
 
