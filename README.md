@@ -95,6 +95,12 @@ When prompted, enter one of the available colors:
 
 If the input dialog is cancelled, the race does not start and the window remains available to close with a click.
 
+## Troubleshooting
+
+If the program cannot create the graphical window or reports that Python's `tkinter` support is unavailable, the Python installation needs Tk support enabled or installed. The exact package or installation option depends on the operating system. This project does not require any third-party Python package beyond the standard-library components used by `main.py`.
+
+If the game window opens but terminal win/loss messages are not visible, launch the script from a terminal rather than by double-clicking the file.
+
 ## Screenshot
 
 <img width="1011" height="543" alt="Screenshot of the Turtle Race game" src="https://github.com/user-attachments/assets/006caf17-8801-4bd9-900b-620bd7ce7a55" />
