@@ -31,6 +31,7 @@ The entered bet is compared case-insensitively with the detected winner's color 
 - Cancelling the startup dialog leaves the race disabled. The six turtle objects are still created after the dialog closes, but they do not race.
 - Each launch runs one race at most; start the script again to play another race after the window has been closed.
 - No score or race history is saved between launches; each new launch creates a fresh set of turtles at the starting positions.
+- The final `screen.exitonclick()` call is reached after either a completed race or a cancelled startup dialog, so closing the graphics window requires a click in both cases.
 
 ## Implementation Notes
 
