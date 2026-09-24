@@ -12,7 +12,7 @@ A small Python `turtle` graphics game where six colored turtles race across the 
 
 ## How the Race Works
 
-The program creates six turtles at fixed vertical positions near the left side of an `800 × 400` window. The window title is set to `Turtle Race ` by the current implementation. All six start at x = `-370`; their y-coordinates are paired with the color list in this order: red `-70`, orange `-40`, yellow `-10`, green `20`, blue `50`, and purple `80`.
+The program creates six turtles at fixed vertical positions near the left side of an `800 × 400` window. The window title is set to `Turtle Race ` by the current implementation. All six start at x = `-370`; their y-coordinates are paired with the color list in this order: red `-70`, orange `-40`, yellow `-10`, green `20`, blue `50`, and purple `80`. Each turtle is created with the `turtle` shape and has its pen lifted, so its movement does not draw a trail.
 
 The bet dialog is shown before the six turtle objects are created. The race state is then enabled only when the dialog returns a non-empty value; cancelling the dialog therefore leaves the race disabled even though the turtle objects are subsequently created.
 
