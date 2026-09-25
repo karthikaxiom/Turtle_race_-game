@@ -35,7 +35,7 @@ The entered bet is compared case-insensitively with the detected winner's color 
 
 ## Implementation Notes
 
-- The project uses only Python's standard-library `turtle` and `random` modules.
+- The project uses only Python's standard-library `turtle` and `random` modules. The graphical interface is provided by the standard `turtle` module; no separate GUI framework is configured by the project.
 - Six turtle objects are stored in a list and updated sequentially inside the race loop.
 - Starting positions are defined explicitly with matching color and y-position lists.
 - Random movement is generated with `random.randint(0, 10)` for each turtle on each loop.
