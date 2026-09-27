@@ -27,6 +27,8 @@ The entered bet is compared case-insensitively with the detected winner's color 
 - Letter case is ignored when checking the bet because the input is converted with `.lower()`, but leading or trailing spaces are not removed.
 - The race itself is automatic; no keyboard controls are required once it starts.
 - The result is printed to the terminal as either a win or loss message.
+
+The win message follows `You've won! The <color> turtle is the winner!`, while the loss message follows `You've lost! The <color> turtle won.` The `<color>` value comes from the detected turtle's current pen color.
 - After the race finishes, click the graphics window to close it.
 - Cancelling the startup dialog leaves the race disabled. The six turtle objects are still created after the dialog closes, but they do not race.
 - Each launch runs one race at most; start the script again to play another race after the window has been closed.
