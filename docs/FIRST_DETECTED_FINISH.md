@@ -1,5 +1,5 @@
-# First Detected Finish
+# Finish Detection During a Pass
 
-The outer race state is switched off when the first turtle encountered by the loop satisfies the finish threshold. Its pen color is then used as the reported winning color.
+When a turtle is already beyond the finish threshold at the start of its turn, the program records that turtle's color and switches the race state off.
 
-The program therefore reports the first finish detected during traversal rather than calculating a separate ranking of all turtles.
+The loop does not immediately break out of the current `for` traversal. Other turtles later in the same pass are still visited, so the stored winner color can be replaced if another already-finished turtle is encountered.
