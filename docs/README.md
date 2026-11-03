@@ -1,50 +1,44 @@
 # Documentation
 
-This directory contains focused references for the current implementation in `main.py`.
+This directory explains the behavior of the current implementation in `main.py`. Start with the lifecycle overview, then use the focused pages below when investigating a particular part of the program.
 
-## Program structure
+## Start here
 
-- [Module Imports](IMPORTS.md) — the standard-library modules imported by the program.
-- [Screen Dimensions](SCREEN_DIMENSIONS.md) — the configured graphical window size.
-- [Color Order](COLOR_ORDER.md) — the six turtle colors and their list order.
-- [Starting Positions](STARTING_POSITIONS.md) — the initial x/y coordinates and pen state.
-- [Turtle Creation Loop](OBJECT_LOOP.md) — the sequence used to construct and store turtle objects.
-- [Execution Flow](EXECUTION_FLOW.md) — startup, turtle creation, race loop, and shutdown sequence.
-- [Input Behavior](INPUT_BEHAVIOR.md) — dialog values and how they affect race startup and result comparison.
-- [Input Comparison](INPUT_COMPARISON.md) — how the entered text is normalized for result comparison.
-- [Race Termination](RACE_TERMINATION.md) — the threshold check, same-pass behavior, and loop termination.
-- [Output and Environment](OUTPUT_AND_ENVIRONMENT.md) — terminal messages and the runtime requirements for the graphical window.
+- [Program lifecycle](PROGRAM_LIFECYCLE.md) — the top-to-bottom execution path.
+- [Observable behavior checklist](OBSERVABLE_BEHAVIOR_CHECKLIST.md) — manual checks for the behavior currently visible in the source.
+- [Safe documentation changes](CHANGE_SAFE_ZONE.md) — boundaries for documentation-only maintenance.
+- [Documentation rules](DOCUMENTATION_RULES.md) — how to add or update pages without creating duplicate notes.
 
-## Implementation details
+## Setup and input
 
-- [Configuration Constants](CONSTANTS_AND_CONFIGURATION.md) — fixed values used by the current implementation.
-- [Turtle Object Creation](OBJECT_CREATION.md) — object construction and initial configuration.
-- [Per-Turtle Turn Sequence](TURN_SEQUENCE.md) — operations performed for each turtle during a race pass.
-- [Threshold Detection](THRESHOLD_DETECTION.md) — when the logical threshold is checked.
-- [Random Movement Range](MOVEMENT_RANGE.md) — the integer range used for each movement.
-- [Result Source](RESULT_SOURCE.md) — where the reported winning color comes from.
-- [Runtime Boundary](RUNTIME_BOUNDARY.md) — what happens inside and after the race loop.
-- [Data Flow](DATA_FLOW.md) — movement and result data flow through the program.
-- [Collection Traversal](COLLECTION_TRAVERSAL.md) — traversal of the turtle collection.
-- [Position Ownership](POSITION_OWNERSHIP.md) — which objects hold turtle positions.
-- [Rendering and Output](RENDERING_AND_OUTPUT.md) — graphical and terminal output paths.
-- [Source Footprint](SOURCE_FOOTPRINT.md) — the small implementation footprint of the program.
-- [Loop Responsibilities](LOOP_RESPONSIBILITIES.md) — responsibilities of the major loops.
-- [Screen Configuration](SCREEN_CONFIGURATION.md) — screen setup behavior.
-- [Turtle Configuration](TURTLE_CONFIGURATION.md) — per-turtle configuration.
-- [Movement Semantics](MOVEMENT_SEMANTICS.md) — movement behavior.
-- [State Variables](STATE_VARIABLES.md) — key runtime state variables.
-- [Control Flow](CONTROL_FLOW.md) — major control-flow boundaries.
-- [Module Responsibilities](MODULE_RESPONSIBILITIES.md) — responsibilities of imported modules and program code.
-- [Race Coordinates](RACE_COORDINATES.md) — coordinate values used by the race.
-- [Initialization Order](INITIALIZATION_ORDER.md) — startup and initialization ordering.
-- [Turtle List Storage](TURTLE_LIST_STORAGE.md) — how turtle objects are retained.
-- [Graphics Window Lifecycle](GRAPHICS_WINDOW_LIFECYCLE.md) — creation and closing behavior.
-- [Input Normalization](INPUT_NORMALIZATION.md) — input normalization behavior.
-- [List Indexing](LIST_INDEXING.md) — indexed relationship between configuration lists.
-- [Pen State](PEN_STATE.md) — turtle pen-state behavior.
-- [Screen Setup Sequence](SCREEN_SETUP_SEQUENCE.md) — screen setup ordering.
-- [State Transitions](STATE_TRANSITIONS.md) — race-state transitions.
-- [Dependency Boundary](DEPENDENCY_BOUNDARY.md) — dependency boundary of the current program.
+- [Execution prerequisites](EXECUTION_PREREQUISITES.md) — Python and graphical runtime requirements.
+- [Runtime dependencies](RUNTIME_DEPENDENCIES.md) — the modules used by the program.
+- [Screen configuration](SCREEN_CONFIGURATION.md) — window dimensions and setup.
+- [Initialization sequence](INITIALIZATION_SEQUENCE.md) — ordering of setup stages.
+- [Input lifecycle](INPUT_LIFECYCLE.md) — the input dialog and how its value affects the run.
+- [Input normalization boundary](INPUT_NORMALIZATION_BOUNDARY.md) — what is and is not normalized.
+- [Input whitespace](INPUT_WHITESPACE.md) — the effect of leading and trailing spaces.
 
-These notes describe the current code rather than planned features.
+## Turtles and movement
+
+- [Turtle initial state](TURTLE_INITIAL_STATE.md) — creation, appearance, pen state, and starting position.
+- [Color mapping](COLOR_MAPPING.md) — the configured colors and their relationship to turtle order.
+- [Collection traversal](COLLECTION_TRAVERSAL.md) — how turtle objects are visited.
+- [Movement semantics](MOVEMENT_SEMANTICS.md) — random movement and its per-turn behavior.
+- [Finish-check timing](FINISH_CHECK_TIMING.md) — when the threshold is evaluated.
+- [Threshold overshoot](THRESHOLD_OVERSHOOT.md) — why a turtle can move beyond the logical finish threshold.
+
+## Results and shutdown
+
+- [First detected finish](FIRST_DETECTED_FINISH.md) — finish detection during a pass through the turtle list.
+- [Post-finish movement](POST_FINISH_MOVEMENT.md) — movement calls that still occur after a finish check.
+- [Output branching](OUTPUT_BRANCHING.md) — how the program chooses its win or loss message.
+- [Winner color source](WINNER_COLOR_SOURCE.md) — where the reported color is read from.
+- [Screen shutdown](SCREEN_SHUTDOWN.md) — the final click-to-close behavior.
+
+## Supplementary records
+
+- [Reference notes](reference/README_SCOPE.md) — scope of the focused notes in `reference/`.
+- [Dated maintenance notes](maintenance/) — chronological records of earlier documentation maintenance.
+
+The focused notes are not all equally authoritative. When two older pages overlap, use `main.py` as the source of truth and prefer the clearest current explanation. See [Documentation rules](DOCUMENTATION_RULES.md) before adding another page.
