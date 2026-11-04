@@ -58,11 +58,12 @@ This compact project demonstrates several useful Python fundamentals in one runn
 
 ```text
 Turtle_race_-game/
-├── main.py      # game setup, betting prompt, race loop, and result handling
-└── README.md    # project documentation
+├── docs/        # focused behavior notes, reference material, and maintenance guidance
+├── main.py      # game setup, input prompt, race loop, and result handling
+└── README.md    # project overview, setup instructions, and run guide
 ```
 
-The repository is intentionally compact: the complete game logic lives in `main.py`, while the README documents setup and behavior.
+The complete game logic remains in `main.py`. The `docs/` directory contains the maintained documentation index, lifecycle overview, focused implementation notes, and guidance for future documentation changes. Start at [docs/README.md](docs/README.md) for the documentation map.
 
 ## Requirements
 
