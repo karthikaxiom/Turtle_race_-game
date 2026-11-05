@@ -1,5 +1,5 @@
 # Shared Starting X Contract
 
-Every turtle is positioned with the same starting x-coordinate: `-370`.
+The shared horizontal start and participant-specific lane positions are maintained in [Starting Positions](STARTING_POSITIONS.md).
 
-The participant-specific part of the starting position is the y-coordinate selected from `y_positions`. This gives every lane a common horizontal starting boundary.
+Use that page as the canonical description of the `x=-370` starting coordinate and the indexed `y_positions` assignment.
