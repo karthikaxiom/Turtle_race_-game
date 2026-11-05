@@ -1,5 +1,5 @@
 # Input Case Sensitivity
 
-The entered turtle color is compared after applying `lower()` to the user's input. This makes the result comparison insensitive to letter casing for otherwise matching color names.
+The case-handling rule is maintained in [Input Normalization Boundary](INPUT_NORMALIZATION_BOUNDARY.md).
 
-The program does not otherwise normalize whitespace or validate the input against the configured color list.
+The current source lowercases `user_bet` at comparison time. It does not lowercase the captured `winning_color` value in that expression, and it does not trim whitespace.
