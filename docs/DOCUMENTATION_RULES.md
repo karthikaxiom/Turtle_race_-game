@@ -16,6 +16,19 @@ Create a separate page only when it answers a distinct maintainer or user questi
 
 When related notes already exist, link to the canonical explanation rather than copying the same explanation into another file. Avoid near-duplicate filenames and narrow documents that differ only in wording.
 
+## Consolidating legacy notes
+
+When two or more pages cover the same concept:
+
+1. Choose the clearest page as the canonical reference.
+2. Compare the other pages for unique factual details or edge cases.
+3. Incorporate useful details into the canonical page, checking every claim against `main.py`.
+4. Search the repository for links to each proposed removal.
+5. Update navigation and internal links before removing redundant pages.
+6. Keep dated maintenance records when they provide historical context; do not treat them as current behavioral specifications.
+
+Do not delete a page merely because its title resembles another. Consolidation is appropriate only after its useful information and inbound links have been accounted for.
+
 ## Page quality
 
 A useful page should:
@@ -35,4 +48,4 @@ Keep claims consistent with the current source. Do not invent tests, guarantees,
 - Use [the safe-change guidance](CHANGE_SAFE_ZONE.md) and [the observable-behavior checklist](OBSERVABLE_BEHAVIOR_CHECKLIST.md) when reviewing documentation changes.
 - Treat `reference/` as supplementary focused notes and `maintenance/` as dated maintenance records; neither should replace a clear, maintained overview.
 
-These rules guide future contributions. They do not automatically delete or rewrite existing pages; consolidate legacy overlap in a separately reviewed change.
+Consolidate legacy overlap in a separately reviewed change, preserving historical records where appropriate.
