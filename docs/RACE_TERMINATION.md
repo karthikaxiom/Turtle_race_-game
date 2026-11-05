@@ -1,18 +1,19 @@
 # Race Termination
 
-The race loop uses a two-level structure:
+The race uses an outer `while race_on` loop and an inner `for turtle_ in all_turtles` traversal.
 
-- The outer loop continues while `race_on` is true.
-- The inner loop visits every turtle in `all_turtles` in its existing list order.
+A turtle is detected as a finisher when its current x-coordinate is greater than 370 at the start of its turn. When that condition is true, the program sets `race_on = False`, captures the turtle's pen color, and prints the matching win or loss result.
 
-A turtle is considered a detected winner when its x-coordinate is already greater than `370` at the start of that turtle's turn.
+Setting `race_on` to false does not break or return from the inner `for` loop. The current turn still reaches its `forward(...)` call, and turtles later in the list are still checked and moved during the same pass.
 
-The threshold check occurs before the movement call. Therefore:
+This means:
 
-- A turtle that moves beyond `370` during its current turn is not detected until a later turn.
-- Setting `race_on = False` does not break the inner `for` loop.
-- Later turtles in the same pass are still checked and moved.
-- If multiple turtles already satisfy the threshold in one pass, each can produce a result.
-- After the inner loop finishes, the false `race_on` value prevents another outer-loop pass.
+- A turtle that crosses x = 370 during its movement call is detected on a later turn.
+- The current inner-loop pass completes after `race_on` becomes false.
+- More than one turtle can satisfy the threshold in the same pass, so more than one result line can be printed.
+- The next outer-loop pass does not begin because its condition sees `race_on` as false.
+- If the startup input is falsey, `race_on` is false from initialization and the race loop is skipped entirely.
 
-The code does not draw a separate finish line; `370` is the logical threshold used for detection.
+The current source has one race flow per script launch and no in-loop restart mechanism. The code does not draw a separate finish line; 370 is a logical coordinate threshold.
+
+Source of truth: `main.py`.
