@@ -1,5 +1,20 @@
 # Initialization Sequence
 
-The program imports `turtle` and `random`, creates the graphics screen, configures its size and title, defines the turtle colors and starting y-positions, and then asks for the user's input. It next creates the six turtle objects, assigns each one a color and starting position, and stores them in `all_turtles` before entering the race loop.
+`main.py` executes its setup stages in file order:
 
-This document records the existing initialization order without changing the application code.
+1. Import the standard-library `turtle` and `random` modules.
+2. Create the graphics screen and configure its dimensions and title.
+3. Define the color list and the matching vertical-position list.
+4. Display the startup text-input dialog and store its return value in `user_bet`.
+5. Create the empty `all_turtles` collection.
+6. Iterate through six participant indices.
+7. For each index, create a turtle with the `turtle` shape, assign the indexed color, lift its pen, move it to x = `-370` and the indexed y-coordinate, then append it to `all_turtles`.
+8. Initialize `race_on` from whether `user_bet` is truthy.
+9. Execute the race loop only while `race_on` remains true.
+10. Call `screen.exitonclick()` after the loop ends.
+
+The input dialog appears before turtle creation, but cancellation does not skip participant setup. All six turtle objects are still created; a falsey input simply leaves `race_on` false, so the movement loop is skipped.
+
+There is no separate application entry-point function. Launching the script executes these stages from top to bottom.
+
+Source of truth: `main.py`.
