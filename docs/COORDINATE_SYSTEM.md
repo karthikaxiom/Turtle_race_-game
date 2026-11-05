@@ -1,21 +1,23 @@
 # Race Coordinates
 
-The current implementation uses the turtle graphics coordinate system directly.
+The current implementation uses the Turtle graphics coordinate system directly for setup and finish detection.
 
-## Screen
+## Screen dimensions
 
-The screen is configured as 800 × 400 through:
+The screen is configured with `screen.setup(width=800, height=400)`, giving the game a window width of 800 and height of 400.
 
-```python
-screen.setup(width=800, height=400)
-```
+## Starting positions
 
-## Starting coordinates
+Every turtle starts at x = `-370`. The six y-coordinates, in participant order, are:
 
-Every turtle starts at x = -370. Their vertical coordinates are -70, -40, -10, 20, 50, and 80 in the configured list order.
+`[-70, -40, -10, 20, 50, 80]`
 
-## Detection threshold
+The same loop index selects the turtle's color and its y-coordinate. This produces six distinct horizontal lanes with a shared horizontal starting point. The turtle is moved to its initial position after `penup()`, so setup does not draw a trail.
 
-Winner detection checks whether the current turtle's x-coordinate is greater than 370. This is a logical coordinate used by the program; no separate finish-line object is drawn.
+## Finish threshold
 
-Movement changes the turtle's current coordinate through forward(...); the program does not maintain a separate position variable.
+The race loop checks whether a turtle's current x-coordinate is greater than `370`. The comparison is strict: a position of exactly 370 does not satisfy the condition. The code does not draw a separate finish-line object; 370 is a logical threshold used by the loop.
+
+Movement occurs in discrete increments, so a turtle can pass the threshold without landing exactly on it. The finish check observes the coordinate on the turtle's next turn, before that turn's movement call.
+
+Source of truth: `main.py` (`screen.setup`, `y_positions`, `goto`, and `xcor() > 370`).
