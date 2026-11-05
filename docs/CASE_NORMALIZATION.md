@@ -1,3 +1,5 @@
 # Result Comparison Normalization
 
-The selected input is compared with the winning turtle color after calling `lower()` on the winning color. The result logic therefore treats an uppercase or mixed-case winning color representation as lowercase when formatting the comparison.
+The canonical explanation is [Input Normalization Boundary](INPUT_NORMALIZATION_BOUNDARY.md).
+
+Correction to the earlier wording on this page: the source applies `lower()` to `user_bet`, not to `winning_color`. The captured turtle color comes from `pencolor()` and is compared directly with the lowercased user input.
