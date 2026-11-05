@@ -1,3 +1,5 @@
 # Screen Geometry
 
-The graphics window is configured with a width of 800 and a height of 400. The turtles begin at x=-370, while the race loop checks for a finish when a turtle's x-coordinate is greater than 370. These values define the horizontal play area used by the current implementation.
+Use [Race Coordinates](COORDINATE_SYSTEM.md) as the canonical reference for the 800 by 400 screen, starting coordinates, and logical finish threshold.
+
+This page is retained as a stable entry point; the detailed geometry explanation is maintained in one place to avoid drift.
