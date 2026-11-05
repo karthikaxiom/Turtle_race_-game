@@ -1,5 +1,5 @@
 # Starting X Alignment
 
-Every participant is positioned with `x=-370` during setup.
+The shared starting x-coordinate and the per-lane y-coordinate sequence are documented in [Starting Positions](STARTING_POSITIONS.md).
 
-The shared starting x-coordinate gives all six turtles the same horizontal starting line. Their initial vertical positions differ, creating separate lanes without changing the horizontal starting point.
+That page is the canonical reference for the common horizontal start, indexed lane assignment, and pen-up placement behavior.
