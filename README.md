@@ -109,6 +109,10 @@ If the program cannot create the graphical window or reports that Python's `tkin
 
 If the game window opens but terminal win/loss messages are not visible, launch the script from a terminal rather than by double-clicking the file.
 
+## Manual Verification
+
+For a practical review of the current input paths, movement order, result output, and window shutdown, use the [observable behavior checklist](docs/OBSERVABLE_BEHAVIOR_CHECKLIST.md). It describes manual checks; the repository does not currently claim an automated test suite.
+
 ## Screenshot
 
 <img width="1011" height="543" alt="Screenshot of the Turtle Race game" src="https://github.com/user-attachments/assets/006caf17-8801-4bd9-900b-620bd7ce7a55" />
