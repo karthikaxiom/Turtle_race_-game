@@ -8,6 +8,7 @@ This directory explains the behavior of the current implementation in `main.py`.
 - [Observable behavior checklist](OBSERVABLE_BEHAVIOR_CHECKLIST.md) — manual checks for the behavior currently visible in the source.
 - [Safe documentation changes](CHANGE_SAFE_ZONE.md) — boundaries for documentation-only maintenance.
 - [Documentation rules](DOCUMENTATION_RULES.md) — how to add or update pages without creating duplicate notes.
+- [Contribution guide](../CONTRIBUTING.md) — repository-level expectations for code and documentation changes.
 
 ## Setup and input
 
