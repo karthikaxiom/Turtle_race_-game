@@ -1,5 +1,5 @@
 # Result Comparison Case
 
-The final comparison lowercases the detected winner color before comparing it with the user's stored bet using `user_bet.lower()`.
+The canonical comparison details are maintained in [Input Normalization Boundary](INPUT_NORMALIZATION_BOUNDARY.md).
 
-This makes the result comparison insensitive to capitalization entered in the bet, while the stored input itself is not rewritten at capture time.
+Correction to the earlier wording: the source does not lowercase the detected winner color. The expression is `winning_color == user_bet.lower()`, so the user's text is lowercased and compared with the captured turtle color.
