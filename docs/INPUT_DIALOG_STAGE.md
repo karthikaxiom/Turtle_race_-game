@@ -1,5 +1,5 @@
 # Input Dialog Stage
 
-The startup `screen.textinput()` call occurs after screen setup and before the turtle-creation loop.
+The input dialog appears after screen configuration and before turtle creation. Its returned value is stored as `user_bet`.
 
-Its returned value is stored in `user_bet` and remains available to determine whether the race starts and to compare against the winning color later.
+The canonical ordering is maintained in [Initialization Sequence](INITIALIZATION_SEQUENCE.md); the value's effect on race activation and comparison is maintained in [Input Lifecycle](INPUT_LIFECYCLE.md).
