@@ -1,5 +1,5 @@
 # No Validation Path
 
-The program does not explicitly check whether the user's text matches one of the six configured colors before starting the race.
+The startup path does not check whether a non-empty entry matches one of the six configured colors. A non-empty unsupported value can therefore start the race, even though it will not match any configured turtle color in the result comparison.
 
-When a non-empty value is supplied, the race proceeds. The final result is then compared with that value after lowercasing the input.
+See [Input Normalization Boundary](INPUT_NORMALIZATION_BOUNDARY.md) for the complete comparison behavior and its limitations.
