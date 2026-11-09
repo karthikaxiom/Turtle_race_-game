@@ -1,8 +1,5 @@
 # Input Boundaries
 
-The application has two user-facing input boundaries:
+The startup and cancellation boundary is maintained in [Input Lifecycle](INPUT_LIFECYCLE.md).
 
-- The bet dialog may return a color string or no value when the input is cancelled.
-- The final comparison uses the entered color after converting it to lowercase.
-
-No additional validation layer is implemented in the current source. The documentation therefore describes the existing boundary rather than prescribing new validation behavior.
+The later result-comparison boundary—including lowercasing of `user_bet`, the absence of whitespace trimming, and the unsupported-color case—is maintained in [Input Normalization Boundary](INPUT_NORMALIZATION_BOUNDARY.md).
