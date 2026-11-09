@@ -1,5 +1,5 @@
 # Input Capture
 
-The program asks for the user's color choice through `screen.textinput()` after the screen is configured and before the turtle objects are created.
+The position of `screen.textinput()` in the setup flow is documented in [Initialization Sequence](INITIALIZATION_SEQUENCE.md).
 
-The returned value is stored in `user_bet` and is later used to decide whether the race should run and to compare the entered value with the reported winner.
+The captured value is stored in `user_bet` and later controls race activation and result comparison. Those behaviors are described in [Input Lifecycle](INPUT_LIFECYCLE.md) and [Input Normalization Boundary](INPUT_NORMALIZATION_BOUNDARY.md).
