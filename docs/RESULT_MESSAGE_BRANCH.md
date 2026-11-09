@@ -1,5 +1,5 @@
 # Result Message Branch
 
-Once a finish is detected, the program compares the detected turtle color with the lowercased user input.
+The canonical explanation of the win/loss comparison and the two terminal message formats is [Output Branching](OUTPUT_BRANCHING.md).
 
-A matching value produces the winning message; a non-matching value produces the losing message. The branch uses the detected turtle's color as the reported result.
+The color inserted into either message is obtained from the detected turtle. See [Winner Color Source](WINNER_COLOR_SOURCE.md) for that source property.
