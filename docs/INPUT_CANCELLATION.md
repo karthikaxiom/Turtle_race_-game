@@ -1,5 +1,5 @@
 # Input Cancellation
 
-The initial bet dialog returns a falsey value when the user cancels it. The program stores that value in `user_bet`, and the race state is then initialized from whether an input value exists.
+A cancelled or empty startup dialog follows the falsey-input path: the turtle objects are created, but `race_on` is false and the race loop is skipped.
 
-This means cancellation prevents the race loop from starting rather than producing a normal win or loss result.
+The full ordering and the subsequent window-exit behavior are maintained in [Input Lifecycle](INPUT_LIFECYCLE.md) and [Screen Shutdown](SCREEN_SHUTDOWN.md).
