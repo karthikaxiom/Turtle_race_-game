@@ -1,13 +1,5 @@
 # Input and Output Boundaries
 
-The project uses two distinct interaction surfaces.
+The startup dialog and its effect on race activation are documented in [Input Lifecycle](INPUT_LIFECYCLE.md).
 
-## Input
-
-The turtle graphics module presents the startup text-input dialog. The entered value is kept as text and is used later when comparing the selection with a detected turtle color.
-
-## Output
-
-Race results are sent to the terminal with `print(...)`. The graphics window does not display the win/loss message itself.
-
-The final graphics-window lifecycle is handled separately by `screen.exitonclick()`, so terminal output and window closure are independent parts of the current implementation.
+The win/loss messages are printed to standard output, while the graphics window is handled separately. See [Output and Environment](OUTPUT_AND_ENVIRONMENT.md) for the two output surfaces and [Screen Shutdown](SCREEN_SHUTDOWN.md) for window closure.
