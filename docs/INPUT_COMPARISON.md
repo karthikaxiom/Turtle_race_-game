@@ -1,11 +1,5 @@
 # Result Input Comparison
 
-When a turtle crosses the logical threshold, the program stores that turtle's pen color in `winning_color`.
+The maintained comparison expression is documented in [Input Normalization Boundary](INPUT_NORMALIZATION_BOUNDARY.md).
 
-The result comparison then uses:
-
-`winning_color == user_bet.lower()`
-
-This means the entered text is converted to lowercase for the comparison, while the turtle's color is already represented by lowercase color names.
-
-The comparison is performed only after a turtle satisfies the threshold condition.
+Correction to the earlier wording on this page: the source compares `winning_color == user_bet.lower()`. It lowercases the user's stored input, not the captured winner color. The comparison runs only after a turtle satisfies the finish threshold.
