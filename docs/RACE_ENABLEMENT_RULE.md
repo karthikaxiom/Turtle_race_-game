@@ -1,5 +1,5 @@
 # Race Enablement Rule
 
-The race state is initialized with `True if user_bet else False`.
+The initial value of `race_on` is derived from whether `user_bet` is truthy. This controls whether the outer race loop is entered after turtle setup.
 
-A truthy response from the input dialog enables the race loop. A falsey response prevents entry into the loop, so the game proceeds directly to the final screen shutdown call.
+See [Input Lifecycle](INPUT_LIFECYCLE.md) for the complete startup path and [Race Termination](RACE_TERMINATION.md) for the later false-state transition.
