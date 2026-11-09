@@ -1,5 +1,5 @@
 # Race Flag Initialization
 
-The race loop is controlled by `race_on`.
+The race state is initialized from the truthiness of `user_bet` after the turtle objects have been created. A truthy value allows the outer `while` loop to run; a falsey value skips it.
 
-It is initialized from the user's input: a non-empty response starts the race, while a missing response leaves the race disabled. Once initialized, the value is used directly by the outer `while` loop to decide whether race iterations should run.
+See [Input Lifecycle](INPUT_LIFECYCLE.md) for the startup sequence and [Race Termination](RACE_TERMINATION.md) for the later transition to a false state.
