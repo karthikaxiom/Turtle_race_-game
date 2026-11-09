@@ -1,3 +1,5 @@
 # No-Input Path
 
-If the input dialog returns a falsy value, `race_on` is initialized to `False`. The `while race_on` loop is therefore skipped, so no race movement or winner output is produced. The program then reaches the final window-wait call.
+If the startup dialog returns a falsey value, `race_on` is initialized to false after turtle setup. The movement loop is skipped and no winner message is printed.
+
+See [Input Lifecycle](INPUT_LIFECYCLE.md) for the setup order and [Screen Shutdown](SCREEN_SHUTDOWN.md) for the click-to-close behavior shared by both exit paths.
