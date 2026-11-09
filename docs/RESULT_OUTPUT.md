@@ -1,5 +1,5 @@
 # Result Output
 
-When the finish condition is detected, the current turtle's `pencolor()` is stored in `winning_color`. The program then prints one of two terminal messages based on the comparison already implemented in `main.py`.
+The result messages are printed to the terminal with `print(...)`; they are not rendered inside the graphics window. The exact win/loss branches and message formats are maintained in [Output Branching](OUTPUT_BRANCHING.md).
 
-No separate result file, database record, or persistent score is created by the current implementation.
+The detected color is read from the turtle's `pencolor()` property. See [Winner Color Source](WINNER_COLOR_SOURCE.md) for the source of that value. The current implementation does not write a result file or persist a score.
