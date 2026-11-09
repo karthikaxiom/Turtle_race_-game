@@ -1,9 +1,5 @@
 # Input Acceptance
 
-`main.py` stores the value returned by `screen.textinput()` in `user_bet`.
+The startup dialog's return value and its effect on `race_on` are documented in [Input Lifecycle](INPUT_LIFECYCLE.md).
 
-The code does not validate the entered text against the six configured colors before creating the turtles. Any non-empty returned string makes `race_on` true, while a falsey return value leaves `race_on` false.
-
-Later, when a turtle crosses the threshold, the stored input is converted to lowercase for the winner comparison. The conversion does not otherwise alter the original stored value.
-
-Source of truth: `main.py` input capture, race-state initialization, and result comparison.
+The code does not validate a non-empty entry against the six configured colors. The exact comparison expression and its case and whitespace behavior are maintained in [Input Normalization Boundary](INPUT_NORMALIZATION_BOUNDARY.md).
