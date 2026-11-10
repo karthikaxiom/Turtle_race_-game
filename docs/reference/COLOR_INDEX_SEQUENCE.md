@@ -1,3 +1,5 @@
 # Color Index Sequence
 
-The configured turtle colors are stored in the order red, orange, yellow, green, blue, and purple. The creation loop assigns these colors by index.
+The fixed color order is red, orange, yellow, green, blue, and purple. The participant-creation loop selects each color by index.
+
+The maintained mapping and its relationship to the lane list are documented in [Turtle Color Mapping](../COLOR_MAPPING.md).
