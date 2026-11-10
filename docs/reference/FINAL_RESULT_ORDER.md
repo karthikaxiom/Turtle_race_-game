@@ -1,3 +1,5 @@
 # Final Result Order
 
-If multiple turtles satisfy the threshold during the same pass, their result messages are emitted in list order. The last qualifying turtle in that pass supplies the final printed result.
+When more than one turtle already satisfies the finish condition during a pass, each qualifying turtle is processed in list order and can print a result. The last qualifying turtle processed supplies the last message of that pass.
+
+See [Race Termination](../RACE_TERMINATION.md) and [Output Branching](../OUTPUT_BRANCHING.md) for the maintained control-flow and message behavior.
