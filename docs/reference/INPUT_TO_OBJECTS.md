@@ -1,10 +1,5 @@
 # Input to Object Creation
 
-The startup input step occurs before the turtle objects are created.
+The text-input dialog is shown before the turtle-creation loop. Its return value is stored in `user_bet`; all six turtle objects are created afterward, even if the dialog was cancelled.
 
-- `screen.textinput(...)` collects the user's initial value.
-- The returned value is stored in `user_bet`.
-- The six turtle objects are created afterward in the `for` loop.
-- Cancelling input does not prevent object creation; it only leaves `race_on` false.
-
-This sequence describes the current execution order without changing the game logic.
+See [Initialization Sequence](../INITIALIZATION_SEQUENCE.md) for the complete order and [Input Lifecycle](../INPUT_LIFECYCLE.md) for the effect on race activation.
