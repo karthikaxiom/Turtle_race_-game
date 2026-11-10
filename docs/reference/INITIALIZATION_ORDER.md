@@ -1,3 +1,5 @@
-# Initialization order
+# Initialization Order
 
-The program imports its modules, creates the screen, defines race configuration, collects the user's input, creates the turtles, and only then enters the race loop. This ordering is part of the current runtime behavior.
+The script configures the screen, defines the race configuration, collects input, creates the six turtles, initializes `race_on`, and then enters the race loop if enabled.
+
+The complete ordered sequence is maintained in [Initialization Sequence](../INITIALIZATION_SEQUENCE.md) and [Program Lifecycle](../PROGRAM_LIFECYCLE.md).
