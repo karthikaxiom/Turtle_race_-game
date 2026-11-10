@@ -1,3 +1,5 @@
-# Invalid color behavior
+# Invalid Color Behavior
 
-The input dialog accepts text without a validation step against the configured color list. An unsupported color therefore does not prevent the race from starting; it simply fails the final equality comparison unless it matches the winner color.
+A non-empty unsupported string is truthy, so it does not prevent the race from starting. Since the final comparison uses the configured winner color, unsupported text will not match one of the six configured color names.
+
+See [Input Normalization Boundary](../INPUT_NORMALIZATION_BOUNDARY.md) for the exact validation and comparison behavior.
