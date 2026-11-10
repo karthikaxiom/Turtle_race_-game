@@ -1,3 +1,8 @@
-# Dependency responsibilities
+# Dependency Responsibilities
 
-`turtle` provides the graphical screen, turtle objects, text input, movement, and window lifecycle. `random` supplies the per-turn integer used for movement. No third-party package is imported by the current program.
+The current source imports two standard-library modules:
+
+- `turtle` supplies the graphics window, input dialog, turtle objects, and movement interface.
+- `random` supplies each turtle's movement distance.
+
+See [Dependency Boundary](../DEPENDENCY_BOUNDARY.md) for the maintained module and dependency summary, and [Execution Prerequisites](../EXECUTION_PREREQUISITES.md) for the graphical runtime requirement.
