@@ -1,7 +1,5 @@
 # Launch State Reset
 
-Each execution starts with fresh module-level state created by the script.
+Each script launch rebuilds the turtle collection, positions the participants from the configured lists, and initializes `race_on` from the new startup input. The current source does not persist scores, winner history, or previous turtle positions.
 
-The turtle list is rebuilt, every turtle receives its configured starting position, and the race flag is initialized from the current startup input. No score, winner history, or previous turtle positions are persisted by the project.
-
-As a result, restarting the script creates a new race state rather than continuing a previous run. This reference documents the existing one-launch lifecycle without changing game behavior.
+See [Program Lifecycle](../PROGRAM_LIFECYCLE.md) for the complete one-launch execution path. A new race requires launching the script again.
