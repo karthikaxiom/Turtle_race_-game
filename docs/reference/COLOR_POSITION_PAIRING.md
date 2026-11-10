@@ -1,3 +1,5 @@
 # Color and Position Pairing
 
-The color and vertical-position lists are parallel configuration lists. Index `i` selects one color and its matching y-coordinate when the turtles are constructed.
+The `colors` and `y_positions` lists are parallel configurations. The same participant index selects both values during turtle creation.
+
+See [Turtle Color Mapping](../COLOR_MAPPING.md) for indexed color assignment and [Starting Positions](../STARTING_POSITIONS.md) for the lane coordinates.
