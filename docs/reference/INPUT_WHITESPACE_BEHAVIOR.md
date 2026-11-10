@@ -1,3 +1,5 @@
-# Input whitespace behavior
+# Input Whitespace Behavior
 
-The result comparison applies `.lower()` to the stored input but does not strip surrounding whitespace. Therefore an otherwise matching color with extra leading or trailing spaces will not compare equal to the winner color.
+The current source lowercases `user_bet` at comparison time but does not call `strip()`. Leading or trailing spaces therefore remain and can prevent an otherwise matching color from comparing equal.
+
+See [Input Normalization Boundary](../INPUT_NORMALIZATION_BOUNDARY.md) for the full comparison contract.
