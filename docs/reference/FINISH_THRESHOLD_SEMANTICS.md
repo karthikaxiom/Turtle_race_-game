@@ -1,3 +1,5 @@
 # Finish Threshold Semantics
 
-A turtle qualifies as a detected winner when its x-coordinate is greater than `370` at the beginning of its turn. Equality with `370` does not qualify.
+A turtle qualifies when its x-coordinate is greater than 370 at the start of its turn. The comparison is strict.
+
+See [Race Coordinates](../COORDINATE_SYSTEM.md) for screen geometry and [Race Termination](../RACE_TERMINATION.md) for how a qualifying check affects the loops.
