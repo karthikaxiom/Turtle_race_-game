@@ -1,3 +1,5 @@
 # Loop Termination
 
-Once a turtle crosses the finish threshold, `race_on` is set to `False`. The enclosing while-loop completes its current pass and then terminates rather than starting another race pass.
+When a turtle satisfies the finish condition, `race_on` becomes false. This does not interrupt the current inner `for` traversal; the outer `while` loop stops before beginning another pass.
+
+See [Race Termination](../RACE_TERMINATION.md) for the full same-pass behavior.
