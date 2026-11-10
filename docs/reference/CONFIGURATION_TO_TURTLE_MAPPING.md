@@ -1,6 +1,6 @@
 # Configuration to Turtle Mapping
 
-The color and vertical-position lists are paired by the same loop index.
+The current indexed pairing is:
 
 | Index | Color | Y position |
 | ---: | --- | ---: |
@@ -11,4 +11,4 @@ The color and vertical-position lists are paired by the same loop index.
 | 4 | blue | 50 |
 | 5 | purple | 80 |
 
-The loop uses each index to select one color and one starting y-coordinate for the corresponding turtle.
+The detailed descriptions are maintained in [Turtle Color Mapping](../COLOR_MAPPING.md) and [Starting Positions](../STARTING_POSITIONS.md).
