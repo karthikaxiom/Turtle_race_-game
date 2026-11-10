@@ -1,3 +1,5 @@
-# Color to lane mapping
+# Color to Lane Mapping
 
-The `colors` and `y_positions` lists are paired by index. The six turtle colors are assigned to the six corresponding vertical positions in list order, so changing one list independently would change the visual mapping.
+Each participant receives a color and vertical lane from parallel lists using the same loop index. Changing one list independently changes the color-to-lane pairing.
+
+The canonical descriptions are [Turtle Color Mapping](../COLOR_MAPPING.md) and [Starting Positions](../STARTING_POSITIONS.md).
