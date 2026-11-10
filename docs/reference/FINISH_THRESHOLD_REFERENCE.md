@@ -1,3 +1,5 @@
-# Finish threshold reference
+# Finish Threshold Reference
 
-A turtle is treated as having reached the finish when its x-coordinate is greater than 370 at the time the check is performed. The comparison is evaluated before the current turn's movement call.
+The finish comparison is strict: the current turtle must have an x-coordinate greater than 370. Equality with 370 is not sufficient.
+
+The canonical coordinate contract is maintained in [Race Coordinates](../COORDINATE_SYSTEM.md); timing relative to movement is explained in [Movement Semantics](../MOVEMENT_SEMANTICS.md).
