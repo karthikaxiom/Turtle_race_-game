@@ -1,3 +1,5 @@
 # Finish Check Point
 
-The finish condition is evaluated from the turtle's current x-coordinate before its movement call in each turn. A turtle beyond the threshold can therefore be detected before another random step is applied.
+The x-coordinate is evaluated before the current turtle's movement call. A turtle already beyond the boundary is detected at that point in its turn.
+
+See [Race Coordinates](../COORDINATE_SYSTEM.md) for the exact threshold and [Movement Semantics](../MOVEMENT_SEMANTICS.md) for operation order.
