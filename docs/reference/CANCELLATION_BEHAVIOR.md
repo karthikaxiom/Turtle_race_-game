@@ -1,3 +1,5 @@
-# Cancellation behavior
+# Cancellation Behavior
 
-If the text-input dialog returns no value, `race_on` is initialized to `False`. Turtle creation still occurs because object setup follows the input dialog, but the race loop itself is skipped.
+A falsey result from the startup dialog leaves `race_on` false. Turtle setup still follows the dialog, but the movement loop is skipped.
+
+The maintained startup explanation is [Input Lifecycle](../INPUT_LIFECYCLE.md); the subsequent click-to-close behavior is [Screen Shutdown](../SCREEN_SHUTDOWN.md).
