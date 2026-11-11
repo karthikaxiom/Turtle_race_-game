@@ -1,5 +1,5 @@
 # Finish Detection During a Pass
 
-When a turtle is already beyond the finish threshold at the start of its turn, the program records that turtle's color and switches the race state off.
+A qualifying turtle sets `race_on` to false and prints a result, but that assignment does not break the active `for` loop. Later turtles in the same pass can also be checked and can print additional results.
 
-The loop does not immediately break out of the current `for` traversal. Other turtles later in the same pass are still visited, so the stored winner color can be replaced if another already-finished turtle is encountered.
+The maintained explanation of this same-pass behavior and outer-loop termination is [Race Termination](RACE_TERMINATION.md).
