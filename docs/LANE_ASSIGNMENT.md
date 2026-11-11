@@ -1,3 +1,5 @@
 # Lane Assignment
 
-The game keeps a fixed list of vertical starting coordinates. Turtle creation uses the same participant index for the color list and the position list, so each turtle receives one stable color and one stable lane during a run.
+Turtle creation uses the same participant index to select a color from `colors` and a vertical coordinate from `y_positions`. This pairs each turtle with one stable color and lane for the duration of the run.
+
+The complete coordinate and pairing contract is maintained in [Starting Positions](STARTING_POSITIONS.md) and [Color Mapping](COLOR_MAPPING.md).
