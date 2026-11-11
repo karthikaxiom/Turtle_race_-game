@@ -1,5 +1,5 @@
 # Input Capture
 
-The position of `screen.textinput()` in the setup flow is documented in [Initialization Sequence](INITIALIZATION_SEQUENCE.md).
+`screen.textinput()` runs after screen configuration and before the turtle creation loop. Its return value is stored in `user_bet`, which is later used both to initialize the race state and to compare the detected turtle color.
 
-The captured value is stored in `user_bet` and later controls race activation and result comparison. Those behaviors are described in [Input Lifecycle](INPUT_LIFECYCLE.md) and [Input Normalization Boundary](INPUT_NORMALIZATION_BOUNDARY.md).
+See [Initialization Sequence](INITIALIZATION_SEQUENCE.md) for ordering and [Input Lifecycle](INPUT_LIFECYCLE.md) for how the captured value affects execution.
