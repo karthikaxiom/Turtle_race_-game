@@ -1,3 +1,5 @@
 # Initial Horizontal Position
 
-Every turtle is placed at x=-370 during setup. The y-coordinate varies by turtle, while the initial horizontal coordinate is shared across all six competitors.
+All six turtles start at the same horizontal coordinate, `x=-370`. Their vertical coordinates differ by participant index, as described in the maintained placement guide.
+
+See [Starting Positions](STARTING_POSITIONS.md) for the complete coordinate sequence and list pairing.
