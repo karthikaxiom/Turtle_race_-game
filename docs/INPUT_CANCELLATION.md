@@ -1,5 +1,5 @@
 # Input Cancellation
 
-A cancelled or empty startup dialog follows the falsey-input path: the turtle objects are created, but `race_on` is false and the race loop is skipped.
+A cancelled or empty dialog result is falsey. The script still creates and positions all six turtles, skips the race loop, and then reaches the shared window shutdown step.
 
-The full ordering and the subsequent window-exit behavior are maintained in [Input Lifecycle](INPUT_LIFECYCLE.md) and [Screen Shutdown](SCREEN_SHUTDOWN.md).
+The maintained descriptions are [Input Lifecycle](INPUT_LIFECYCLE.md) and [Screen Shutdown](SCREEN_SHUTDOWN.md); this page is a concise entry point for the cancellation path.
