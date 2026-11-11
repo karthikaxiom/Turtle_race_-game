@@ -1,5 +1,5 @@
 # Initialization Order
 
-The maintained setup sequence is documented in [Initialization Sequence](INITIALIZATION_SEQUENCE.md).
+The program's startup order matters: screen setup comes first, the input dialog appears before turtle creation, and `race_on` is initialized only after the six turtles have been configured and stored.
 
-That page covers imports, screen setup, input collection, turtle creation and configuration, race-state initialization, loop entry, and window shutdown. Keep the full sequence there so that the ordering is described consistently.
+The canonical step-by-step sequence is [Initialization Sequence](INITIALIZATION_SEQUENCE.md). Keep changes to startup ordering there so the lifecycle remains consistent.
