@@ -1,3 +1,5 @@
 # Finish Check Timing
 
-Each participant is checked against the finish boundary during the race loop before its next movement step. The boundary check therefore observes the turtle position at the start of that participant's turn. Movement that happens afterward is observed on a later loop pass.
+The race loop checks each turtle's current x-coordinate at the beginning of that turtle's turn, before calling `forward(...)`. A movement step that crosses the threshold is therefore observed on a later turn, not immediately after the movement call.
+
+The maintained explanation is [Threshold Detection Timing](THRESHOLD_DETECTION.md). Update that page when the threshold or check order changes.
