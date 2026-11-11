@@ -1,5 +1,5 @@
 # Empty Input
 
-An empty string is falsey, so it follows the same no-race path as a cancelled startup dialog. No turtle movement is performed because the outer race loop is not entered.
+This page is retained as a focused entry point for the empty-input case. An empty string is falsey, so the game still creates its turtle objects but does not enter the movement loop.
 
-The canonical explanation is [Input Lifecycle](INPUT_LIFECYCLE.md).
+The maintained startup-path explanation is [Input Lifecycle](INPUT_LIFECYCLE.md). Keep the full sequence and related cancellation behavior there rather than duplicating it here.
