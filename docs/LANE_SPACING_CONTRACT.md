@@ -1,5 +1,5 @@
 # Lane Spacing Contract
 
-The six participant lanes use the y-coordinate sequence `-70, -40, -10, 20, 50, 80`.
+The configured vertical coordinates are `-70, -40, -10, 20, 50, 80`, giving 30 coordinate units between adjacent lanes. The lane order follows the participant index used during turtle creation.
 
-Each adjacent lane is separated by 30 coordinate units. The ordering is inherited directly from `y_positions` and is paired with the turtle-creation index.
+See [Starting Positions](STARTING_POSITIONS.md) for the canonical placement explanation; update that page if the configured coordinates change.
