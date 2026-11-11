@@ -1,5 +1,5 @@
 # Input to Race State
 
-The startup input is stored in `user_bet`; after turtle creation, its truthiness initializes `race_on`. A falsey result skips the movement loop, while a non-empty string enables it.
+The dialog result is stored in `user_bet`. After turtle creation, the source initializes `race_on` from that value's truthiness: a non-empty string enables the race, while a falsey result skips the loop.
 
-The maintained sequence is [Input Lifecycle](INPUT_LIFECYCLE.md). The later transition to a stopped race state is covered by [Race Termination](RACE_TERMINATION.md).
+See [Input Lifecycle](INPUT_LIFECYCLE.md) for the startup contract and [State Transitions](STATE_TRANSITIONS.md) for the later finish transition.
