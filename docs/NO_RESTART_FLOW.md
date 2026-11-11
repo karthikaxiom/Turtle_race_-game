@@ -1,5 +1,5 @@
 # No-Restart Flow
 
-The current program contains one startup input stage and one race loop for a single launch.
+A script launch presents one startup dialog and runs at most one race loop. After `race_on` becomes false, the current inner pass ends, the outer loop is not entered again, and execution proceeds to `screen.exitonclick()`.
 
-After the race state becomes false, control leaves the outer loop and proceeds to `screen.exitonclick()`. There is no second input dialog or explicit race-restart loop in the current source.
+See [Program Lifecycle](PROGRAM_LIFECYCLE.md) for the complete launch sequence and [Race Termination](RACE_TERMINATION.md) for the loop exit details.
