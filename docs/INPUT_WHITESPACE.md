@@ -1,5 +1,5 @@
 # Input Whitespace
 
-The entered value is passed directly to the result comparison except for the `lower()` call. No `strip()` operation is applied.
+The result comparison lowercases `user_bet` but does not call `strip()`. Leading or trailing spaces therefore remain part of the input and prevent an otherwise matching color name from comparing equal.
 
-Consequently, leading or trailing spaces remain part of the value and can prevent an otherwise matching color name from comparing equal.
+The canonical input edge-case reference is [Input Normalization Boundary](INPUT_NORMALIZATION_BOUNDARY.md).
