@@ -1,5 +1,5 @@
 # Inner Loop Continuation
 
-Setting `race_on` to `False` ends the outer `while` loop after the current pass, but it does not interrupt the active `for turtle_ in all_turtles` iteration.
+Changing `race_on` to `False` affects the next evaluation of the outer `while` condition; it does not cancel the already-running `for turtle_ in all_turtles` traversal. Remaining entries in the current pass still reach their normal check and movement call.
 
-Remaining turtles in that pass still reach their existing checks and movement calls.
+The canonical explanation is [Race Termination](RACE_TERMINATION.md), which also describes the possibility of multiple result messages in one pass.
