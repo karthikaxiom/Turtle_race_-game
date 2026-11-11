@@ -1,5 +1,5 @@
 # Movement After Detection
 
-The finish check occurs before the movement call for each turtle. If the check succeeds, the program still reaches that turtle's `forward()` call before the current loop pass advances.
+The finish condition is checked before the current turtle's `forward(...)` call. Even when that check succeeds and `race_on` becomes false, the current turtle still reaches its movement call and the remaining turtles in the same pass are processed.
 
-The movement step therefore remains part of the current turtle turn even when the finish condition has already been detected.
+The maintained explanation is [Race Termination](RACE_TERMINATION.md), supported by the per-turtle sequence in [Turn Sequence](TURN_SEQUENCE.md).
