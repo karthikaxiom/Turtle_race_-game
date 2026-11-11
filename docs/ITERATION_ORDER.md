@@ -1,5 +1,5 @@
 # Iteration Order
 
-The race loop visits the turtles in the order they were appended to `all_turtles`.
+The race loop visits turtles in the order they were appended to `all_turtles`. For each turtle, it checks the current x-coordinate before issuing a random movement call.
 
-For each visited turtle, the finish threshold is checked first and the turtle is then moved with a newly generated random distance. This ordering is repeated while the outer race state remains active.
+See [Turn Order](TURN_ORDER.md) for the maintained per-pass ordering and its effect when the race flag changes during a pass.
