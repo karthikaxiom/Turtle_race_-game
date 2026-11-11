@@ -1,3 +1,5 @@
 # Movement Randomness
 
-Each active turtle receives an independent random forward distance on its turn. The current range is inclusive of both endpoints, so a turn may produce no movement as well as the maximum configured movement. The randomness affects race progression but does not change lane assignment or turtle identity.
+The movement distance is drawn with `random.randint(0, 10)` for each processed turtle turn. Both endpoints are included, so no movement is a valid outcome; randomness affects horizontal progress but not the configured turtle color or lane.
+
+The canonical movement explanation is [Movement Semantics](MOVEMENT_SEMANTICS.md).
