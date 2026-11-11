@@ -1,5 +1,5 @@
 # Movement Call Order
 
-For each turtle visited by the race loop, the game checks the turtle's x-coordinate before calling `forward()`.
+For each turtle, the loop checks `xcor() > 370` before calling `forward(...)`. A movement step can carry a turtle beyond the threshold, but that crossing is detected on a later visit to its turn.
 
-The random movement therefore affects the turtle after that iteration's finish check. A turtle can cross the finish boundary because of its movement call and is evaluated for winning on the next visit through the loop.
+See [Turn Sequence](TURN_SEQUENCE.md) for the maintained operation order and [Threshold Detection Timing](THRESHOLD_DETECTION.md) for the detection boundary.
