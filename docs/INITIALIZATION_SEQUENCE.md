@@ -13,8 +13,10 @@
 9. Execute the race loop only while `race_on` remains true.
 10. Call `screen.exitonclick()` after the loop ends.
 
-The input dialog appears before turtle creation, but cancellation does not skip participant setup. All six turtle objects are still created; a falsey input simply leaves `race_on` false, so the movement loop is skipped.
+## Phase boundaries
 
-There is no separate application entry-point function. Launching the script executes these stages from top to bottom.
+The input dialog appears before turtle creation, but cancellation does not skip participant setup. All six turtle objects are still created; a falsey input simply leaves `race_on` false, so the movement loop is skipped. The race flag is initialized after the creation loop, not when the dialog first returns.
+
+There is no separate application entry-point function. Launching the script executes these stages from top to bottom. See [Program Lifecycle](PROGRAM_LIFECYCLE.md) for the larger execution narrative and [Input Lifecycle](INPUT_LIFECYCLE.md) for the falsey/truthy input branch.
 
 Source of truth: `main.py`.
