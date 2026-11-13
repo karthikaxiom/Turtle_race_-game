@@ -1,16 +1,12 @@
 # Dependency Boundary
 
-The current source has two direct imports:
+The current `main.py` has two direct imports:
 
 - `turtle`
 - `random`
 
-Both are Python standard-library modules.
+Both are Python standard-library modules. `turtle` provides the screen, input dialog, turtle objects, positioning, movement, color handling, and click-to-exit behavior. `random` supplies the integer movement distance for each processed turtle turn.
 
-The program does not import application-specific modules, third-party packages, database clients, web frameworks, or network libraries.
+The source does not import application-specific modules, third-party packages, database clients, web frameworks, or network libraries. No third-party installation step is implied by these two imports alone.
 
-The `turtle` dependency provides the screen, input dialog, turtle objects, positioning, movement, color handling, and final click-to-exit behavior used by the program.
-
-The `random` dependency supplies the integer movement distance for each turtle turn.
-
-No package installation step is represented in the current source, and no dependency manifest is required for these two imports alone.
+There is still an environment requirement: the `turtle` module depends on a working Tk-based graphical environment. A Python installation without the required GUI support, or a session without a usable display, may not be able to open the game window. See [Runtime Dependencies](RUNTIME_DEPENDENCIES.md) for the user-facing runtime prerequisite.
