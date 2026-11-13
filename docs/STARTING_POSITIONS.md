@@ -1,13 +1,16 @@
 # Starting Positions
 
-Every turtle is placed at the same horizontal coordinate, x = `-370`, before the race loop begins.
+Every turtle is placed at the same horizontal coordinate, x = `-370`, before the race loop begins. The starting y-coordinate is selected using the participant's index in the creation loop.
 
-The six starting y-coordinates are:
+| Participant | Color | Starting coordinate |
+| ---: | --- | --- |
+| 1 | red | `(-370, -70)` |
+| 2 | orange | `(-370, -40)` |
+| 3 | yellow | `(-370, -10)` |
+| 4 | green | `(-370, 20)` |
+| 5 | blue | `(-370, 50)` |
+| 6 | purple | `(-370, 80)` |
 
-`[-70, -40, -10, 20, 50, 80]`
+The lanes are separated by 30 coordinate units. The program calls `penup()` before `goto(...)`, so initial placement does not draw a line. The same participant index selects the color and y-coordinate, keeping each turtle's identity paired with its lane during the run.
 
-The turtle-creation loop selects a y-coordinate by participant index. The same index selects the color from the `colors` list, so each participant's color and lane remain paired.
-
-The program calls `penup()` before `goto(x=-370, y=y_positions[i])`. The initial placement therefore does not draw a line.
-
-This page describes the shared starting line and the per-participant lane assignment. See [Turtle Color Mapping](COLOR_MAPPING.md) for the fixed color order and [Race Coordinates](COORDINATE_SYSTEM.md) for screen and finish-threshold details.
+This page describes configured start coordinates, not guaranteed finish positions. See [Color Mapping](COLOR_MAPPING.md) for the color list and [Race Coordinates](COORDINATE_SYSTEM.md) for the screen size and logical finish threshold.
