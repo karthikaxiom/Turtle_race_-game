@@ -1,40 +1,41 @@
 # Documentation
 
-This directory explains the behavior of the current implementation in `main.py`. Start with the lifecycle overview, then use the focused pages below when investigating a particular part of the program.
+This directory explains the behavior of the current implementation in `main.py`. The source is authoritative; these pages describe and help review what the script actually does. Start with the lifecycle overview, then use the focused guides for a particular concern.
 
 ## Start here
 
-- [Program lifecycle](PROGRAM_LIFECYCLE.md) — the top-to-bottom execution path.
-- [Observable behavior checklist](OBSERVABLE_BEHAVIOR_CHECKLIST.md) — manual checks for the behavior currently visible in the source.
+- [Program lifecycle](PROGRAM_LIFECYCLE.md) — the complete top-to-bottom execution path and its two startup outcomes.
+- [Observable behavior checklist](OBSERVABLE_BEHAVIOR_CHECKLIST.md) — manual checks for behavior visible in the current source.
+- [Control flow boundaries](CONTROL_FLOW.md) — the nested loops and where execution continues after a finish check.
+- [Data flow](DATA_FLOW.md) — how the input, configuration, turtle objects, and result values move through the script.
 - [Safe documentation changes](CHANGE_SAFE_ZONE.md) — boundaries for documentation-only maintenance.
-- [Documentation rules](DOCUMENTATION_RULES.md) — how to add or update pages without creating duplicate notes.
+- [Documentation rules](DOCUMENTATION_RULES.md) — how to maintain canonical pages and avoid duplicate notes.
 - [Contribution guide](../CONTRIBUTING.md) — repository-level expectations for code and documentation changes.
 
 ## Setup and input
 
 - [Execution prerequisites](EXECUTION_PREREQUISITES.md) — Python and graphical runtime requirements.
-- [Runtime dependencies](RUNTIME_DEPENDENCIES.md) — the modules used by the program.
-- [Screen configuration](SCREEN_CONFIGURATION.md) — window dimensions and setup.
+- [Runtime dependencies](RUNTIME_DEPENDENCIES.md) — the modules and GUI support used by the program.
+- [Screen configuration](SCREEN_CONFIGURATION.md) — window dimensions and title.
 - [Initialization sequence](INITIALIZATION_SEQUENCE.md) — ordering of setup stages.
-- [Input lifecycle](INPUT_LIFECYCLE.md) — the input dialog and how its value affects the run.
-- [Input normalization boundary](INPUT_NORMALIZATION_BOUNDARY.md) — what is and is not normalized.
-- [Input whitespace](INPUT_WHITESPACE.md) — the effect of leading and trailing spaces.
+- [Input lifecycle](INPUT_LIFECYCLE.md) — the dialog and how its return value affects execution.
+- [Input normalization boundary](INPUT_NORMALIZATION_BOUNDARY.md) — case conversion, whitespace, and unsupported values.
 
 ## Turtles and movement
 
-- [Turtle initial state](TURTLE_INITIAL_STATE.md) — creation, appearance, pen state, and starting position.
-- [Color mapping](COLOR_MAPPING.md) — the configured colors and their relationship to turtle order.
-- [Collection traversal](COLLECTION_TRAVERSAL.md) — how turtle objects are visited.
-- [Movement semantics](MOVEMENT_SEMANTICS.md) — random movement and its per-turn behavior.
-- [Finish-check timing](FINISH_CHECK_TIMING.md) — when the threshold is evaluated.
-- [Threshold overshoot](THRESHOLD_OVERSHOOT.md) — why a turtle can move beyond the logical finish threshold.
+- [Turtle configuration](TURTLE_CONFIGURATION.md) — creation, appearance, pen state, and placement.
+- [Color mapping](COLOR_MAPPING.md) — the configured colors and their participant order.
+- [Starting positions](STARTING_POSITIONS.md) — the horizontal start and vertical lanes.
+- [Collection traversal](COLLECTION_TRAVERSAL.md) — the order in which turtle objects are processed.
+- [Movement semantics](MOVEMENT_SEMANTICS.md) — random movement and per-turn ordering.
+- [Determinism boundary](DETERMINISM_BOUNDARY.md) — fixed configuration versus random progression.
 
 ## Results and shutdown
 
-- [First detected finish](FIRST_DETECTED_FINISH.md) — finish detection during a pass through the turtle list.
-- [Post-finish movement](POST_FINISH_MOVEMENT.md) — movement calls that still occur after a finish check.
-- [Output branching](OUTPUT_BRANCHING.md) — how the program chooses its win or loss message.
-- [Winner color source](WINNER_COLOR_SOURCE.md) — where the reported color is read from.
+- [Threshold detection timing](THRESHOLD_DETECTION.md) — the strict finish comparison and when it is evaluated.
+- [Race termination](RACE_TERMINATION.md) — same-pass processing and the end of the outer loop.
+- [Output branching](OUTPUT_BRANCHING.md) — win/loss selection and terminal messages.
+- [Output and environment](OUTPUT_AND_ENVIRONMENT.md) — the terminal and graphics output surfaces.
 - [Screen shutdown](SCREEN_SHUTDOWN.md) — the final click-to-close behavior.
 
 ## Supplementary records
@@ -42,4 +43,4 @@ This directory explains the behavior of the current implementation in `main.py`.
 - [Reference notes](reference/README_SCOPE.md) — scope of the focused notes in `reference/`.
 - [Dated maintenance notes](maintenance/) — chronological records of earlier documentation maintenance.
 
-The focused notes are not all equally authoritative. When two older pages overlap, use `main.py` as the source of truth and prefer the clearest current explanation. See [Documentation rules](DOCUMENTATION_RULES.md) before adding another page.
+When pages overlap, prefer the maintained overview linked above and check `main.py` before treating any statement as current. Reference notes are supplementary, and dated maintenance records are historical rather than behavioral specifications.
