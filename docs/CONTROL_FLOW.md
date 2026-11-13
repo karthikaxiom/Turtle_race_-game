@@ -1,23 +1,23 @@
 # Control Flow Boundaries
 
-The program has four main control-flow stages:
+The script has a linear setup phase, an optional race phase, and a shared shutdown step. There is no separate event-driven winner handler or replay loop.
 
-## 1. Setup
+## 1. Screen and input setup
 
-The screen and its dimensions/title are configured first.
+The screen is created and configured, then the input dialog stores its return value in `user_bet`.
 
-## 2. Input and initialization
+## 2. Participant initialization
 
-The startup text-input dialog runs before turtle objects are created. The six turtles are then initialized and stored in a list.
+The program creates six turtles, configures their color and position, and appends them to `all_turtles`. Only after this setup does it initialize `race_on` from the input's truthiness. A falsey input therefore skips the race phase without skipping participant creation.
 
-## 3. Race loop
+## 3. Race processing
 
-The outer `while race_on` loop contains a `for turtle_ in all_turtles` loop. Winner detection happens before movement for each turtle.
+The outer `while race_on` loop contains a `for turtle_ in all_turtles` traversal. For each participant, the source checks `xcor() > 370` before calling `forward(random.randint(0, 10))`.
 
-When a qualifying turtle is found, `race_on` becomes false, but the inner loop is not interrupted. The remaining turtles in that same pass continue through their checks and movement calls.
+When the check succeeds, `race_on` becomes false and a result is printed. The assignment does not interrupt the active `for` loop: the current turtle still reaches its movement call, and later turtles in that pass continue to be processed. After the pass completes, the outer condition prevents a new pass.
 
 ## 4. Shutdown
 
-Once the current inner pass finishes, the outer loop condition prevents another pass. The program then reaches `screen.exitonclick()`.
+Both the completed-race path and the falsey-input path reach `screen.exitonclick()`. The window is left open for the user to click; there is no separate restart path in the current script.
 
-This structure means the loop has no explicit `break` statement and no separate restart loop within a single program launch.
+Source of truth: `main.py`.
