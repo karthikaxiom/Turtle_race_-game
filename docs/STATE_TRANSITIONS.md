@@ -1,21 +1,23 @@
 # Race State Transitions
 
-The race uses the boolean variable `race_on` to control the outer loop.
+The boolean variable `race_on` controls whether another complete pass through the turtle collection may begin.
 
-## Initial state
+## Initialization
 
-After the six turtle objects are created, the source assigns:
+After all six turtle objects have been created and appended to `all_turtles`, the source assigns:
 
-`race_on = True if user_bet else False`
+```python
+race_on = True if user_bet else False
+```
 
-A truthy input therefore starts the race state as active. A falsey input leaves it inactive.
+A truthy dialog result enables the race. A falsey result leaves it disabled; participant creation has already taken place by this point.
 
-## Active state
+## Active processing
 
-While `race_on` is true, the outer `while` loop processes the turtle list.
+While `race_on` remains true, the outer `while` loop starts a pass through `all_turtles`. Each turtle is checked and then moved in list order.
 
 ## Finish transition
 
-When a processed turtle already has an x-coordinate greater than `370`, the code sets `race_on` to false and records the detected turtle color for result reporting.
+When a processed turtle already has an x-coordinate greater than `370`, the code sets `race_on` to false, captures its pen color, and prints a win/loss message. There is no assignment back to true and no replay transition in the current script.
 
-The current inner-loop pass still continues through the remaining list entries. Once that pass ends, the false outer-loop condition prevents another pass from starting.
+Setting the flag to false does not stop the active inner `for` loop. The remainder of that pass can still produce additional checks, movement calls, and result messages. Only after the pass completes does the outer loop stop. See [Race Termination](RACE_TERMINATION.md) for the full consequence of this ordering.
