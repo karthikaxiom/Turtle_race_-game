@@ -1,21 +1,19 @@
 # Threshold Detection Timing
 
-Winner detection is based on the turtle's x-coordinate at the beginning of its turn.
+Winner detection is based on the turtle's current x-coordinate at the beginning of its turn. The condition in the source is:
 
-The condition is:
-
-`turtle_.xcor() > 370`
-
-This has two important consequences.
+```python
+turtle_.xcor() > 370
+```
 
 ## Crossing during movement
 
-A turtle can move from a position at or below `370` to a position above `370` during its `forward(...)` call. That movement does not immediately trigger the result branch, because the check for that turtle has already happened for the current turn.
+The check runs before `forward(random.randint(0, 10))`. A turtle can therefore move from a position at or below `370` to a position above `370` without being detected during that same check. It is detected when its next turn reaches the condition and the coordinate is already above the threshold.
 
-The turtle is detected when it is processed again and its x-coordinate is already above `370`.
+## Equality and overshoot
 
-## Equality
+An x-coordinate of exactly `370` does not satisfy the condition because the comparison uses `>`, not `>=`. The random movement step can carry a turtle past the threshold without landing exactly on it; the code tests the resulting coordinate on the next visit rather than testing for an exact landing.
 
-An x-coordinate of exactly `370` does not satisfy the condition because the comparison uses `>`, not `>=`.
+## Detection is loop-driven
 
-There is no separate finish-line collision or event handler; detection is performed directly inside the race loop.
+There is no separate finish-line object, collision callback, or immediate post-movement check. Detection occurs only when the loop processes a turtle and evaluates its current coordinate. See [Race Termination](RACE_TERMINATION.md) for what happens when the condition succeeds during a pass.
