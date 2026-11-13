@@ -7,6 +7,7 @@ These rules keep the repository's documentation useful as the code evolves.
 - Treat `main.py` as the authority for current runtime behavior.
 - Describe what the code does today; label proposed or hypothetical behavior clearly instead of presenting it as implemented.
 - Do not change runtime code as part of documentation-only maintenance.
+- Treat screenshots, remembered behavior, and older notes as supporting context only; reconcile them with the current source before documenting a claim.
 
 ## When to add a page
 
@@ -34,12 +35,17 @@ Do not delete a page merely because its title resembles another. Consolidation i
 A useful page should:
 
 - state its scope in the opening paragraph;
-- explain the behavior and why it matters, with source identifiers where helpful;
+- explain behavior and why it matters, with source identifiers where helpful;
 - distinguish guaranteed behavior from outcomes that depend on random movement or user input;
 - mention relevant limitations and edge cases;
-- link to adjacent material instead of repeating it.
+- link to adjacent material instead of repeating it;
+- avoid claims that are stronger than the source supports.
 
 Keep claims consistent with the current source. Do not invent tests, guarantees, controls, persistence, or features that the program does not implement.
+
+## Review workflow
+
+For a documentation change, read the relevant source section first, update the canonical page, and then review nearby pages for contradictions. Check every changed relative link, confirm that examples match current names and values, and inspect the final diff for accidental scope expansion. If a code change is also needed, separate it from a docs-only change so each can be reviewed on its own.
 
 ## Index and review
 
