@@ -1,29 +1,23 @@
-# Configuration Constants
+# Constants and Configuration
 
-This note records the fixed configuration values used by the current implementation in `main.py`.
+This page records fixed values in the current `main.py`; none are loaded from a configuration file.
 
 ## Window
 
 - Width: `800`
 - Height: `400`
-- Title: `Turtle Race `
+- Title: `Turtle Race ` (including the trailing space in the source)
 
-The window dimensions are supplied directly to `screen.setup(...)`.
+## Participants
 
-## Turtle configuration
+The color list is `red`, `orange`, `yellow`, `green`, `blue`, `purple`.
 
-The program defines six colors:
+The paired y-coordinate list is `-70`, `-40`, `-10`, `20`, `50`, `80`. Both lists are indexed by the same creation-loop counter, so their order is significant.
 
-`red`, `orange`, `yellow`, `green`, `blue`, and `purple`.
+## Position and finish
 
-Their starting vertical coordinates are:
+- Starting x-coordinate: `-370` for every turtle.
+- Finish comparison: `xcor() > 370`.
+- Movement draw: `random.randint(0, 10)`, inclusive.
 
-`-70`, `-40`, `-10`, `20`, `50`, and `80`.
-
-The two lists are indexed together when the turtle objects are created.
-
-## Race boundary
-
-The current winner check uses an x-coordinate threshold of `370`. There is no separately drawn finish-line object in the implementation.
-
-These values are implementation constants, not values loaded from a configuration file.
+There is no separately created finish-line object. The threshold is a numeric condition in the loop, not a drawn boundary. See [Coordinate System](COORDINATE_SYSTEM.md), [Color Mapping](COLOR_MAPPING.md), and [Movement Semantics](MOVEMENT_SEMANTICS.md).
