@@ -1,5 +1,13 @@
 # Finish Condition
 
-The race loop checks each turtle's x-coordinate against the right-side threshold of `370`. When a turtle is already beyond that threshold at the time of the check, `race_on` is set to false and that turtle's pen color is captured as `winning_color` for the result message.
+For each turtle turn, the program checks whether the turtle's current x-coordinate is strictly greater than `370`:
 
-The movement call still occurs later in the same loop iteration because the `forward()` statement follows the threshold check.
+```python
+if turtle_.xcor() > 370:
+```
+
+A coordinate equal to `370` does not satisfy this condition. The comparison is performed before the turn's movement call, so a turtle that crosses the threshold during movement is detected on a later visit to that turtle.
+
+When the check succeeds, the program sets `race_on` to false, captures `pencolor()` as `winning_color`, and prints a win/loss message. The subsequent `forward(...)` call still executes during that iteration.
+
+See [Finish Check Timing](FINISH_CHECK_TIMING.md), [Finish Boundary Semantics](FINISH_BOUNDARY_SEMANTICS.md), and [Race Termination](RACE_TERMINATION.md).
