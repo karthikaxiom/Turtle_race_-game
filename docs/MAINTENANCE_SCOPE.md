@@ -1,7 +1,9 @@
 # Maintenance Scope
 
-This repository's current documentation describes the behavior of the existing Turtle graphics race implementation.
+This repository's documentation describes the behavior of the existing Turtle graphics race implementation.
 
-Documentation-only maintenance should preserve the source program's behavior unless a separate change is intentionally planned and reviewed. Small behavior notes can be added when they clarify an observable part of the implementation without modifying `main.py`.
+Documentation-only maintenance should preserve source behavior and improve accuracy, navigation, or explanation without modifying `main.py`. Runtime changes should be treated as separate work and reviewed against the behavior checklist.
 
-This scope keeps maintenance work separate from feature development and makes the documented behavior easier to audit against the source.
+When documenting a proposed feature, label it clearly as a proposal; do not describe it as implemented until the source supports it. In particular, the current program has no persistent score, replay flow, input retry, or validation against the configured color list.
+
+This separation keeps maintenance distinct from feature development and makes the documentation auditable against the source. See [Development Scope](DEVELOPMENT_SCOPE.md) and [Change Safe Zone](CHANGE_SAFE_ZONE.md).
