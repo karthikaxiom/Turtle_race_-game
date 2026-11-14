@@ -2,18 +2,18 @@
 
 The current implementation imports two Python standard-library modules.
 
-## turtle
+## `turtle`
 
-main.py uses turtle for the graphical portion of the program, including screen creation, turtle objects, text input, movement, and keeping the window open.
+Used for screen creation and configuration, the startup text-input dialog, turtle objects, color and position methods, movement, and click-to-close behavior. The graphical interface depends on a desktop environment with Tk support.
 
-## random
+## `random`
 
-main.py uses random for movement distance through:
+Used at each processed turtle turn to generate a movement distance:
 
 ```python
 random.randint(0, 10)
 ```
 
-Each movement call obtains an integer from the inclusive range 0 through 10.
+Both endpoints are included. A zero draw is valid and leaves that turtle's position unchanged for that movement call.
 
-No third-party Python package is imported by the current implementation.
+No third-party package is imported by `main.py`. See [Imports](IMPORTS.md) and [Dependency Boundary](DEPENDENCY_BOUNDARY.md).
