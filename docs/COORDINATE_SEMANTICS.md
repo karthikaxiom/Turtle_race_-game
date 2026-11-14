@@ -1,5 +1,11 @@
 # Coordinate Semantics
 
-The complete coordinate specification is maintained in [Race Coordinates](COORDINATE_SYSTEM.md).
+The canonical coordinate reference is [Coordinate System](COORDINATE_SYSTEM.md). Key distinctions in the current source:
 
-That page is the canonical reference for screen dimensions, shared starting x-coordinate, vertical lane sequence, strict finish threshold, and the order in which coordinates are checked. This file remains as a stable entry point for existing references.
+- The screen is configured to 800 by 400.
+- Every participant starts at x = `-370`.
+- The six y-coordinates are `-70, -40, -10, 20, 50, 80`, paired by list index with the six colors.
+- The finish test is strictly `xcor() > 370`; equality does not satisfy it.
+- The coordinate is read before the movement call for that turtle's turn.
+
+The numeric threshold is a program condition; the source does not draw a finish-line object. The check is not continuous between loop iterations. See [Finish Check Timing](FINISH_CHECK_TIMING.md).
