@@ -1,5 +1,7 @@
 # Loop State Transition
 
-The input result initializes `race_on`; during the race, a qualifying finish check sets it to `False`. The active inner traversal completes, and the outer `while` loop then stops before another pass begins.
+The input result initializes `race_on` after all six turtle objects have been created.
 
-See [State Transitions](STATE_TRANSITIONS.md) for the canonical flag lifecycle and [Race Termination](RACE_TERMINATION.md) for loop behavior.
+During the race, a qualifying coordinate check sets `race_on` to `False`. This state change does not break the inner `for` loop; the remaining turtles in that pass are processed. Once the pass finishes, the outer `while` condition is false and no new pass begins.
+
+A falsey startup input initializes the flag as false, so the race loop is skipped entirely. See [State Transitions](STATE_TRANSITIONS.md), [Input Lifecycle](INPUT_LIFECYCLE.md), and [Race Termination](RACE_TERMINATION.md).
