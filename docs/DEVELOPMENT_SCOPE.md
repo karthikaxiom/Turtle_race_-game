@@ -1,10 +1,12 @@
 # Development Scope
 
-The current project is intentionally a compact single-file turtle graphics exercise.
+The project is a compact, single-file Turtle graphics exercise.
 
-- `main.py` contains the complete runtime implementation.
-- `README.md` describes observable behavior and local execution.
-- `docs/` contains focused references to implementation behavior.
-- The current maintenance documentation does not change the game logic.
+- `main.py` contains the runtime implementation.
+- `README.md` introduces the project and its execution.
+- `docs/` contains behavior references and maintenance guidance.
+- The current runtime imports only Python standard-library modules.
 
-This scope keeps the repository suitable for learning Python objects, lists, loops, GUI input, and simple simulation behavior without introducing unnecessary dependencies or architectural layers.
+The implementation demonstrates GUI input, lists, object creation, iteration, random movement, conditional branching, and a simple simulation loop. It does not currently include persistence, networking, a browser interface, scoring history, or a replay feature.
+
+Documentation should describe behavior that exists in the source. Feature ideas should be labeled as proposals until implemented and reviewed. See [Maintenance Scope](MAINTENANCE_SCOPE.md) and [Change Safe Zone](CHANGE_SAFE_ZONE.md).
