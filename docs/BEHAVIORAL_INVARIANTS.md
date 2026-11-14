@@ -1,11 +1,18 @@
 # Behavioral Invariants
 
-The current program preserves a small set of observable relationships during a run:
+The current program preserves these observable relationships during one launch:
 
-- Each turtle is created from the paired `colors` and `y_positions` entries.
-- Each turtle keeps its assigned color after initialization.
-- A race remains active while no processed turtle has crossed the finish threshold.
-- The selected input remains available for the final comparison.
-- The program reports the winning turtle color when the race stops.
+- Six turtle objects are created, one for each paired color and lane entry.
+- Every turtle starts at x = `-370`; its y-coordinate comes from the same index as its color.
+- Each turtle's pen is lifted before it is positioned and moved.
+- Collection order remains red, orange, yellow, green, blue, purple.
+- A race begins only when the input dialog returns a truthy value.
+- The race checks `xcor() > 370` before each movement call.
+- The input is lowercased for comparison, but whitespace is not stripped.
+- The result is printed to the terminal, not drawn in the Turtle window.
 
-These invariants describe the behavior of the existing implementation without changing its source code.
+These are source-derived invariants, not promises about which turtle wins. Random movement can change the finishing order between runs.
+
+## Review boundary
+
+Compare proposed changes with `main.py` and verify that they preserve the relevant invariant or deliberately document a behavior change. Related: [Data Flow](DATA_FLOW.md), [Observable Behavior Checklist](OBSERVABLE_BEHAVIOR_CHECKLIST.md), and [Change Safe Zone](CHANGE_SAFE_ZONE.md).
