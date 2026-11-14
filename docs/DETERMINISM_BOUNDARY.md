@@ -1,24 +1,21 @@
 # Determinism Boundary
 
-A run contains fixed configuration and random movement. The distinction matters when reviewing behavior: setup values and loop order can be checked directly, while a particular finishing order cannot be inferred from those values alone.
+A run combines fixed setup and iteration rules with random movement. Reviewers should distinguish what the source guarantees from what depends on random draws.
 
 ## Fixed by the source
 
 - Six turtle objects are created.
-- Colors are assigned in the order red, orange, yellow, green, blue, purple.
-- The starting x-coordinate is `-370` for every turtle.
-- Starting y-coordinates are `-70, -40, -10, 20, 50, 80`.
-- The screen is configured to 800 by 400.
-- Turtles are traversed in their list order during each active pass.
-- The finish test uses the strict comparison `xcor() > 370`.
-- The input is lowercased only at comparison time; it is not stripped.
+- Colors are assigned red, orange, yellow, green, blue, purple.
+- All participants start at x = `-370`; y-coordinates are `-70, -40, -10, 20, 50, 80`.
+- The screen is 800 by 400.
+- Each active pass visits the list in stored order.
+- The finish check is the strict comparison `xcor() > 370`, before movement.
+- The entered guess is lowercased at comparison time but is not stripped.
 
-## Variable during a run
+## Variable during execution
 
-For each processed turtle turn, the program calls `random.randint(0, 10)` and passes that draw to `forward()`. Each call can return any integer in the inclusive range, including zero. The source does not set an explicit random seed or store a sequence of draws.
+Each processed turtle turn calls `random.randint(0, 10)`. The range is inclusive, so a call may return zero or ten. The source does not set an explicit seed or store the draws.
 
-The movement sequence therefore depends on the random values produced during execution. Exact finishing order, number of printed result lines, and completion time cannot be derived from the fixed setup alone. This does not mean every launch must produce a different outcome; random runs can coincide.
+Consequently, exact finishing order, number of result messages, and run duration are not fixed by configuration alone. Two runs may still happen to produce the same outcome.
 
-For manual review, verify fixed configuration and control-flow rules without asserting a specific winner or timing. See [Observable Behavior Checklist](OBSERVABLE_BEHAVIOR_CHECKLIST.md) for practical checks and [Movement Semantics](MOVEMENT_SEMANTICS.md) for the movement call itself.
-
-Source of truth: `main.py`.
+For testing, verify source-defined invariants without asserting a particular winner or elapsed time. See [Observable Behavior Checklist](OBSERVABLE_BEHAVIOR_CHECKLIST.md) and [Movement Semantics](MOVEMENT_SEMANTICS.md).
