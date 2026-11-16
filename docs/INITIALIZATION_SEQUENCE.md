@@ -1,22 +1,18 @@
 # Initialization Sequence
 
-`main.py` executes its setup stages in file order:
+The current `main.py` executes setup in file order:
 
-1. Import the standard-library `turtle` and `random` modules.
-2. Create the graphics screen and configure its dimensions and title.
-3. Define the color list and the matching vertical-position list.
-4. Display the startup text-input dialog and store its return value in `user_bet`.
-5. Create the empty `all_turtles` collection.
-6. Iterate through six participant indices.
-7. For each index, create a turtle with the `turtle` shape, assign the indexed color, lift its pen, move it to x = `-370` and the indexed y-coordinate, then append it to `all_turtles`.
-8. Initialize `race_on` from whether `user_bet` is truthy.
-9. Execute the race loop only while `race_on` remains true.
-10. Call `screen.exitonclick()` after the loop ends.
+1. Import `turtle` and `random`.
+2. Create the graphics screen; configure width, height, and title.
+3. Define the color and vertical-position lists.
+4. Display the text-input dialog and store its return value in `user_bet`.
+5. Create the empty `all_turtles` list.
+6. Iterate over six participant indices.
+7. Create each turtle, assign its indexed color, lift its pen, position it at x = -370 and the indexed y-coordinate, then append it.
+8. Initialize `race_on` from the truthiness of `user_bet`.
+9. Run the nested race loops only while the flag is true.
+10. Call `screen.exitonclick()`.
 
-## Phase boundaries
+The input dialog precedes turtle creation, but a falsey result does not skip that setup. It only prevents the movement loop from starting. Running the script executes these statements top to bottom.
 
-The input dialog appears before turtle creation, but cancellation does not skip participant setup. All six turtle objects are still created; a falsey input simply leaves `race_on` false, so the movement loop is skipped. The race flag is initialized after the creation loop, not when the dialog first returns.
-
-There is no separate application entry-point function. Launching the script executes these stages from top to bottom. See [Program Lifecycle](PROGRAM_LIFECYCLE.md) for the larger execution narrative and [Input Lifecycle](INPUT_LIFECYCLE.md) for the falsey/truthy input branch.
-
-Source of truth: `main.py`.
+See [Program Lifecycle](PROGRAM_LIFECYCLE.md) and [Input Lifecycle](INPUT_LIFECYCLE.md).
