@@ -1,7 +1,7 @@
 # Execution Prerequisites
 
-`main.py` imports Python's standard-library `turtle` and `random` modules. The program therefore depends on a Python runtime with those modules available.
+The script requires a Python runtime that provides the standard-library `turtle` and `random` modules.
 
-The script creates a graphical turtle screen before requesting input. A graphical desktop environment is therefore required for normal interactive execution.
+Normal interactive execution also requires a graphical desktop environment. The program creates a Turtle screen and opens a text-input dialog; a headless terminal without a display cannot provide the intended interaction.
 
-The source does not define a package installation step, external service, database, or network dependency. Runtime behavior is contained in the single `main.py` script.
+The source defines no package installation step, external service, database, or network dependency. After the race or falsey-input path, `screen.exitonclick()` waits for a user click. See [Runtime Dependencies](RUNTIME_DEPENDENCIES.md) and [Screen Shutdown](SCREEN_SHUTDOWN.md).
