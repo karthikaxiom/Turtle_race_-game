@@ -1,57 +1,15 @@
 # Documentation Rules
 
-These rules keep the repository's documentation useful as the code evolves.
+Treat `main.py` as authoritative for current runtime behavior. Describe what the code does today; label proposed behavior as a proposal. Reconcile older notes with the source before repeating their claims.
 
-## Source of truth
+## Page design
 
-- Treat `main.py` as the authority for current runtime behavior.
-- Describe what the code does today; label proposed or hypothetical behavior clearly instead of presenting it as implemented.
-- Do not change runtime code as part of documentation-only maintenance.
-- Treat screenshots, remembered behavior, and older notes as supporting context only; reconcile them with the current source before documenting a claim.
+Before adding a page, search existing documentation and update the closest canonical page when the subject is already covered. Create a separate page only for a distinct maintainer or user question.
 
-## When to add a page
+A useful page explains a meaningful concept, relationship, edge case, or procedure. Avoid pages that merely restate one literal or assignment. Related short pages should link to the canonical explanation instead of duplicating it.
 
-Before creating a new page, search the existing documentation and prefer updating the closest relevant page when the subject is already covered.
+## Consolidation
 
-Create a separate page only when it answers a distinct maintainer or user question that cannot be answered clearly by extending an existing page. A page should explain a meaningful concept, relationship, edge case, or operational procedure—not merely restate one assignment, literal, or line of code.
+Choose the clearest canonical page, preserve unique facts, check claims against source, find inbound links, update navigation, and only then remove redundant pages. Retain dated maintenance records when they explain repository history.
 
-When related notes already exist, link to the canonical explanation rather than copying the same explanation into another file. Avoid near-duplicate filenames and narrow documents that differ only in wording.
-
-## Consolidating legacy notes
-
-When two or more pages cover the same concept:
-
-1. Choose the clearest page as the canonical reference.
-2. Compare the other pages for unique factual details or edge cases.
-3. Incorporate useful details into the canonical page, checking every claim against `main.py`.
-4. Search the repository for links to each proposed removal.
-5. Update navigation and internal links before removing redundant pages.
-6. Keep dated maintenance records when they provide historical context; do not treat them as current behavioral specifications.
-
-Do not delete a page merely because its title resembles another. Consolidation is appropriate only after its useful information and inbound links have been accounted for.
-
-## Page quality
-
-A useful page should:
-
-- state its scope in the opening paragraph;
-- explain behavior and why it matters, with source identifiers where helpful;
-- distinguish guaranteed behavior from outcomes that depend on random movement or user input;
-- mention relevant limitations and edge cases;
-- link to adjacent material instead of repeating it;
-- avoid claims that are stronger than the source supports.
-
-Keep claims consistent with the current source. Do not invent tests, guarantees, controls, persistence, or features that the program does not implement.
-
-## Review workflow
-
-For a documentation change, read the relevant source section first, update the canonical page, and then review nearby pages for contradictions. Check every changed relative link, confirm that examples match current names and values, and inspect the final diff for accidental scope expansion. If a code change is also needed, separate it from a docs-only change so each can be reviewed on its own.
-
-## Index and review
-
-- Add new substantial pages to [the documentation index](README.md).
-- Check relative Markdown links when editing an index.
-- Use [the safe-change guidance](CHANGE_SAFE_ZONE.md) and [the observable-behavior checklist](OBSERVABLE_BEHAVIOR_CHECKLIST.md) when reviewing documentation changes.
-- Treat `reference/` as supplementary focused notes and `maintenance/` as dated maintenance records; neither should replace a clear, maintained overview.
-
-Consolidate legacy overlap in a separately reviewed change, preserving historical records where appropriate.
+See [Safe Documentation Change Zone](CHANGE_SAFE_ZONE.md).
