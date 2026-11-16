@@ -15,3 +15,7 @@ The current `main.py` follows this order:
 11. Call `screen.exitonclick()`.
 
 The source does not load or save persistent state. This sequence describes the current implementation, not a proposed refactor.
+
+## Sequence-sensitive review
+
+The order of setup operations matters: the input dialog appears before turtle creation, while the race flag is assigned after all six turtles have been configured and stored. Do not summarize the falsey-input path as an early return; it still passes through participant setup and reaches the shared window shutdown call.
