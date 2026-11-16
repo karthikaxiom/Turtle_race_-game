@@ -16,3 +16,12 @@ These are source-derived invariants, not promises about which turtle wins. Rando
 ## Review boundary
 
 Compare proposed changes with `main.py` and verify that they preserve the relevant invariant or deliberately document a behavior change. Related: [Data Flow](DATA_FLOW.md), [Observable Behavior Checklist](OBSERVABLE_BEHAVIOR_CHECKLIST.md), and [Change Safe Zone](CHANGE_SAFE_ZONE.md).
+
+## Practical review probes
+
+- Inspect the six list entries in order and confirm that color and y-position are selected with the same index.
+- Trace one active turn and confirm the coordinate read precedes the random movement call.
+- Trace a finish-triggering turn and confirm that the flag change does not introduce an early exit from the inner traversal.
+- Run with a falsey dialog result and confirm that setup still occurs before the race loop is skipped.
+
+These probes check observable structure; they should not assert a particular random winner.
