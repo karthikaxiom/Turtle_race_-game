@@ -1,5 +1,7 @@
 # Finish Check Timing
 
-The race loop checks each turtle's current x-coordinate at the beginning of that turtle's turn, before calling `forward(...)`. A movement step that crosses the threshold is therefore observed on a later turn, not immediately after the movement call.
+At the beginning of each turtle's turn, the loop reads its current x-coordinate and tests the strict threshold before calling `forward(...)`.
 
-The maintained explanation is [Threshold Detection Timing](THRESHOLD_DETECTION.md). Update that page when the threshold or check order changes.
+A movement step that crosses x = 370 is not detected immediately after that movement. Detection occurs on a later turn for that turtle, when its coordinate is checked again.
+
+The source does not install a continuous collision listener or draw a finish-line object. See [Finish Boundary Semantics](FINISH_BOUNDARY_SEMANTICS.md) and [Turn Sequence](TURN_SEQUENCE.md).
