@@ -1,5 +1,5 @@
 # Empty Input Case
 
-An empty or cancelled dialog result is falsey. Turtle setup still completes, but `race_on` is false when the loop is reached, so no movement or result message occurs.
+An empty string from the startup dialog is falsey. The program still creates and positions all six turtles, then initializes `race_on` as false. The movement loop is skipped and execution reaches `screen.exitonclick()`.
 
-See [Input Lifecycle](INPUT_LIFECYCLE.md) for the full startup path and [Screen Shutdown](SCREEN_SHUTDOWN.md) for the final click-to-close behavior.
+No result message is printed, no validation error is shown, and the dialog is not reopened. See [Input Lifecycle](INPUT_LIFECYCLE.md) and [Input Cancellation](INPUT_CANCELLATION.md).
