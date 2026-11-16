@@ -1,5 +1,7 @@
 # Initialization Order
 
-The program's startup order matters: screen setup comes first, the input dialog appears before turtle creation, and `race_on` is initialized only after the six turtles have been configured and stored.
+Startup order is observable: the screen is configured first, then the input dialog appears, then the six turtle objects are created and stored. Only after participant setup does the source initialize `race_on` from the truthiness of `user_bet`.
 
-The canonical step-by-step sequence is [Initialization Sequence](INITIALIZATION_SEQUENCE.md). Keep changes to startup ordering there so the lifecycle remains consistent.
+A cancelled dialog therefore does not bypass participant creation. The turtles are still configured, but the race loop is skipped because the flag is false.
+
+The canonical step-by-step sequence is [Initialization Sequence](INITIALIZATION_SEQUENCE.md).
