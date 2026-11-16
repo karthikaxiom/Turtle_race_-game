@@ -1,8 +1,7 @@
 # Import Dependency Boundary
 
-The game imports two standard-library modules at startup:
+The program imports two standard-library modules. `turtle` provides the graphical screen, input dialog, turtle objects, movement, and shutdown interaction. `random` provides the integer distance for each processed movement call.
 
-- `turtle` provides the screen, turtle objects, input dialog, movement, and shutdown interaction.
-- `random` provides the per-move distance used during the race.
+No third-party package is imported by `main.py`. The graphical runtime still requires Tk support and a usable desktop display; this is an environment prerequisite rather than another project dependency.
 
-No third-party package is required by the current `main.py` implementation. The import boundary therefore matches the runtime features used by the game.
+See [Dependency Boundary](DEPENDENCY_BOUNDARY.md) and [Execution Prerequisites](EXECUTION_PREREQUISITES.md).
