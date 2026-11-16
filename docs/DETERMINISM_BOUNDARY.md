@@ -19,3 +19,7 @@ Each processed turtle turn calls `random.randint(0, 10)`. The range is inclusive
 Consequently, exact finishing order, number of result messages, and run duration are not fixed by configuration alone. Two runs may still happen to produce the same outcome.
 
 For testing, verify source-defined invariants without asserting a particular winner or elapsed time. See [Observable Behavior Checklist](OBSERVABLE_BEHAVIOR_CHECKLIST.md) and [Movement Semantics](MOVEMENT_SEMANTICS.md).
+
+## Safe assertions
+
+A deterministic test may assert the participant count, color order, lane coordinates, initial x-coordinate, strict threshold, and ordering of check-before-move operations. It should not hard-code a winner, a fixed number of loop passes, or a fixed total movement distance unless the random source is deliberately controlled by the test harness. The production source itself does not seed the generator.
