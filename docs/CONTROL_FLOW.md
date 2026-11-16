@@ -23,3 +23,12 @@ Setting `race_on = False` does not break the active `for` loop. The current turt
 Both paths reach `screen.exitonclick()`. The window waits for a click; the script does not offer a restart control.
 
 Source of truth: `main.py`. See [Program Lifecycle](PROGRAM_LIFECYCLE.md).
+
+## Branch review cases
+
+- Truthy input: all six objects are created, then the race loop is eligible to run.
+- Falsey input: all six objects are still created, but the race loop is skipped.
+- Threshold reached during a pass: the flag changes immediately, while the active `for` traversal continues.
+- Pass completed with the flag false: control proceeds to `screen.exitonclick()` without another race pass.
+
+No branch currently offers an input retry or a second race in the same launch.
