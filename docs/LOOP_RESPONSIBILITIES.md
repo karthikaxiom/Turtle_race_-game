@@ -15,3 +15,7 @@ The inner loop visits each object in `all_turtles` once in list order. For each 
 4. calls the movement method.
 
 The inner loop has no `break`. Changing `race_on` does not interrupt the remaining iterations of the current pass. The outer condition is checked only after the inner loop completes.
+
+## Do not conflate the loops
+
+The `while` condition is not re-evaluated between individual turtle entries. The `for` loop owns the remainder of the current pass, while `race_on` controls whether a subsequent pass begins. This distinction explains why a false flag does not itself stop the current traversal.
