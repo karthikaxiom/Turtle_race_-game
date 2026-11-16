@@ -9,3 +9,7 @@ Therefore:
 - the outer `while` loop does not begin another pass after the current pass completes.
 
 This is why “first detected” means first qualifying turtle in the current traversal, not necessarily the only result printed during that pass. See [Race Termination](RACE_TERMINATION.md) and [Inner Loop Continuation](INNER_LOOP_CONTINUATION.md).
+
+## Interpretation example
+
+Suppose an early list entry is already beyond the threshold when checked. Its result is printed and the flag becomes false, but its movement call still runs. If a later entry is also beyond the threshold when its turn arrives, that entry can print another result. The later message may therefore be the last visible result from that pass; this is a consequence of list traversal, not a tie-breaking feature.
