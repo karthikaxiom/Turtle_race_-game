@@ -19,3 +19,7 @@ The current program uses a short in-memory flow. It does not read from a databas
 The input, lists, turtle references, and race flag exist only in the running process. The script does not save a score, movement sequence, random seed, or history between launches.
 
 See [State Variables](STATE_VARIABLES.md), [Input Lifecycle](INPUT_LIFECYCLE.md), and [Output and Environment](OUTPUT_AND_ENVIRONMENT.md).
+
+## Mutation and observation
+
+The turtle objects are mutable runtime objects. The list stores references to them, so later coordinate reads observe positions changed by earlier `forward(...)` calls. The color used for a result is read from the detected object's pen color at that moment; it is not recovered from a separate winner registry.
