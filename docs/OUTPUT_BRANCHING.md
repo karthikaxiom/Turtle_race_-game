@@ -20,3 +20,7 @@ Printing a result does not break the inner `for` loop. If a later turtle in the 
 The source does not maintain a separate immutable winner record or suppress later messages. See [Race Termination](RACE_TERMINATION.md) for the loop ordering and [Input Normalization Boundary](INPUT_NORMALIZATION_BOUNDARY.md) for the comparison details.
 
 Source of truth: `main.py`.
+
+## Message and state relationship
+
+The text uses the detected object's color, not the raw guess. The guess affects only which branch is selected. The source does not interpolate the user's original spelling into either message, and it does not convert the printed result into a structured score value.
