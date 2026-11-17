@@ -12,3 +12,7 @@ The same collection remains in use for one launch. The current program does not 
 - **After the race:** the script reaches `screen.exitonclick()`; it does not serialize the list or retain it for another launch.
 
 The collection is process-local state, not saved game data. See [Collection Traversal](COLLECTION_TRAVERSAL.md) and [Data Flow](DATA_FLOW.md).
+
+## Identity versus position
+
+Appending a turtle stores its object reference in the list. Movement changes the referenced object's coordinates without changing the list's membership or order. This is why later turns can inspect updated positions while still visiting participants in the same configured sequence.
