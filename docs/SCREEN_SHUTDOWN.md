@@ -15,3 +15,7 @@ When the startup dialog returns a falsey value, `race_on` is initialized to fals
 `screen.exitonclick()` leaves the graphics window available until the user clicks it. The source does not automatically close the window immediately after printing a result, does not provide a separate restart control, and does not request a second guess after a race.
 
 This describes the call present in `main.py`; it does not specify operating-system window-manager behavior beyond the program's click-to-exit request. See [Program Lifecycle](PROGRAM_LIFECYCLE.md) for the shared path.
+
+## Shutdown is not race reset
+
+The click-to-exit call is a window-lifecycle step, not a replay mechanism. The source does not clear participant positions, recreate turtles, reset the input value, or reinitialize `race_on` for another round. A new run requires launching the script again.
