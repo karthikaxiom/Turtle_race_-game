@@ -13,3 +13,7 @@ The generated value is an integer in the inclusive range from `0` through `10`.
 - A new random value is generated separately for each turtle movement call.
 
 The source code does not define a fixed movement distance, speed setting, or explicit timing interval. The movement amount therefore comes directly from the random integer generated for each call.
+
+## Boundary and test implications
+
+The inclusive range means tests should account for both a stationary step (`0`) and the largest single step (`10`). A deterministic test can replace or control the random draw, but documentation of production behavior should not claim a constant step size or a guaranteed number of turns. See [Determinism Boundary](DETERMINISM_BOUNDARY.md).
