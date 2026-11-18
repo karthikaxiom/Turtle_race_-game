@@ -13,3 +13,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Expected:** The screen is configured to 800 by 400 pixels and the title is exactly `Turtle Race ` (including its trailing space).
 
 **Regression signal:** A changed size or title is a user-visible behavior change and should be reviewed explicitly.
+
+## 02 — Participant count and collection size
+
+**Check:** Confirm that a non-empty guess leads to exactly six turtle objects being appended to the participant list. A different count can break the parallel color/position mapping or leave a lane absent.
+
+**Result recording:** Mark this scenario pass/fail against the current source without silently normalizing or correcting the observed behavior.
