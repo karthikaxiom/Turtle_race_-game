@@ -151,3 +151,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** After an early turtle is detected as finished, count movement calls for the remaining participants in that same pass. They continue to receive their normal check-and-move processing because the inner loop is not interrupted.
 
 **Interpretation:** This records the existing loop structure, not a recommendation for how a future race engine should handle simultaneous finishers.
+
+## 25 — Multiple finish detections can occur in one pass
+
+**Check:** Arrange for two or more turtles to already be beyond x = 370 when their turns arrive in the same pass. The loop can evaluate each and print more than one result because setting the race flag false does not break the active for-loop.
+
+**Interpretation:** This records the existing loop structure, not a recommendation for how a future race engine should handle simultaneous finishers.
