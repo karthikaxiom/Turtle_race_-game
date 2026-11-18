@@ -115,3 +115,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Place a turtle at x = 370 immediately before its turn. The finish condition uses greater-than, not greater-than-or-equal, so equality alone must not trigger a winner result.
 
 **Harness note:** Control the random draw or turtle position only in a disposable test harness. Keep the production source unchanged for this documentation-only check.
+
+## 19 — Position beyond the finish boundary is detected
+
+**Check:** Place a turtle at x = 371 before its turn. The strict threshold condition is satisfied, so the program captures its pen color and enters a result branch before requesting that turn's movement.
+
+**Harness note:** Control the random draw or turtle position only in a disposable test harness. Keep the production source unchanged for this documentation-only check.
