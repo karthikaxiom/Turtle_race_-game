@@ -49,3 +49,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Supply any non-empty string and inspect the race flag. Truthiness enables the loop; the value is not checked against the six supported colors before the race starts.
 
 **Result recording:** Mark this scenario pass/fail against the current source without silently normalizing or correcting the observed behavior.
+
+## 08 — Empty input skips the race loop
+
+**Check:** Submit an empty string. The participants are still created, but the falsey input leaves the race flag false, so no movement pass or winner message occurs.
+
+**Result recording:** Record the exact input and observed branch. Do not describe absent validation or trimming as a feature.
