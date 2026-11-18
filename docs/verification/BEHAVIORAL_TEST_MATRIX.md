@@ -19,3 +19,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Confirm that a non-empty guess leads to exactly six turtle objects being appended to the participant list. A different count can break the parallel color/position mapping or leave a lane absent.
 
 **Result recording:** Mark this scenario pass/fail against the current source without silently normalizing or correcting the observed behavior.
+
+## 03 — Color-to-lane pairing
+
+**Check:** Inspect participants in creation order. Expected pairs are red/-70, orange/-40, yellow/-10, green/20, blue/50, and purple/80. Reordering either configuration list changes the pairing.
+
+**Result recording:** Mark this scenario pass/fail against the current source without silently normalizing or correcting the observed behavior.
