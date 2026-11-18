@@ -127,3 +127,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Start a turtle at x = 360 and control its movement draw to 10. It reaches x = 370 after the check for that turn, so no winner is reported during that same check; equality is not enough.
 
 **Interpretation:** This records the existing loop structure, not a recommendation for how a future race engine should handle simultaneous finishers.
+
+## 21 — Crossing is observed on a later visit
+
+**Check:** Continue from x = 370 and control a later movement draw to 1. The turtle reaches x = 371 after its current check; detection occurs only when the loop checks that turtle again.
+
+**Interpretation:** This records the existing loop structure, not a recommendation for how a future race engine should handle simultaneous finishers.
