@@ -169,3 +169,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Exercise both comparison outcomes with controlled input and a known detected turtle. A matching lowercased guess prints the win message; a non-matching value prints the loss message naming the detected turtle's color. Both messages are terminal output, not on-screen labels.
 
 **Result recording:** Note the observed terminal output and whether the GUI remains available for the expected click-to-exit action.
+
+## 28 — Window wait is reached after either race path
+
+**Check:** Run once with a non-empty guess and once with a falsey guess. After the loop is skipped or finishes, execution reaches the screen's click-to-exit wait. This is a GUI lifecycle step, not a replay or restart mechanism.
+
+**Result recording:** Note the observed terminal output and whether the GUI remains available for the expected click-to-exit action.
