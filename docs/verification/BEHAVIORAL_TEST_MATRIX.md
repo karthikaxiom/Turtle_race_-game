@@ -61,3 +61,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Dismiss the input dialog using the window's cancel action. Verify that the returned falsey value follows the same no-race path as empty input; the application still reaches its final window-wait call.
 
 **Result recording:** Record the exact input and observed branch. Do not describe absent validation or trimming as a feature.
+
+## 10 — Unsupported color is not rejected
+
+**Check:** Enter a non-empty value that is not one of the six configured colors. The race still runs because there is no supported-color validation. A completed race will normally report a loss unless the raw comparison happens to match.
+
+**Result recording:** Record the exact input and observed branch. Do not describe absent validation or trimming as a feature.
