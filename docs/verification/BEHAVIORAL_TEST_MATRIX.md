@@ -25,3 +25,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Inspect participants in creation order. Expected pairs are red/-70, orange/-40, yellow/-10, green/20, blue/50, and purple/80. Reordering either configuration list changes the pairing.
 
 **Result recording:** Mark this scenario pass/fail against the current source without silently normalizing or correcting the observed behavior.
+
+## 04 — Shared starting x-coordinate
+
+**Check:** Before the first movement pass, compare all participants' x-coordinates. Each must begin at -370; only their y-coordinates differ. A staggered start would be a visible behavior change.
+
+**Result recording:** Mark this scenario pass/fail against the current source without silently normalizing or correcting the observed behavior.
