@@ -85,3 +85,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Inspect the stored input immediately after the dialog and then at result comparison. The original input remains stored; lowercasing is applied in the equality expression rather than by rewriting the variable.
 
 **Result recording:** Record the exact input and observed branch. Do not describe absent validation or trimming as a feature.
+
+## 14 — Random step lower boundary
+
+**Check:** In an isolated deterministic harness, make the movement function return 0. Verify that the selected turtle's x-coordinate does not change during that movement call; zero is a permitted draw.
+
+**Harness note:** Control the random draw or turtle position only in a disposable test harness. Keep the production source unchanged for this documentation-only check.
