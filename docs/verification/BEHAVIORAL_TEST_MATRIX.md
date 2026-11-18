@@ -109,3 +109,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Instrument the random function and observe one complete pass. A separate random draw is requested for each turtle visited, rather than one shared distance being reused for the entire field.
 
 **Harness note:** Control the random draw or turtle position only in a disposable test harness. Keep the production source unchanged for this documentation-only check.
+
+## 18 — Finish comparison is strict
+
+**Check:** Place a turtle at x = 370 immediately before its turn. The finish condition uses greater-than, not greater-than-or-equal, so equality alone must not trigger a winner result.
+
+**Harness note:** Control the random draw or turtle position only in a disposable test harness. Keep the production source unchanged for this documentation-only check.
