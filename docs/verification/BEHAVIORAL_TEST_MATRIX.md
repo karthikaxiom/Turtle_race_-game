@@ -121,3 +121,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Place a turtle at x = 371 before its turn. The strict threshold condition is satisfied, so the program captures its pen color and enters a result branch before requesting that turn's movement.
 
 **Harness note:** Control the random draw or turtle position only in a disposable test harness. Keep the production source unchanged for this documentation-only check.
+
+## 20 — Movement can reach the boundary without immediate detection
+
+**Check:** Start a turtle at x = 360 and control its movement draw to 10. It reaches x = 370 after the check for that turn, so no winner is reported during that same check; equality is not enough.
+
+**Interpretation:** This records the existing loop structure, not a recommendation for how a future race engine should handle simultaneous finishers.
