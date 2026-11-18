@@ -133,3 +133,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Continue from x = 370 and control a later movement draw to 1. The turtle reaches x = 371 after its current check; detection occurs only when the loop checks that turtle again.
 
 **Interpretation:** This records the existing loop structure, not a recommendation for how a future race engine should handle simultaneous finishers.
+
+## 22 — Detection happens before the current turn's movement
+
+**Check:** Place a turtle beyond x = 370 before its turn and instrument its movement. The result is evaluated first, then the movement call still occurs for that turtle in the same iteration.
+
+**Interpretation:** This records the existing loop structure, not a recommendation for how a future race engine should handle simultaneous finishers.
