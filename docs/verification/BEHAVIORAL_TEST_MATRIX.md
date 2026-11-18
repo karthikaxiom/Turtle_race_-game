@@ -43,3 +43,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Pause at startup and verify that the text-input dialog is requested before the participant-creation loop. Moving the dialog later changes the startup sequence.
 
 **Result recording:** Mark this scenario pass/fail against the current source without silently normalizing or correcting the observed behavior.
+
+## 07 — Non-empty input enables the race
+
+**Check:** Supply any non-empty string and inspect the race flag. Truthiness enables the loop; the value is not checked against the six supported colors before the race starts.
+
+**Result recording:** Mark this scenario pass/fail against the current source without silently normalizing or correcting the observed behavior.
