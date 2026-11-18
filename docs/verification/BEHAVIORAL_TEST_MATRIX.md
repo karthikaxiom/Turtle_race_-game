@@ -31,3 +31,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Before the first movement pass, compare all participants' x-coordinates. Each must begin at -370; only their y-coordinates differ. A staggered start would be a visible behavior change.
 
 **Result recording:** Mark this scenario pass/fail against the current source without silently normalizing or correcting the observed behavior.
+
+## 05 — Turtle shape and pen state
+
+**Check:** Inspect each participant after initialization. Every turtle uses the turtle shape and has its pen lifted before placement, preventing movement trails.
+
+**Result recording:** Mark this scenario pass/fail against the current source without silently normalizing or correcting the observed behavior.
