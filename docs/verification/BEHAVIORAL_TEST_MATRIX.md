@@ -55,3 +55,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Submit an empty string. The participants are still created, but the falsey input leaves the race flag false, so no movement pass or winner message occurs.
 
 **Result recording:** Record the exact input and observed branch. Do not describe absent validation or trimming as a feature.
+
+## 09 — Cancelled dialog follows the falsey path
+
+**Check:** Dismiss the input dialog using the window's cancel action. Verify that the returned falsey value follows the same no-race path as empty input; the application still reaches its final window-wait call.
+
+**Result recording:** Record the exact input and observed branch. Do not describe absent validation or trimming as a feature.
