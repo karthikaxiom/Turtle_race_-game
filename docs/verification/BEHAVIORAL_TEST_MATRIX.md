@@ -37,3 +37,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Inspect each participant after initialization. Every turtle uses the turtle shape and has its pen lifted before placement, preventing movement trails.
 
 **Result recording:** Mark this scenario pass/fail against the current source without silently normalizing or correcting the observed behavior.
+
+## 06 — Input dialog precedes participant creation
+
+**Check:** Pause at startup and verify that the text-input dialog is requested before the participant-creation loop. Moving the dialog later changes the startup sequence.
+
+**Result recording:** Mark this scenario pass/fail against the current source without silently normalizing or correcting the observed behavior.
