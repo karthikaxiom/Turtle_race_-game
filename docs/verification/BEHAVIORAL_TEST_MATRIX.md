@@ -73,3 +73,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Enter a supported color using uppercase letters. The winner comparison lowercases the stored guess, so an uppercase spelling of the winning color is treated as a match.
 
 **Result recording:** Record the exact input and observed branch. Do not describe absent validation or trimming as a feature.
+
+## 12 — Leading or trailing whitespace remains significant
+
+**Check:** Enter a supported color with a leading or trailing space. The program lowercases the guess but does not strip whitespace; therefore the padded value does not equal the plain winning color.
+
+**Result recording:** Record the exact input and observed branch. Do not describe absent validation or trimming as a feature.
