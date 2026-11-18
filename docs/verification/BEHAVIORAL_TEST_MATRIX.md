@@ -139,3 +139,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Place a turtle beyond x = 370 before its turn and instrument its movement. The result is evaluated first, then the movement call still occurs for that turtle in the same iteration.
 
 **Interpretation:** This records the existing loop structure, not a recommendation for how a future race engine should handle simultaneous finishers.
+
+## 23 — No break follows a finish detection
+
+**Check:** Arrange for the first turtle in a pass to satisfy the finish condition. Verify that the for-loop continues to visit later list entries even after the race flag has been set false.
+
+**Interpretation:** This records the existing loop structure, not a recommendation for how a future race engine should handle simultaneous finishers.
