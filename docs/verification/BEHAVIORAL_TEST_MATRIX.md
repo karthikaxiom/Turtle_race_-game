@@ -91,3 +91,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** In an isolated deterministic harness, make the movement function return 0. Verify that the selected turtle's x-coordinate does not change during that movement call; zero is a permitted draw.
 
 **Harness note:** Control the random draw or turtle position only in a disposable test harness. Keep the production source unchanged for this documentation-only check.
+
+## 15 — Random step upper boundary
+
+**Check:** In an isolated deterministic harness, make the movement function return 10. Verify that the turtle advances by exactly 10 horizontal units; the upper endpoint is inclusive.
+
+**Harness note:** Control the random draw or turtle position only in a disposable test harness. Keep the production source unchanged for this documentation-only check.
