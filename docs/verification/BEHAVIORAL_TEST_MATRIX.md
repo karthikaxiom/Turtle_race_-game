@@ -157,3 +157,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Arrange for two or more turtles to already be beyond x = 370 when their turns arrive in the same pass. The loop can evaluate each and print more than one result because setting the race flag false does not break the active for-loop.
 
 **Interpretation:** This records the existing loop structure, not a recommendation for how a future race engine should handle simultaneous finishers.
+
+## 26 — Winner identity comes from the turtle pen color
+
+**Check:** Cause a specific participant to be detected beyond the finish boundary. Verify that the reported winning color is read from that turtle's pen color at detection time, rather than inferred from its list index or the user's guess.
+
+**Result recording:** Note the observed terminal output and whether the GUI remains available for the expected click-to-exit action.
