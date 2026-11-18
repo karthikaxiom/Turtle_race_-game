@@ -67,3 +67,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Enter a non-empty value that is not one of the six configured colors. The race still runs because there is no supported-color validation. A completed race will normally report a loss unless the raw comparison happens to match.
 
 **Result recording:** Record the exact input and observed branch. Do not describe absent validation or trimming as a feature.
+
+## 11 — Uppercase guess comparison
+
+**Check:** Enter a supported color using uppercase letters. The winner comparison lowercases the stored guess, so an uppercase spelling of the winning color is treated as a match.
+
+**Result recording:** Record the exact input and observed branch. Do not describe absent validation or trimming as a feature.
