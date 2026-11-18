@@ -163,3 +163,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** Cause a specific participant to be detected beyond the finish boundary. Verify that the reported winning color is read from that turtle's pen color at detection time, rather than inferred from its list index or the user's guess.
 
 **Result recording:** Note the observed terminal output and whether the GUI remains available for the expected click-to-exit action.
+
+## 27 — Result text follows the direct equality branch
+
+**Check:** Exercise both comparison outcomes with controlled input and a known detected turtle. A matching lowercased guess prints the win message; a non-matching value prints the loss message naming the detected turtle's color. Both messages are terminal output, not on-screen labels.
+
+**Result recording:** Note the observed terminal output and whether the GUI remains available for the expected click-to-exit action.
