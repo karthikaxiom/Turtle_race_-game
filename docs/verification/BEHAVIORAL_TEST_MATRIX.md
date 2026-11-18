@@ -97,3 +97,9 @@ This matrix records reproducible checks for the current single-run Turtle Race i
 **Check:** In an isolated deterministic harness, make the movement function return 10. Verify that the turtle advances by exactly 10 horizontal units; the upper endpoint is inclusive.
 
 **Harness note:** Control the random draw or turtle position only in a disposable test harness. Keep the production source unchanged for this documentation-only check.
+
+## 16 — Random step range
+
+**Check:** Exercise controlled draws at 0, 1, an interior value, 9, and 10. Each requested step must be an integer in the inclusive range 0 through 10; no negative or greater-than-10 step is part of the current contract.
+
+**Harness note:** Control the random draw or turtle position only in a disposable test harness. Keep the production source unchanged for this documentation-only check.
