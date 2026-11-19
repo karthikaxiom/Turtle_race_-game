@@ -46,3 +46,7 @@ Record whether the dialog was submitted empty or dismissed. Both are falsey path
 ## 10 — Observe the startup sequence
 
 Record the order in which the screen is created, the input dialog appears, and turtle objects are initialized. Do not infer the order solely from the final screen.
+
+## 11 — Record participant order
+
+List the six turtles in their creation order. This is the order used by the participant collection during each pass.
