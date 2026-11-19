@@ -90,3 +90,7 @@ When a turtle is detected, continue recording the remainder of that same pass. T
 ## 21 — Record every result message
 
 Capture the exact terminal text, including the winning color and whether the message reports a win or loss. Do not replace the actual output with a summary alone.
+
+## 22 — Identify the detected turtle
+
+Record which turtle triggered the finish check and the pen color read at that point. Do not assume the first turtle in creation order must win.
