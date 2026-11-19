@@ -38,3 +38,7 @@ Write down the exact characters submitted, including capitalization and spaces. 
 ## 08 — Keep one variable under test
 
 Change only one condition between paired runs. For example, compare a plain supported color with the same color plus a trailing space, keeping the rest of the setup constant.
+
+## 09 — Distinguish empty input from cancellation
+
+Record whether the dialog was submitted empty or dismissed. Both are falsey paths in the current program, but the action taken by the tester should remain explicit in the evidence.
