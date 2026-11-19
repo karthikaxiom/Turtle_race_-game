@@ -166,3 +166,7 @@ The race loop has no explicit delay call. Avoid describing a particular frame ra
 ## 40 — Do not infer a winner from visual proximity
 
 A turtle appearing furthest to the right is not sufficient evidence of a result. Record the program's threshold check and the actual printed output.
+
+## 41 — Archive blocked scenarios with their cause
+
+If a scenario cannot be run because Tk, a desktop display, or another prerequisite is missing, record the blocker and the evidence. Revisit it in a suitable environment rather than treating it as passed.
