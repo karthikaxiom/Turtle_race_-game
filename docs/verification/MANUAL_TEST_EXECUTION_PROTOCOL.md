@@ -130,3 +130,7 @@ Record whether the window was closed through the intended click-to-exit action o
 ## 31 — Avoid assuming a replay control exists
 
 After one race, inspect the visible interface for any documented restart action. The current program has no replay loop or reset control; do not mark absence as a defect against a nonexistent requirement.
+
+## 32 — Repeat stochastic cases with a recorded seed strategy
+
+If a harness controls randomness, record its seed or exact supplied sequence. An uncontrolled run may produce a different race order and should not be treated as a deterministic reproduction.
