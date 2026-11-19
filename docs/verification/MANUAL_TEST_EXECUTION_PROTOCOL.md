@@ -42,3 +42,7 @@ Change only one condition between paired runs. For example, compare a plain supp
 ## 09 — Distinguish empty input from cancellation
 
 Record whether the dialog was submitted empty or dismissed. Both are falsey paths in the current program, but the action taken by the tester should remain explicit in the evidence.
+
+## 10 — Observe the startup sequence
+
+Record the order in which the screen is created, the input dialog appears, and turtle objects are initialized. Do not infer the order solely from the final screen.
