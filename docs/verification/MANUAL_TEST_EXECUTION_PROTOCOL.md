@@ -118,3 +118,7 @@ After an early finish detection, verify whether later collection entries still r
 ## 28 — Record terminal output separately from the GUI
 
 Keep a terminal transcript or exact copied output separate from screenshots of the turtle window. The result messages are printed to the console, not drawn as labels in the graphics window.
+
+## 29 — Verify the window remains interactive at shutdown
+
+After the race loop completes or is skipped, observe the window and test the click-to-exit wait. Record whether the desktop event loop responds as expected.
