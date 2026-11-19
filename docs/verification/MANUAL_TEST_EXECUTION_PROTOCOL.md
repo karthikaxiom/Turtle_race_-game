@@ -82,3 +82,7 @@ Use separate cases at x = 370 and x = 371. Record them independently because the
 ## 19 — Observe one complete participant pass
 
 Log the ordered sequence of participant checks and movement requests. This helps identify whether a change has altered traversal order.
+
+## 20 — Continue observing after a finish flag change
+
+When a turtle is detected, continue recording the remainder of that same pass. The current inner loop is not interrupted by setting the outer race flag false.
