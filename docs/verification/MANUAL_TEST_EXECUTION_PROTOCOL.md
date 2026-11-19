@@ -158,3 +158,7 @@ Record raw coordinates, dialog values, and terminal messages before interpreting
 ## 38 — Compare behavior against the same revision
 
 When two runs are compared, ensure both use the same source revision unless the purpose is explicitly to compare revisions. Record any difference in setup or environment.
+
+## 39 — Report timing carefully
+
+The race loop has no explicit delay call. Avoid describing a particular frame rate or fixed duration unless it has been measured in the tested environment.
