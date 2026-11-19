@@ -66,3 +66,7 @@ For exact threshold tests, use an isolated harness that supplies a predetermined
 ## 15 — Preserve the inclusive random interval
 
 When testing the random-step contract, explicitly include both endpoints, zero and ten, plus at least one interior value. Record the requested draw, not merely the apparent visual distance.
+
+## 16 — Verify each draw independently
+
+Instrument the random function in a disposable harness and count calls during a pass. Compare the call sequence with the participant traversal order.
