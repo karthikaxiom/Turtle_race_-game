@@ -98,3 +98,7 @@ Record which turtle triggered the finish check and the pen color read at that po
 ## 23 — Test a matching guess
 
 Pair a known detected color with an input whose lowercase form is identical. Verify the win branch and preserve the exact input string in the record.
+
+## 24 — Test a non-matching guess
+
+Use a non-matching input and a controlled detected turtle. Verify the loss branch and capture the reported color.
