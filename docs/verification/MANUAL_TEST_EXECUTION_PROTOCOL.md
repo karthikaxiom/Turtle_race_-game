@@ -94,3 +94,7 @@ Capture the exact terminal text, including the winning color and whether the mes
 ## 22 — Identify the detected turtle
 
 Record which turtle triggered the finish check and the pen color read at that point. Do not assume the first turtle in creation order must win.
+
+## 23 — Test a matching guess
+
+Pair a known detected color with an input whose lowercase form is identical. Verify the win branch and preserve the exact input string in the record.
