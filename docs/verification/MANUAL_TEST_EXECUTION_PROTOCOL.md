@@ -30,3 +30,7 @@ Record whether the program fails before the input dialog, during turtle construc
 
 Launch a new process for each independent scenario. The program is a single-run flow and does not expose an in-window reset or replay operation.
 
+
+## 07 — Capture the exact input
+
+Write down the exact characters submitted, including capitalization and spaces. A paraphrase such as “blue” is insufficient when the actual value contained whitespace or different casing.
