@@ -146,3 +146,7 @@ Use a temporary test harness or disposable worktree for instrumentation. Confirm
 ## 35 — Check the dependency boundary
 
 Inspect imports and the runtime environment. The current program imports only Python's turtle and random standard-library modules; do not attribute an unrelated optional package to its runtime requirements.
+
+## 36 — Close the test record with a verdict
+
+For each scenario, choose pass, fail, blocked, or not run. Include evidence and the source revision. A blocked GUI test is not a pass, and a planned test is not an executed test.
