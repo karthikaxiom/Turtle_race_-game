@@ -126,3 +126,7 @@ After the race loop completes or is skipped, observe the window and test the cli
 ## 30 — Distinguish user closure from program completion
 
 Record whether the window was closed through the intended click-to-exit action or forcibly terminated by the operating system. These are different shutdown conditions.
+
+## 31 — Avoid assuming a replay control exists
+
+After one race, inspect the visible interface for any documented restart action. The current program has no replay loop or reset control; do not mark absence as a defect against a nonexistent requirement.
