@@ -70,3 +70,7 @@ When testing the random-step contract, explicitly include both endpoints, zero a
 ## 16 — Verify each draw independently
 
 Instrument the random function in a disposable harness and count calls during a pass. Compare the call sequence with the participant traversal order.
+
+## 17 — Track positions at check time
+
+For finish-condition scenarios, record each turtle's x-coordinate immediately before its finish comparison. A coordinate observed after movement does not establish what the preceding check saw.
