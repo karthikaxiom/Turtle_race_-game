@@ -106,3 +106,7 @@ Use a non-matching input and a controlled detected turtle. Verify the loss branc
 ## 25 — Observe multiple detections in one pass
 
 In a controlled harness, place more than one turtle beyond the threshold before their turns. Record the order and number of messages emitted during that pass.
+
+## 26 — Check movement after detection
+
+Instrument the movement call for a turtle that already satisfies the finish condition at the beginning of its turn. Record that the call still occurs after result evaluation.
