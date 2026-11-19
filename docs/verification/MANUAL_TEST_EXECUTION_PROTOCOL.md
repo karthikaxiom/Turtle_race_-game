@@ -154,3 +154,7 @@ For each scenario, choose pass, fail, blocked, or not run. Include evidence and 
 ## 37 — Preserve raw observations
 
 Record raw coordinates, dialog values, and terminal messages before interpreting them. Keeping observations separate from conclusions makes later review possible.
+
+## 38 — Compare behavior against the same revision
+
+When two runs are compared, ensure both use the same source revision unless the purpose is explicitly to compare revisions. Record any difference in setup or environment.
