@@ -78,3 +78,7 @@ For finish-condition scenarios, record each turtle's x-coordinate immediately be
 ## 18 — Distinguish equality from overshoot
 
 Use separate cases at x = 370 and x = 371. Record them independently because the current finish test is strict greater-than.
+
+## 19 — Observe one complete participant pass
+
+Log the ordered sequence of participant checks and movement requests. This helps identify whether a change has altered traversal order.
