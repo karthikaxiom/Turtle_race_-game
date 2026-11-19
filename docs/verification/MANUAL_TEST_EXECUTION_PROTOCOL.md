@@ -102,3 +102,7 @@ Pair a known detected color with an input whose lowercase form is identical. Ver
 ## 24 — Test a non-matching guess
 
 Use a non-matching input and a controlled detected turtle. Verify the loss branch and capture the reported color.
+
+## 25 — Observe multiple detections in one pass
+
+In a controlled harness, place more than one turtle beyond the threshold before their turns. Record the order and number of messages emitted during that pass.
