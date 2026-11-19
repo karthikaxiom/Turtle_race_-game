@@ -134,3 +134,7 @@ After one race, inspect the visible interface for any documented restart action.
 ## 32 — Repeat stochastic cases with a recorded seed strategy
 
 If a harness controls randomness, record its seed or exact supplied sequence. An uncontrolled run may produce a different race order and should not be treated as a deterministic reproduction.
+
+## 33 — Separate source behavior from harness behavior
+
+Document every monkey patch, stub, fake turtle, or replaced random function used by a test. A harness can make a scenario reproducible but is not itself evidence that the GUI behaves identically.
