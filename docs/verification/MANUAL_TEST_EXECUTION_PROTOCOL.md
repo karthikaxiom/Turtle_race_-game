@@ -62,3 +62,7 @@ Record each turtle's shape, color, and pen state before movement. This provides 
 ## 14 — Use controlled movement for boundary checks
 
 For exact threshold tests, use an isolated harness that supplies a predetermined movement result. Record the injected value and the turtle position before and after the call; do not claim a random run exercised a particular boundary by chance.
+
+## 15 — Preserve the inclusive random interval
+
+When testing the random-step contract, explicitly include both endpoints, zero and ten, plus at least one interior value. Record the requested draw, not merely the apparent visual distance.
