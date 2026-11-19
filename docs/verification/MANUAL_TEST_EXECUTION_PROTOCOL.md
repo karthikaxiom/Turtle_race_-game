@@ -110,3 +110,7 @@ In a controlled harness, place more than one turtle beyond the threshold before 
 ## 26 — Check movement after detection
 
 Instrument the movement call for a turtle that already satisfies the finish condition at the beginning of its turn. Record that the call still occurs after result evaluation.
+
+## 27 — Check later participants in the same pass
+
+After an early finish detection, verify whether later collection entries still receive their check and movement operations before the outer loop condition is reconsidered.
