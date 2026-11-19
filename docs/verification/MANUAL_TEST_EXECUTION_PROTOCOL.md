@@ -114,3 +114,7 @@ Instrument the movement call for a turtle that already satisfies the finish cond
 ## 27 — Check later participants in the same pass
 
 After an early finish detection, verify whether later collection entries still receive their check and movement operations before the outer loop condition is reconsidered.
+
+## 28 — Record terminal output separately from the GUI
+
+Keep a terminal transcript or exact copied output separate from screenshots of the turtle window. The result messages are printed to the console, not drawn as labels in the graphics window.
