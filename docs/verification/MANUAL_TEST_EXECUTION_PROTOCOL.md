@@ -162,3 +162,7 @@ When two runs are compared, ensure both use the same source revision unless the 
 ## 39 — Report timing carefully
 
 The race loop has no explicit delay call. Avoid describing a particular frame rate or fixed duration unless it has been measured in the tested environment.
+
+## 40 — Do not infer a winner from visual proximity
+
+A turtle appearing furthest to the right is not sufficient evidence of a result. Record the program's threshold check and the actual printed output.
