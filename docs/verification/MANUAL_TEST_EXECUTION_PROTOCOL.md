@@ -138,3 +138,7 @@ If a harness controls randomness, record its seed or exact supplied sequence. An
 ## 33 — Separate source behavior from harness behavior
 
 Document every monkey patch, stub, fake turtle, or replaced random function used by a test. A harness can make a scenario reproducible but is not itself evidence that the GUI behaves identically.
+
+## 34 — Keep the production file untouched during experiments
+
+Use a temporary test harness or disposable worktree for instrumentation. Confirm that the tracked production source remains unchanged after the test.
