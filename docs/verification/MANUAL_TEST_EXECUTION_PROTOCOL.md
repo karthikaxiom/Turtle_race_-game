@@ -150,3 +150,7 @@ Inspect imports and the runtime environment. The current program imports only Py
 ## 36 — Close the test record with a verdict
 
 For each scenario, choose pass, fail, blocked, or not run. Include evidence and the source revision. A blocked GUI test is not a pass, and a planned test is not an executed test.
+
+## 37 — Preserve raw observations
+
+Record raw coordinates, dialog values, and terminal messages before interpreting them. Keeping observations separate from conclusions makes later review possible.
