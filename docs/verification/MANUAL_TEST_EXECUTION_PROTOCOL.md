@@ -34,3 +34,7 @@ Launch a new process for each independent scenario. The program is a single-run 
 ## 07 — Capture the exact input
 
 Write down the exact characters submitted, including capitalization and spaces. A paraphrase such as “blue” is insufficient when the actual value contained whitespace or different casing.
+
+## 08 — Keep one variable under test
+
+Change only one condition between paired runs. For example, compare a plain supported color with the same color plus a trailing space, keeping the rest of the setup constant.
