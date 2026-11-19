@@ -58,3 +58,7 @@ Before the first movement pass, record each participant's x/y coordinates. Compa
 ## 13 — Capture initial appearance
 
 Record each turtle's shape, color, and pen state before movement. This provides a baseline for identifying visual initialization regressions.
+
+## 14 — Use controlled movement for boundary checks
+
+For exact threshold tests, use an isolated harness that supplies a predetermined movement result. Record the injected value and the turtle position before and after the call; do not claim a random run exercised a particular boundary by chance.
