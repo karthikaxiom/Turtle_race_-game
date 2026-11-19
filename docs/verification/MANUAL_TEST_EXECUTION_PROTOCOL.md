@@ -54,3 +54,7 @@ List the six turtles in their creation order. This is the order used by the part
 ## 12 — Capture initial coordinates
 
 Before the first movement pass, record each participant's x/y coordinates. Compare them with the configured common start and lane positions.
+
+## 13 — Capture initial appearance
+
+Record each turtle's shape, color, and pen state before movement. This provides a baseline for identifying visual initialization regressions.
