@@ -122,3 +122,7 @@ Keep a terminal transcript or exact copied output separate from screenshots of t
 ## 29 — Verify the window remains interactive at shutdown
 
 After the race loop completes or is skipped, observe the window and test the click-to-exit wait. Record whether the desktop event loop responds as expected.
+
+## 30 — Distinguish user closure from program completion
+
+Record whether the window was closed through the intended click-to-exit action or forcibly terminated by the operating system. These are different shutdown conditions.
