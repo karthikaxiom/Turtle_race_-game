@@ -142,3 +142,7 @@ Document every monkey patch, stub, fake turtle, or replaced random function used
 ## 34 — Keep the production file untouched during experiments
 
 Use a temporary test harness or disposable worktree for instrumentation. Confirm that the tracked production source remains unchanged after the test.
+
+## 35 — Check the dependency boundary
+
+Inspect imports and the runtime environment. The current program imports only Python's turtle and random standard-library modules; do not attribute an unrelated optional package to its runtime requirements.
