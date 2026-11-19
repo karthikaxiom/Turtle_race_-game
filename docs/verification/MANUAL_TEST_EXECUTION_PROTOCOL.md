@@ -50,3 +50,7 @@ Record the order in which the screen is created, the input dialog appears, and t
 ## 11 — Record participant order
 
 List the six turtles in their creation order. This is the order used by the participant collection during each pass.
+
+## 12 — Capture initial coordinates
+
+Before the first movement pass, record each participant's x/y coordinates. Compare them with the configured common start and lane positions.
