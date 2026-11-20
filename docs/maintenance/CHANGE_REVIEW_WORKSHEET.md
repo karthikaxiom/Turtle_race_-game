@@ -30,3 +30,7 @@ For setup changes, verify the order of screen creation, dialog invocation, parti
 ## 07 — Review configuration pairing
 
 When changing participant colors or lane positions, inspect the paired lists together. Confirm that each participant retains the intended color-to-position association.
+
+## 08 — Check collection assumptions
+
+If participant count or storage changes, inspect every loop and index assumption that depends on the collection. A configuration edit can have downstream effects beyond drawing another turtle.
