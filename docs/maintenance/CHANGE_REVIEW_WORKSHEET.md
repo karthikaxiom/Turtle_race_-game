@@ -78,3 +78,7 @@ Follow the value used to identify a detected participant into the result message
 ## 19 — Compare both result branches
 
 Review matching and non-matching input paths together. A change that fixes one message branch may leave the other branch inconsistent or unreachable.
+
+## 20 — Check output destination
+
+Determine whether feedback is printed to the terminal, drawn in the graphics window, or sent elsewhere. Changing the output surface affects how users launch and observe the game.
