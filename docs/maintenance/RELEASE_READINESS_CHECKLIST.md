@@ -46,3 +46,7 @@ Ensure documentation distinguishes terminal messages from graphics-window conten
 ## 11 — Check screenshot relevance
 
 If a screenshot is included, verify that it represents the current interface and does not imply controls or features absent from the source.
+
+## 12 — Check license statements
+
+Inspect the repository for a license file before describing reuse permissions. Do not infer an open-source license from public visibility alone.
