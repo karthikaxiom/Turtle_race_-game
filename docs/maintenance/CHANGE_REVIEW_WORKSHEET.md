@@ -42,3 +42,7 @@ Review any changes to start coordinates, lane spacing, or finish boundaries as o
 ## 10 — Review appearance and drawing state
 
 For visual changes, check shape, fill and pen colors, pen-up state, and drawing side effects. A turtle can look correct while unexpectedly leaving a trail.
+
+## 11 — Preserve random range semantics
+
+If movement randomness changes, record the lower and upper bounds and whether each endpoint is inclusive. Do not describe a range as equivalent when its endpoints differ.
