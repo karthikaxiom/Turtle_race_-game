@@ -82,3 +82,7 @@ For any executed manual test, note operating system, Python version, Tk availabi
 ## 20 — Separate harness evidence
 
 If a controlled harness or stub was used, describe it and keep its results distinct from a normal interactive GUI run.
+
+## 21 — Check unresolved limitations
+
+Record known limitations such as single-run behavior, terminal-based output, or dependence on a graphical environment when relevant to the audience.
