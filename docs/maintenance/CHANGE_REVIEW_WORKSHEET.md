@@ -138,3 +138,7 @@ State whether a result came from a manual GUI run, a controlled harness, static 
 ## 34 — Record environment-sensitive observations
 
 When behavior depends on Python, Tk, operating system, or desktop session, capture those details with the observation rather than presenting it as universal.
+
+## 35 — Review the complete diff
+
+Read the final diff after editing, not only the intended lines. Look for accidental whitespace churn, unrelated file changes, duplicated paragraphs, and stale cross-references.
