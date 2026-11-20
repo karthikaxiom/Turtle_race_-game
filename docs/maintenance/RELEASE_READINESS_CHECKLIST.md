@@ -98,3 +98,7 @@ Inspect the exact changes proposed for the release, including whitespace, accide
 ## 24 — Confirm source scope
 
 Ensure the release contains only the source changes intended by the maintainer. Documentation-only work should not silently alter application logic.
+
+## 25 — Prepare a concise handoff note
+
+Summarize the snapshot identity, user-visible behavior, setup requirements, verification performed, and any checks still outstanding.
