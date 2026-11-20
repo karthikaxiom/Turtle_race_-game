@@ -94,3 +94,7 @@ Search for stale descriptions, conflicting values, duplicate specifications, and
 ## 23 — Review the final diff
 
 Inspect the exact changes proposed for the release, including whitespace, accidental content replacement, and unrelated modifications.
+
+## 24 — Confirm source scope
+
+Ensure the release contains only the source changes intended by the maintainer. Documentation-only work should not silently alter application logic.
