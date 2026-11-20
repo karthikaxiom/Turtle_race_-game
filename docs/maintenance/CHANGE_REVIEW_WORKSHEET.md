@@ -38,3 +38,7 @@ If participant count or storage changes, inspect every loop and index assumption
 ## 09 — Verify coordinate assumptions
 
 Review any changes to start coordinates, lane spacing, or finish boundaries as one geometric system. Confirm that the window dimensions still make the intended positions visible.
+
+## 10 — Review appearance and drawing state
+
+For visual changes, check shape, fill and pen colors, pen-up state, and drawing side effects. A turtle can look correct while unexpectedly leaving a trail.
