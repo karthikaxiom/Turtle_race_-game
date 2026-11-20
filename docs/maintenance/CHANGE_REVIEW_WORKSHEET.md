@@ -34,3 +34,7 @@ When changing participant colors or lane positions, inspect the paired lists tog
 ## 08 — Check collection assumptions
 
 If participant count or storage changes, inspect every loop and index assumption that depends on the collection. A configuration edit can have downstream effects beyond drawing another turtle.
+
+## 09 — Verify coordinate assumptions
+
+Review any changes to start coordinates, lane spacing, or finish boundaries as one geometric system. Confirm that the window dimensions still make the intended positions visible.
