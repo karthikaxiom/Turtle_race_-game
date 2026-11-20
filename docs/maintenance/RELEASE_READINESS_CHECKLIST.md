@@ -38,3 +38,7 @@ Review shell commands for correct repository paths and platform-appropriate Pyth
 ## 09 — Review input guidance
 
 Confirm that user-facing instructions accurately describe the startup dialog, supported colors, and behavior when input is empty or cancelled.
+
+## 10 — Review result guidance
+
+Ensure documentation distinguishes terminal messages from graphics-window content and explains where users should look for the outcome.
