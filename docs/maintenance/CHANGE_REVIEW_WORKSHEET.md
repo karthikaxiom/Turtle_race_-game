@@ -110,3 +110,7 @@ Check whether a user can perceive prompts, progress, and results with the curren
 ## 27 — Check documentation ownership
 
 Choose one canonical page for each concept and update its links when needed. Avoid creating a second competing specification for behavior already covered elsewhere.
+
+## 28 — Keep historical notes clearly historical
+
+When recording an earlier behavior or decision, include its date or revision context. Do not allow a maintenance log to be mistaken for the current behavioral contract.
