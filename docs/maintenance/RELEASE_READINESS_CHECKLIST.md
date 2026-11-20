@@ -74,3 +74,7 @@ Verify claims about race order, random movement, finish detection, result output
 ## 18 — Identify unexecuted checks
 
 List any GUI, platform, or manual checks that have not been run. Do not convert planned verification into a passed status.
+
+## 19 — Record test environment
+
+For any executed manual test, note operating system, Python version, Tk availability, and whether a desktop session was used.
