@@ -86,3 +86,7 @@ If a controlled harness or stub was used, describe it and keep its results disti
 ## 21 — Check unresolved limitations
 
 Record known limitations such as single-run behavior, terminal-based output, or dependence on a graphical environment when relevant to the audience.
+
+## 22 — Check documentation consistency
+
+Search for stale descriptions, conflicting values, duplicate specifications, and links to removed or renamed files.
