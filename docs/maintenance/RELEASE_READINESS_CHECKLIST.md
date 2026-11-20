@@ -22,3 +22,7 @@ Review the complete repository tree at the candidate revision. Confirm that requ
 ## 05 — Check the entry-point file
 
 Confirm that the documented launch command points to the actual application entry point and that the referenced file exists.
+
+## 06 — Verify documentation navigation
+
+Open the documentation index and follow its important links. Check nested relative paths from their actual locations.
