@@ -50,3 +50,7 @@ If a screenshot is included, verify that it represents the current interface and
 ## 12 — Check license statements
 
 Inspect the repository for a license file before describing reuse permissions. Do not infer an open-source license from public visibility alone.
+
+## 13 — Check attribution and asset references
+
+Review external images, screenshots, and linked assets for attribution or provenance notes where applicable. Do not claim ownership without evidence.
