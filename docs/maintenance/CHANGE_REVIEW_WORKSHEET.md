@@ -22,3 +22,7 @@ Mark the change as source logic, user-visible presentation, documentation, repos
 ## 05 — Trace the input path
 
 For input-related changes, follow the value from dialog return through storage and comparison. Check whether empty, cancelled, padded, uppercase, and unsupported values are affected.
+
+## 06 — Trace initialization dependencies
+
+For setup changes, verify the order of screen creation, dialog invocation, participant construction, and race-state initialization. Reordering can affect observable startup behavior.
