@@ -90,3 +90,7 @@ Trace the end of execution after a completed race and after startup input is can
 ## 22 — Identify single-run assumptions
 
 If adding replay, reset, or repeated rounds, review which objects and variables must be recreated or reset. Re-entering a loop alone does not guarantee a clean new game.
+
+## 23 — Check dependency claims
+
+Inspect imports and runtime setup before adding or removing a dependency. Keep documentation aligned with the actual modules used by the program and distinguish standard-library requirements from optional developer tools.
