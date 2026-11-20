@@ -74,3 +74,7 @@ Consider whether more than one participant can satisfy the finish condition duri
 ## 18 — Trace the reported identity
 
 Follow the value used to identify a detected participant into the result message. Ensure the displayed color or label comes from the intended source and is not accidentally inferred from the user's selection.
+
+## 19 — Compare both result branches
+
+Review matching and non-matching input paths together. A change that fixes one message branch may leave the other branch inconsistent or unreachable.
