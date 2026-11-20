@@ -34,3 +34,7 @@ Ensure the setup steps describe the current Python and graphical runtime require
 ## 08 — Check launch commands
 
 Review shell commands for correct repository paths and platform-appropriate Python executable names. Distinguish alternatives rather than implying every environment uses the same command.
+
+## 09 — Review input guidance
+
+Confirm that user-facing instructions accurately describe the startup dialog, supported colors, and behavior when input is empty or cancelled.
