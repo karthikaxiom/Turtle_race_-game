@@ -18,3 +18,7 @@ List the behavior that the change is meant to alter and the behavior that must r
 ## 04 — Classify the change surface
 
 Mark the change as source logic, user-visible presentation, documentation, repository configuration, or tooling. If it spans categories, explain why the coupling is necessary.
+
+## 05 — Trace the input path
+
+For input-related changes, follow the value from dialog return through storage and comparison. Check whether empty, cancelled, padded, uppercase, and unsupported values are affected.
