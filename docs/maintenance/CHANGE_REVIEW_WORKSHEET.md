@@ -146,3 +146,7 @@ Read the final diff after editing, not only the intended lines. Look for acciden
 ## 36 — Check scope against the stated goal
 
 Compare every changed file with the original change intent. Remove unrelated edits or split them into a separately reviewable change.
+
+## 37 — Verify the final repository state
+
+After committing, confirm the intended branch and changed paths. Check that no generated files, local artifacts, or unrelated source edits were included by the maintenance operation.
