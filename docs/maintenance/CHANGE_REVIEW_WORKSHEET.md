@@ -54,3 +54,7 @@ Determine whether a change affects how often random values are requested: once p
 ## 13 — Inspect movement ordering
 
 Trace whether a participant is checked before or after it moves. Reversing those operations changes when a crossing becomes observable.
+
+## 14 — Inspect threshold operators
+
+Review the exact comparison operator at the finish boundary. Greater-than and greater-than-or-equal are different contracts at equality.
