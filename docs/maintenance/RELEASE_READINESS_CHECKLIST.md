@@ -90,3 +90,7 @@ Record known limitations such as single-run behavior, terminal-based output, or 
 ## 22 — Check documentation consistency
 
 Search for stale descriptions, conflicting values, duplicate specifications, and links to removed or renamed files.
+
+## 23 — Review the final diff
+
+Inspect the exact changes proposed for the release, including whitespace, accidental content replacement, and unrelated modifications.
