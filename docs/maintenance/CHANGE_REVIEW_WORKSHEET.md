@@ -106,3 +106,7 @@ Identify which failures are currently handled and which propagate. Do not docume
 ## 26 — Consider accessibility of feedback
 
 Check whether a user can perceive prompts, progress, and results with the current interaction model. If feedback remains terminal-only, state the launch requirement plainly.
+
+## 27 — Check documentation ownership
+
+Choose one canonical page for each concept and update its links when needed. Avoid creating a second competing specification for behavior already covered elsewhere.
