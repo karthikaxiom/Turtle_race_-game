@@ -70,3 +70,7 @@ Check that repository names, file paths, and project titles are consistent acros
 ## 17 — Review behavior claims against source
 
 Verify claims about race order, random movement, finish detection, result output, and shutdown against the current entry-point implementation.
+
+## 18 — Identify unexecuted checks
+
+List any GUI, platform, or manual checks that have not been run. Do not convert planned verification into a passed status.
