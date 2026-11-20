@@ -82,3 +82,7 @@ Review matching and non-matching input paths together. A change that fixes one m
 ## 20 — Check output destination
 
 Determine whether feedback is printed to the terminal, drawn in the graphics window, or sent elsewhere. Changing the output surface affects how users launch and observe the game.
+
+## 21 — Review shutdown on every path
+
+Trace the end of execution after a completed race and after startup input is cancelled or empty. Confirm that cleanup and window-wait behavior remain intentional on both paths.
