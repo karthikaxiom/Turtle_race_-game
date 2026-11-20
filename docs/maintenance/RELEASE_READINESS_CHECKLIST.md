@@ -14,3 +14,7 @@ Verify that the candidate is on the intended branch and that the branch contains
 ## 03 — Review the latest commit history
 
 Inspect recent commit subjects and changed paths for accidental work, unexpected generated files, or unrelated maintenance.
+
+## 04 — Inspect the working snapshot
+
+Review the complete repository tree at the candidate revision. Confirm that required source, documentation, and project metadata are present.
