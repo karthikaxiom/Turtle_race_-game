@@ -18,3 +18,7 @@ Inspect recent commit subjects and changed paths for accidental work, unexpected
 ## 04 — Inspect the working snapshot
 
 Review the complete repository tree at the candidate revision. Confirm that required source, documentation, and project metadata are present.
+
+## 05 — Check the entry-point file
+
+Confirm that the documented launch command points to the actual application entry point and that the referenced file exists.
