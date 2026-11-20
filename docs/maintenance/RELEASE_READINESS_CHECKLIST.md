@@ -42,3 +42,7 @@ Confirm that user-facing instructions accurately describe the startup dialog, su
 ## 10 — Review result guidance
 
 Ensure documentation distinguishes terminal messages from graphics-window content and explains where users should look for the outcome.
+
+## 11 — Check screenshot relevance
+
+If a screenshot is included, verify that it represents the current interface and does not imply controls or features absent from the source.
