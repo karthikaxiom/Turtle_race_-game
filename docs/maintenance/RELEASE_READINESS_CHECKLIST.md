@@ -66,3 +66,7 @@ Look for temporary logs, caches, compiled files, screenshots, and local test out
 ## 16 — Review repository naming consistency
 
 Check that repository names, file paths, and project titles are consistent across the README, documentation index, and command examples.
+
+## 17 — Review behavior claims against source
+
+Verify claims about race order, random movement, finish detection, result output, and shutdown against the current entry-point implementation.
