@@ -10,3 +10,7 @@ Write one concise statement describing the intended outcome. Avoid combining unr
 ## 02 — Identify the authoritative source
 
 Confirm which source revision defines the behavior being reviewed. Documentation, screenshots, and old commits can provide context, but they must not override the current implementation.
+
+## 03 — Separate intended behavior from incidental behavior
+
+List the behavior that the change is meant to alter and the behavior that must remain stable. This distinction prevents an apparently small edit from silently changing unrelated interactions.
