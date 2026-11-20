@@ -70,3 +70,7 @@ Check whether later participants continue to be processed after a finish is dete
 ## 17 — Review multiple-finish behavior
 
 Consider whether more than one participant can satisfy the finish condition during one pass. State clearly whether the change preserves, prevents, or intentionally redesigns that possibility.
+
+## 18 — Trace the reported identity
+
+Follow the value used to identify a detected participant into the result message. Ensure the displayed color or label comes from the intended source and is not accidentally inferred from the user's selection.
