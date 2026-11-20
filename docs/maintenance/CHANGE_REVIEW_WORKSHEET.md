@@ -14,3 +14,7 @@ Confirm which source revision defines the behavior being reviewed. Documentation
 ## 03 — Separate intended behavior from incidental behavior
 
 List the behavior that the change is meant to alter and the behavior that must remain stable. This distinction prevents an apparently small edit from silently changing unrelated interactions.
+
+## 04 — Classify the change surface
+
+Mark the change as source logic, user-visible presentation, documentation, repository configuration, or tooling. If it spans categories, explain why the coupling is necessary.
