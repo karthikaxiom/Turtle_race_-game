@@ -26,3 +26,7 @@ For input-related changes, follow the value from dialog return through storage a
 ## 06 — Trace initialization dependencies
 
 For setup changes, verify the order of screen creation, dialog invocation, participant construction, and race-state initialization. Reordering can affect observable startup behavior.
+
+## 07 — Review configuration pairing
+
+When changing participant colors or lane positions, inspect the paired lists together. Confirm that each participant retains the intended color-to-position association.
