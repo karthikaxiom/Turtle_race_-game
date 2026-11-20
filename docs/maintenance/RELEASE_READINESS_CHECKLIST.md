@@ -54,3 +54,7 @@ Inspect the repository for a license file before describing reuse permissions. D
 ## 13 — Check attribution and asset references
 
 Review external images, screenshots, and linked assets for attribution or provenance notes where applicable. Do not claim ownership without evidence.
+
+## 14 — Check dependency declarations
+
+Compare dependency files and documentation with actual imports. Avoid listing development-only tools as runtime requirements unless they are needed to launch the game.
