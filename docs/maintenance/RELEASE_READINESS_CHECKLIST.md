@@ -30,3 +30,7 @@ Open the documentation index and follow its important links. Check nested relati
 ## 07 — Check setup instructions
 
 Ensure the setup steps describe the current Python and graphical runtime requirements without adding unsupported dependency claims.
+
+## 08 — Check launch commands
+
+Review shell commands for correct repository paths and platform-appropriate Python executable names. Distinguish alternatives rather than implying every environment uses the same command.
