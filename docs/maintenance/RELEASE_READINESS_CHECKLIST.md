@@ -6,3 +6,7 @@ This checklist is a practical review aid for preparing a repository snapshot for
 
 Record the branch, commit SHA, and intended release label or sharing context. A moving branch name alone is not enough to identify the exact snapshot being reviewed.
 
+
+## 02 — Confirm the intended branch
+
+Verify that the candidate is on the intended branch and that the branch contains the changes expected for this release or handoff.
