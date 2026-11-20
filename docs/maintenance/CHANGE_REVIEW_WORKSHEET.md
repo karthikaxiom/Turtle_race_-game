@@ -58,3 +58,7 @@ Trace whether a participant is checked before or after it moves. Reversing those
 ## 14 — Inspect threshold operators
 
 Review the exact comparison operator at the finish boundary. Greater-than and greater-than-or-equal are different contracts at equality.
+
+## 15 — Follow state changes to loop boundaries
+
+When a flag or state variable changes, identify which loop condition reads it next. A state update does not necessarily interrupt a loop that is already executing.
