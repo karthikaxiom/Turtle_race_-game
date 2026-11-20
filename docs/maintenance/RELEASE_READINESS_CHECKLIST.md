@@ -78,3 +78,7 @@ List any GUI, platform, or manual checks that have not been run. Do not convert 
 ## 19 — Record test environment
 
 For any executed manual test, note operating system, Python version, Tk availability, and whether a desktop session was used.
+
+## 20 — Separate harness evidence
+
+If a controlled harness or stub was used, describe it and keep its results distinct from a normal interactive GUI run.
