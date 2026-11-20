@@ -46,3 +46,7 @@ For visual changes, check shape, fill and pen colors, pen-up state, and drawing 
 ## 11 — Preserve random range semantics
 
 If movement randomness changes, record the lower and upper bounds and whether each endpoint is inclusive. Do not describe a range as equivalent when its endpoints differ.
+
+## 12 — Check random call frequency
+
+Determine whether a change affects how often random values are requested: once per participant, once per pass, or at another scope. Frequency changes can alter the entire race progression.
