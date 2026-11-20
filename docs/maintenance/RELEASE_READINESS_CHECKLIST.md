@@ -106,3 +106,7 @@ Summarize the snapshot identity, user-visible behavior, setup requirements, veri
 ## 26 — Make release claims proportionate
 
 Describe the candidate as reviewed, manually tested, or otherwise verified only to the extent supported by recorded evidence.
+
+## 27 — Preserve the reviewed revision
+
+After review, record the exact commit SHA that was inspected. If new commits are added, repeat the relevant checks against the new revision.
