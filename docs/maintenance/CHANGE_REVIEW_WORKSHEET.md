@@ -142,3 +142,7 @@ When behavior depends on Python, Tk, operating system, or desktop session, captu
 ## 35 — Review the complete diff
 
 Read the final diff after editing, not only the intended lines. Look for accidental whitespace churn, unrelated file changes, duplicated paragraphs, and stale cross-references.
+
+## 36 — Check scope against the stated goal
+
+Compare every changed file with the original change intent. Remove unrelated edits or split them into a separately reviewable change.
