@@ -62,3 +62,7 @@ Review the exact comparison operator at the finish boundary. Greater-than and gr
 ## 15 — Follow state changes to loop boundaries
 
 When a flag or state variable changes, identify which loop condition reads it next. A state update does not necessarily interrupt a loop that is already executing.
+
+## 16 — Assess same-pass continuation
+
+Check whether later participants continue to be processed after a finish is detected. If control flow is changed, document whether remaining checks, movements, and messages still occur.
