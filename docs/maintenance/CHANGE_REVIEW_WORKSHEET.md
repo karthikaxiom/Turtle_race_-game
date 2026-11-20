@@ -122,3 +122,7 @@ If a new guide is added, link it from the relevant documentation index and descr
 ## 30 — Validate internal links
 
 Check relative links from the file's actual directory, including case-sensitive path spelling. A link that works from the repository root may be wrong when resolved from a nested document.
+
+## 31 — Keep examples executable in context
+
+If a code example is added, verify that names, imports, indentation, and surrounding assumptions are coherent. Label pseudocode and harness-only snippets so they are not mistaken for production code.
