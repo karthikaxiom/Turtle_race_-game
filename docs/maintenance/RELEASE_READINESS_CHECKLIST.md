@@ -10,3 +10,7 @@ Record the branch, commit SHA, and intended release label or sharing context. A 
 ## 02 — Confirm the intended branch
 
 Verify that the candidate is on the intended branch and that the branch contains the changes expected for this release or handoff.
+
+## 03 — Review the latest commit history
+
+Inspect recent commit subjects and changed paths for accidental work, unexpected generated files, or unrelated maintenance.
