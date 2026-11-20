@@ -26,3 +26,7 @@ Confirm that the documented launch command points to the actual application entr
 ## 06 — Verify documentation navigation
 
 Open the documentation index and follow its important links. Check nested relative paths from their actual locations.
+
+## 07 — Check setup instructions
+
+Ensure the setup steps describe the current Python and graphical runtime requirements without adding unsupported dependency claims.
