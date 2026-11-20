@@ -66,3 +66,7 @@ When a flag or state variable changes, identify which loop condition reads it ne
 ## 16 — Assess same-pass continuation
 
 Check whether later participants continue to be processed after a finish is detected. If control flow is changed, document whether remaining checks, movements, and messages still occur.
+
+## 17 — Review multiple-finish behavior
+
+Consider whether more than one participant can satisfy the finish condition during one pass. State clearly whether the change preserves, prevents, or intentionally redesigns that possibility.
