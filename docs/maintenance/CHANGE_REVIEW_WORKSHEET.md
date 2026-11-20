@@ -102,3 +102,7 @@ For GUI or environment changes, consider desktop availability, Tk support, termi
 ## 25 — Review error handling boundaries
 
 Identify which failures are currently handled and which propagate. Do not document graceful recovery unless the implementation actually provides it.
+
+## 26 — Consider accessibility of feedback
+
+Check whether a user can perceive prompts, progress, and results with the current interaction model. If feedback remains terminal-only, state the launch requirement plainly.
