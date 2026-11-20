@@ -130,3 +130,7 @@ If a code example is added, verify that names, imports, indentation, and surroun
 ## 32 — Avoid unsupported performance claims
 
 Do not infer frame rate, completion time, or responsiveness from source structure alone. Such claims require measurements under a named environment and workload.
+
+## 33 — Separate manual evidence from automated evidence
+
+State whether a result came from a manual GUI run, a controlled harness, static inspection, or an automated test. These evidence types support different conclusions.
