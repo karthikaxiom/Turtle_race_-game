@@ -58,3 +58,7 @@ Review external images, screenshots, and linked assets for attribution or proven
 ## 14 — Check dependency declarations
 
 Compare dependency files and documentation with actual imports. Avoid listing development-only tools as runtime requirements unless they are needed to launch the game.
+
+## 15 — Check generated artifacts
+
+Look for temporary logs, caches, compiled files, screenshots, and local test outputs that should not be part of the release snapshot.
