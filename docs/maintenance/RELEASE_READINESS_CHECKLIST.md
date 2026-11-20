@@ -102,3 +102,7 @@ Ensure the release contains only the source changes intended by the maintainer. 
 ## 25 — Prepare a concise handoff note
 
 Summarize the snapshot identity, user-visible behavior, setup requirements, verification performed, and any checks still outstanding.
+
+## 26 — Make release claims proportionate
+
+Describe the candidate as reviewed, manually tested, or otherwise verified only to the extent supported by recorded evidence.
