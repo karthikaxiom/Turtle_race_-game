@@ -150,3 +150,7 @@ Compare every changed file with the original change intent. Remove unrelated edi
 ## 37 — Verify the final repository state
 
 After committing, confirm the intended branch and changed paths. Check that no generated files, local artifacts, or unrelated source edits were included by the maintenance operation.
+
+## 38 — Make the review conclusion evidence-based
+
+Summarize what was inspected, what was executed, what remains unverified, and any known risk. A clear limitation is more useful than an unsupported blanket statement that the change is safe.
