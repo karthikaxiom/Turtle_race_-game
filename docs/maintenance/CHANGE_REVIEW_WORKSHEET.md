@@ -6,3 +6,7 @@ This worksheet helps reviewers assess a proposed change to the Turtle Race proje
 
 Write one concise statement describing the intended outcome. Avoid combining unrelated goals in one change, because a reviewer should be able to tell what success means before inspecting the diff.
 
+
+## 02 — Identify the authoritative source
+
+Confirm which source revision defines the behavior being reviewed. Documentation, screenshots, and old commits can provide context, but they must not override the current implementation.
