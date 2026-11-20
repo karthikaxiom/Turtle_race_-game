@@ -94,3 +94,7 @@ If adding replay, reset, or repeated rounds, review which objects and variables 
 ## 23 — Check dependency claims
 
 Inspect imports and runtime setup before adding or removing a dependency. Keep documentation aligned with the actual modules used by the program and distinguish standard-library requirements from optional developer tools.
+
+## 24 — Evaluate platform assumptions
+
+For GUI or environment changes, consider desktop availability, Tk support, terminal access, and platform-specific launch commands. Avoid promising identical behavior in headless environments.
