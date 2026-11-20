@@ -50,3 +50,7 @@ If movement randomness changes, record the lower and upper bounds and whether ea
 ## 12 — Check random call frequency
 
 Determine whether a change affects how often random values are requested: once per participant, once per pass, or at another scope. Frequency changes can alter the entire race progression.
+
+## 13 — Inspect movement ordering
+
+Trace whether a participant is checked before or after it moves. Reversing those operations changes when a crossing becomes observable.
