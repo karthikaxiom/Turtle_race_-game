@@ -114,3 +114,7 @@ Choose one canonical page for each concept and update its links when needed. Avo
 ## 28 — Keep historical notes clearly historical
 
 When recording an earlier behavior or decision, include its date or revision context. Do not allow a maintenance log to be mistaken for the current behavioral contract.
+
+## 29 — Update navigation deliberately
+
+If a new guide is added, link it from the relevant documentation index and describe its purpose. Do not add a link to a file that has not been created.
