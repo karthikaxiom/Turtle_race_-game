@@ -62,3 +62,7 @@ Compare dependency files and documentation with actual imports. Avoid listing de
 ## 15 — Check generated artifacts
 
 Look for temporary logs, caches, compiled files, screenshots, and local test outputs that should not be part of the release snapshot.
+
+## 16 — Review repository naming consistency
+
+Check that repository names, file paths, and project titles are consistent across the README, documentation index, and command examples.
