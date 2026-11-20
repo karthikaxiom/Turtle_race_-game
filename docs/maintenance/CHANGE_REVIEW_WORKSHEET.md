@@ -134,3 +134,7 @@ Do not infer frame rate, completion time, or responsiveness from source structur
 ## 33 — Separate manual evidence from automated evidence
 
 State whether a result came from a manual GUI run, a controlled harness, static inspection, or an automated test. These evidence types support different conclusions.
+
+## 34 — Record environment-sensitive observations
+
+When behavior depends on Python, Tk, operating system, or desktop session, capture those details with the observation rather than presenting it as universal.
