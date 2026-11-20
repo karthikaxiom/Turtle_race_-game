@@ -98,3 +98,7 @@ Inspect imports and runtime setup before adding or removing a dependency. Keep d
 ## 24 — Evaluate platform assumptions
 
 For GUI or environment changes, consider desktop availability, Tk support, terminal access, and platform-specific launch commands. Avoid promising identical behavior in headless environments.
+
+## 25 — Review error handling boundaries
+
+Identify which failures are currently handled and which propagate. Do not document graceful recovery unless the implementation actually provides it.
