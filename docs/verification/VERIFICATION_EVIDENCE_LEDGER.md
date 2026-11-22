@@ -89,3 +89,7 @@ The movement progression is randomized while participant setup is configured exp
 ## 22. Loop traversal
 
 The program visits participants in list order on each pass through the inner loop. If collection construction or traversal changes, review the effects on finish detection and printed result ordering.
+
+## 23. Finish comparison
+
+The current finish condition is a strict horizontal-coordinate comparison greater than 370. Equality does not satisfy it. Preserve the strictness in test descriptions and boundary-case reasoning.
