@@ -121,3 +121,7 @@ When documenting exact output, copy the current format from source and distingui
 ## 30. Shutdown path
 
 The program calls `screen.exitonclick()` after the race loop or after the loop is skipped. Verify this behavior in the GUI environment and do not claim automatic closure or a replay flow.
+
+## 31. Repeatability
+
+Randomized movement means that repeated manual runs may produce different winners and timings. Record the input and environment for each run; do not use one run as proof of all possible race outcomes.
