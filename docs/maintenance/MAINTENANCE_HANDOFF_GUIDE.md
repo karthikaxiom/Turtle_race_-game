@@ -9,3 +9,7 @@ This guide supports a maintainer who is taking over a small, source-led Turtle g
 ## 02. Authoritative evidence
 
 Treat the checked-out `main.py` as the authority for current runtime behavior. Documentation, screenshots, commit messages, and recollections are secondary evidence. If they disagree with the source, record the discrepancy and verify whether the source or the description is stale before changing either.
+
+## 03. Establish the revision
+
+Record the branch name, full commit identifier, working-tree state, and date of inspection. A handoff without a revision is ambiguous: later readers cannot tell whether observations describe the same code they are reviewing.
