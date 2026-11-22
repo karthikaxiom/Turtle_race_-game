@@ -33,3 +33,7 @@ The inspected source imports `turtle` and `random`, both standard-library module
 ## 08. Launch-path evidence
 
 Record the exact launch command and working directory used for a manual run. If the launch procedure differs between Windows, Linux, or a remote shell, keep separate evidence rather than presenting one command as universally portable.
+
+## 09. GUI availability
+
+Mark whether a graphical display was available and whether the turtle window actually appeared. Headless execution, remote shells, and missing Tk support can prevent visible GUI behavior even when source imports succeed.
