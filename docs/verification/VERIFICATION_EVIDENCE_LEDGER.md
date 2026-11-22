@@ -145,3 +145,7 @@ If an expected event did not occur, record how many attempts were made and the c
 ## 36. Documentation consistency
 
 Compare new claims with the lifecycle, input, movement, threshold, termination, and output pages. When a canonical page already covers a behavior, update it rather than creating a competing explanation.
+
+## 37. Link verification
+
+Open each new relative Markdown link and confirm the target exists on the intended branch. Check capitalization and path spelling, especially where local filesystems may be case-insensitive.
