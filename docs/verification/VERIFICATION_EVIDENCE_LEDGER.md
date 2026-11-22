@@ -37,3 +37,7 @@ Record the exact launch command and working directory used for a manual run. If 
 ## 09. GUI availability
 
 Mark whether a graphical display was available and whether the turtle window actually appeared. Headless execution, remote shells, and missing Tk support can prevent visible GUI behavior even when source imports succeed.
+
+## 10. Startup order
+
+Trace screen creation and configuration, the input dialog, turtle construction, race-state initialization, the loop, and shutdown in source order. If a change reorders these steps, explain its effect on the user-visible startup sequence.
