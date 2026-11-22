@@ -53,3 +53,7 @@ Check the empty or cancelled input path separately from a normal race. In the cu
 ## 13. Unsupported input
 
 The current code lowercases the raw guess for comparison but does not trim whitespace or validate membership in the configured color list. Keep this source-confirmed fact distinct from any future input-validation proposal.
+
+## 14. Case handling
+
+A case-variation check can confirm that the comparison uses a lowercased guess. Record the exact test value and result; do not infer whitespace normalization from case normalization.
