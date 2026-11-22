@@ -13,3 +13,7 @@ Use four labels consistently: observed means directly seen during a check; sourc
 ## 03. Revision identity
 
 Record the full commit SHA, branch, and inspection date before collecting evidence. If the working tree contains uncommitted changes, record that fact and identify the affected paths so another reviewer can reproduce the same state.
+
+## 04. Source of truth
+
+For current behavior, inspect `main.py` at the recorded revision. Treat screenshots, old notes, README wording, and commit messages as supporting context only. Resolve contradictions against the source rather than silently choosing the more convenient description.
