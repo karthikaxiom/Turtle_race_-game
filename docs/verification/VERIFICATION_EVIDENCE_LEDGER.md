@@ -61,3 +61,7 @@ A case-variation check can confirm that the comparison uses a lowercased guess. 
 ## 15. Participant count
 
 The current source constructs six turtle participants. If participant count changes, inspect all coupled configuration and presentation assumptions rather than updating only a single numeric statement.
+
+## 16. Color order
+
+Record the color list in source order and verify that any documentation or screenshot labels use the same ordering. Avoid relying on visual position alone to infer the configured color sequence.
