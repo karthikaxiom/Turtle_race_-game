@@ -149,3 +149,7 @@ Compare new claims with the lifecycle, input, movement, threshold, termination, 
 ## 37. Link verification
 
 Open each new relative Markdown link and confirm the target exists on the intended branch. Check capitalization and path spelling, especially where local filesystems may be case-insensitive.
+
+## 38. Diff review
+
+Inspect the final diff for unrelated files, accidental deletions, duplicated content, broken Markdown, and statements that exceed the available evidence. Confirm the file list matches the declared scope.
