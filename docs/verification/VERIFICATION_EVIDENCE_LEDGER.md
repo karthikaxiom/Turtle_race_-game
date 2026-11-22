@@ -9,3 +9,7 @@ This ledger gives maintainers a consistent way to record evidence for claims abo
 ## 02. Evidence vocabulary
 
 Use four labels consistently: observed means directly seen during a check; source-confirmed means visible in the inspected implementation; inferred means reasoned from evidence but not directly exercised; proposed means future work. Do not mix these categories in a single unqualified claim.
+
+## 03. Revision identity
+
+Record the full commit SHA, branch, and inspection date before collecting evidence. If the working tree contains uncommitted changes, record that fact and identify the affected paths so another reviewer can reproduce the same state.
