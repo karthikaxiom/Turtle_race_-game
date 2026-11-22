@@ -17,3 +17,7 @@ Record the full commit SHA, branch, and inspection date before collecting eviden
 ## 04. Source of truth
 
 For current behavior, inspect `main.py` at the recorded revision. Treat screenshots, old notes, README wording, and commit messages as supporting context only. Resolve contradictions against the source rather than silently choosing the more convenient description.
+
+## 05. Environment record
+
+Record the operating system, Python version, desktop session, and availability of Tk support when testing the graphical program. A successful source review does not establish that a GUI can open in every runtime environment.
