@@ -49,3 +49,7 @@ Record whether the dialog appeared, what prompt was shown, and what value was su
 ## 12. Cancellation path
 
 Check the empty or cancelled input path separately from a normal race. In the current implementation, a falsey answer skips the movement loop, while the final click-to-close call remains in the execution path.
+
+## 13. Unsupported input
+
+The current code lowercases the raw guess for comparison but does not trim whitespace or validate membership in the configured color list. Keep this source-confirmed fact distinct from any future input-validation proposal.
