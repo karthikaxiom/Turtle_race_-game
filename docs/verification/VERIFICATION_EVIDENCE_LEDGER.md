@@ -81,3 +81,7 @@ The turtles are set to pen-up before being positioned. If a change modifies pen 
 ## 20. Movement range
 
 Each movement request uses a random integer from zero through ten inclusive. Document the range as source-confirmed; a single observed movement does not prove every value in that range was generated.
+
+## 21. Randomness boundary
+
+The movement progression is randomized while participant setup is configured explicitly. Do not describe the race as deterministic or promise that the same participant wins on repeated runs.
