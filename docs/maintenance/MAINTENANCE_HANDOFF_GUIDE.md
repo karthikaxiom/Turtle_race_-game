@@ -129,3 +129,7 @@ Describe only controls and feedback that exist in the current interface. The inp
 ## 32. Maintain historical notes
 
 Date historical maintenance records and keep them distinct from current behavior specifications. When a historical note becomes misleading, link readers to the current canonical page rather than silently treating old notes as current.
+
+## 33. Use a proportionate review checklist
+
+Before handoff, verify source alignment, setup clarity, accurate edge-case descriptions, valid links, scoped changes, and a clean final diff. Do not add process overhead that is disproportionate to a small documentation-only change.
