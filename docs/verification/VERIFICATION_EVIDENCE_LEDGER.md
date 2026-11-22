@@ -117,3 +117,7 @@ The current result messages are printed to the terminal. Do not describe them as
 ## 29. Message wording
 
 When documenting exact output, copy the current format from source and distinguish literal punctuation from explanatory paraphrase. Avoid promising output text that has not been verified against the inspected revision.
+
+## 30. Shutdown path
+
+The program calls `screen.exitonclick()` after the race loop or after the loop is skipped. Verify this behavior in the GUI environment and do not claim automatic closure or a replay flow.
