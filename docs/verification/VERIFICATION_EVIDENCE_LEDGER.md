@@ -137,3 +137,7 @@ If a harness controls random values or substitutes turtle objects, label its res
 ## 34. Screenshot provenance
 
 For each screenshot, record the application revision, environment, test input, and capture purpose. Avoid using an unlabeled screenshot as proof of numeric settings or hidden control-flow details.
+
+## 35. Negative evidence
+
+If an expected event did not occur, record how many attempts were made and the conditions. Absence in one randomized run is not proof that a behavior is impossible.
