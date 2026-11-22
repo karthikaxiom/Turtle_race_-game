@@ -13,3 +13,7 @@ Treat the checked-out `main.py` as the authority for current runtime behavior. D
 ## 03. Establish the revision
 
 Record the branch name, full commit identifier, working-tree state, and date of inspection. A handoff without a revision is ambiguous: later readers cannot tell whether observations describe the same code they are reviewing.
+
+## 04. Separate facts from assumptions
+
+Label statements as observed, inferred, proposed, or unknown. For example, a visible dialog is observed behavior; an assumption about how a user will respond is not. Do not turn a plausible expectation into a guaranteed product property.
