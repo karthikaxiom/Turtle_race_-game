@@ -73,3 +73,7 @@ The current vertical-position list is paired with the color list by index. A cha
 ## 18. Initial coordinates
 
 Verify the configured horizontal starting coordinate and each vertical lane directly from source. If a screenshot is used as evidence, identify it as a visual observation rather than the authoritative numeric specification.
+
+## 19. Pen state
+
+The turtles are set to pen-up before being positioned. If a change modifies pen state, verify whether placement or movement begins drawing trails and update the relevant behavioral documentation.
