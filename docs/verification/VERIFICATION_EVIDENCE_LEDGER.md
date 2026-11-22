@@ -93,3 +93,7 @@ The program visits participants in list order on each pass through the inner loo
 ## 23. Finish comparison
 
 The current finish condition is a strict horizontal-coordinate comparison greater than 370. Equality does not satisfy it. Preserve the strictness in test descriptions and boundary-case reasoning.
+
+## 24. Check timing
+
+The finish condition is checked before the current participant's movement request. A turtle that crosses the threshold during movement is detected on a later visit, not immediately after that movement.
