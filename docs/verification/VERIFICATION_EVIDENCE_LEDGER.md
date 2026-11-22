@@ -85,3 +85,7 @@ Each movement request uses a random integer from zero through ten inclusive. Doc
 ## 21. Randomness boundary
 
 The movement progression is randomized while participant setup is configured explicitly. Do not describe the race as deterministic or promise that the same participant wins on repeated runs.
+
+## 22. Loop traversal
+
+The program visits participants in list order on each pass through the inner loop. If collection construction or traversal changes, review the effects on finish detection and printed result ordering.
