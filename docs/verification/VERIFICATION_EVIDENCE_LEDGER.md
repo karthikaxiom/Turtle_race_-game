@@ -41,3 +41,7 @@ Mark whether a graphical display was available and whether the turtle window act
 ## 10. Startup order
 
 Trace screen creation and configuration, the input dialog, turtle construction, race-state initialization, the loop, and shutdown in source order. If a change reorders these steps, explain its effect on the user-visible startup sequence.
+
+## 11. Input dialog evidence
+
+Record whether the dialog appeared, what prompt was shown, and what value was supplied. Avoid copying personal data or unnecessary user input into a public test record.
