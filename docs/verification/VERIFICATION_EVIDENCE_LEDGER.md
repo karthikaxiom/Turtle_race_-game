@@ -153,3 +153,7 @@ Open each new relative Markdown link and confirm the target exists on the intend
 ## 38. Diff review
 
 Inspect the final diff for unrelated files, accidental deletions, duplicated content, broken Markdown, and statements that exceed the available evidence. Confirm the file list matches the declared scope.
+
+## 39. Handoff record
+
+A complete evidence note identifies the revision, environment, checks performed, outcomes, limitations, and unresolved questions. If a check was not performed, say so plainly rather than implying successful verification.
