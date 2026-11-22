@@ -101,3 +101,7 @@ The finish condition is checked before the current participant's movement reques
 ## 25. Outer-loop flag
 
 A detected finisher sets the outer race flag to false. Record this separately from inner-loop termination; the current implementation does not break out of the participant loop at that point.
+
+## 26. Same-pass continuation
+
+Remaining participants in the same inner-loop pass may still be checked and moved after the race flag changes. A further participant may also meet the finish condition and produce another message during that pass.
