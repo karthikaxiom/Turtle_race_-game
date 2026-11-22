@@ -109,3 +109,7 @@ The current implementation has no replay workflow, persistent score storage, con
 ## 27. Prepare a useful handoff summary
 
 Name the inspected revision, files changed, checks performed, known limitations, and unresolved questions. A concise handoff should let the next maintainer continue without reconstructing the investigation from the entire commit history.
+
+## 28. Prioritize unresolved questions
+
+Separate blockers from optional improvements. For each unresolved item, state what evidence is missing and what observation would resolve it. Avoid vague carry-over notes such as 'needs testing' without a defined target.
