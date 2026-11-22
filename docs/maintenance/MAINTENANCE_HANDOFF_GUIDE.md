@@ -105,3 +105,7 @@ Review the complete diff for accidental deletions, duplicated sections, malforme
 ## 26. Record known limitations
 
 The current implementation has no replay workflow, persistent score storage, configurable participant count, or graphical result summary. Keep limitations tied to the inspected revision and avoid implying these are permanent design decisions.
+
+## 27. Prepare a useful handoff summary
+
+Name the inspected revision, files changed, checks performed, known limitations, and unresolved questions. A concise handoff should let the next maintainer continue without reconstructing the investigation from the entire commit history.
