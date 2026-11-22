@@ -113,3 +113,7 @@ Name the inspected revision, files changed, checks performed, known limitations,
 ## 28. Prioritize unresolved questions
 
 Separate blockers from optional improvements. For each unresolved item, state what evidence is missing and what observation would resolve it. Avoid vague carry-over notes such as 'needs testing' without a defined target.
+
+## 29. Protect the production entrypoint
+
+Do not alter `main.py` merely to make documentation examples easier. If a behavior change is proposed, describe the user-visible reason, expected effect, and test plan before modifying the entrypoint.
