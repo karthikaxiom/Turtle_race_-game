@@ -97,3 +97,7 @@ The current finish condition is a strict horizontal-coordinate comparison greate
 ## 24. Check timing
 
 The finish condition is checked before the current participant's movement request. A turtle that crosses the threshold during movement is detected on a later visit, not immediately after that movement.
+
+## 25. Outer-loop flag
+
+A detected finisher sets the outer race flag to false. Record this separately from inner-loop termination; the current implementation does not break out of the participant loop at that point.
