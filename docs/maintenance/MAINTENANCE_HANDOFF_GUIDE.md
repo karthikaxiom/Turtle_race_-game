@@ -29,3 +29,7 @@ Use the repository's current setup instructions and verify them against the pres
 ## 07. Capture startup order
 
 When explaining startup, follow the actual statement order: screen setup, input dialog, turtle construction, race-state initialization, loop, and shutdown. Ordering matters because the dialog occurs before participant construction and the input result determines whether the loop runs.
+
+## 08. Describe input precisely
+
+Document the input as it is implemented. The current program compares the lowercased answer with the winning color; it does not trim surrounding whitespace or validate the answer against the configured palette. Do not describe stricter validation unless code is added and tested.
