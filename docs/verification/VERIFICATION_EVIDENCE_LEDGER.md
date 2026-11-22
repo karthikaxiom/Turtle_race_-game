@@ -77,3 +77,7 @@ Verify the configured horizontal starting coordinate and each vertical lane dire
 ## 19. Pen state
 
 The turtles are set to pen-up before being positioned. If a change modifies pen state, verify whether placement or movement begins drawing trails and update the relevant behavioral documentation.
+
+## 20. Movement range
+
+Each movement request uses a random integer from zero through ten inclusive. Document the range as source-confirmed; a single observed movement does not prove every value in that range was generated.
