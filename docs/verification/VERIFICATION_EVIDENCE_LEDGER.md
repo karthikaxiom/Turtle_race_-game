@@ -109,3 +109,7 @@ Remaining participants in the same inner-loop pass may still be checked and move
 ## 27. Result comparison
 
 The win/loss branch compares the detected turtle's pen color with the lowercased guess. If input normalization changes, re-check both the comparison and the wording used to describe accepted guesses.
+
+## 28. Output destination
+
+The current result messages are printed to the terminal. Do not describe them as graphical labels, dialogs, persistent records, or an in-window scoreboard unless implementation evidence supports that change.
