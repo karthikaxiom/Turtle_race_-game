@@ -43,5 +43,6 @@ This directory explains the behavior of the current implementation in `main.py`.
 - [Reference notes](reference/README_SCOPE.md) — scope of the focused notes in `reference/`.
 - [Dated maintenance notes](maintenance/) — chronological records of earlier documentation maintenance.
 - [Maintainer change review worksheet](maintenance/CHANGE_REVIEW_WORKSHEET.md) — a pre-merge checklist for change impact, evidence, scope, and documentation quality.
+- [Maintenance handoff guide](maintenance/MAINTENANCE_HANDOFF_GUIDE.md) — a source-led handoff reference covering environment checks, behavior evidence, review scope, and maintainer ownership.
 
 When pages overlap, prefer the maintained overview linked above and check `main.py` before treating any statement as current. Reference notes are supplementary, and dated maintenance records are historical rather than behavioral specifications.
