@@ -45,3 +45,7 @@ Trace screen creation and configuration, the input dialog, turtle construction, 
 ## 11. Input dialog evidence
 
 Record whether the dialog appeared, what prompt was shown, and what value was supplied. Avoid copying personal data or unnecessary user input into a public test record.
+
+## 12. Cancellation path
+
+Check the empty or cancelled input path separately from a normal race. In the current implementation, a falsey answer skips the movement loop, while the final click-to-close call remains in the execution path.
