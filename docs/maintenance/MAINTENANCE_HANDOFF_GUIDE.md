@@ -121,3 +121,7 @@ Do not alter `main.py` merely to make documentation examples easier. If a behavi
 ## 30. Check random behavior responsibly
 
 Do not expect repeated runs to produce the same sequence. For a repeatable diagnostic, control randomness only within a test harness and restore ordinary runtime behavior; document exactly how the test differs from production execution.
+
+## 31. Review accessibility and usability claims
+
+Describe only controls and feedback that exist in the current interface. The input dialog and click-to-close window are observable; keyboard navigation, screen-reader support, and in-window status messaging require separate verification.
