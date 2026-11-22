@@ -125,3 +125,7 @@ The program calls `screen.exitonclick()` after the race loop or after the loop i
 ## 31. Repeatability
 
 Randomized movement means that repeated manual runs may produce different winners and timings. Record the input and environment for each run; do not use one run as proof of all possible race outcomes.
+
+## 32. Manual test boundaries
+
+A manual run is useful for checking that the application launches and responds, but it does not exhaustively test random movement, all possible input strings, or every possible same-pass finish combination.
