@@ -17,3 +17,7 @@ Record the branch name, full commit identifier, working-tree state, and date of 
 ## 04. Separate facts from assumptions
 
 Label statements as observed, inferred, proposed, or unknown. For example, a visible dialog is observed behavior; an assumption about how a user will respond is not. Do not turn a plausible expectation into a guaranteed product property.
+
+## 05. Confirm the launch environment
+
+Check the Python interpreter and whether a graphical desktop session is available. The program uses the standard-library `turtle` and `random` modules, while the graphics stack depends on the host's Tk support. A successful import alone does not prove that a window can be displayed.
