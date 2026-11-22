@@ -125,3 +125,7 @@ Do not expect repeated runs to produce the same sequence. For a repeatable diagn
 ## 31. Review accessibility and usability claims
 
 Describe only controls and feedback that exist in the current interface. The input dialog and click-to-close window are observable; keyboard navigation, screen-reader support, and in-window status messaging require separate verification.
+
+## 32. Maintain historical notes
+
+Date historical maintenance records and keep them distinct from current behavior specifications. When a historical note becomes misleading, link readers to the current canonical page rather than silently treating old notes as current.
