@@ -57,3 +57,7 @@ The current code lowercases the raw guess for comparison but does not trim white
 ## 14. Case handling
 
 A case-variation check can confirm that the comparison uses a lowercased guess. Record the exact test value and result; do not infer whitespace normalization from case normalization.
+
+## 15. Participant count
+
+The current source constructs six turtle participants. If participant count changes, inspect all coupled configuration and presentation assumptions rather than updating only a single numeric statement.
