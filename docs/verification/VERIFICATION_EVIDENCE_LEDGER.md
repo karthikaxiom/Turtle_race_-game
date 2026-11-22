@@ -65,3 +65,7 @@ The current source constructs six turtle participants. If participant count chan
 ## 16. Color order
 
 Record the color list in source order and verify that any documentation or screenshot labels use the same ordering. Avoid relying on visual position alone to infer the configured color sequence.
+
+## 17. Lane mapping
+
+The current vertical-position list is paired with the color list by index. A change to either list should trigger a review of list lengths, order, and the intended participant-to-lane mapping.
