@@ -117,3 +117,7 @@ Separate blockers from optional improvements. For each unresolved item, state wh
 ## 29. Protect the production entrypoint
 
 Do not alter `main.py` merely to make documentation examples easier. If a behavior change is proposed, describe the user-visible reason, expected effect, and test plan before modifying the entrypoint.
+
+## 30. Check random behavior responsibly
+
+Do not expect repeated runs to produce the same sequence. For a repeatable diagnostic, control randomness only within a test harness and restore ordinary runtime behavior; document exactly how the test differs from production execution.
