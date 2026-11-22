@@ -21,3 +21,7 @@ For current behavior, inspect `main.py` at the recorded revision. Treat screensh
 ## 05. Environment record
 
 Record the operating system, Python version, desktop session, and availability of Tk support when testing the graphical program. A successful source review does not establish that a GUI can open in every runtime environment.
+
+## 06. Interpreter provenance
+
+Capture which Python executable ran the program and how its version was obtained. Avoid assuming that the `python` command resolves to the same interpreter across shells, virtual environments, and operating systems.
