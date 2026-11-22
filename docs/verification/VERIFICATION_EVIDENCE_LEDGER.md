@@ -105,3 +105,7 @@ A detected finisher sets the outer race flag to false. Record this separately fr
 ## 26. Same-pass continuation
 
 Remaining participants in the same inner-loop pass may still be checked and moved after the race flag changes. A further participant may also meet the finish condition and produce another message during that pass.
+
+## 27. Result comparison
+
+The win/loss branch compares the detected turtle's pen color with the lowercased guess. If input normalization changes, re-check both the comparison and the wording used to describe accepted guesses.
