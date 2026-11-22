@@ -29,3 +29,7 @@ Capture which Python executable ran the program and how its version was obtained
 ## 07. Dependency evidence
 
 The inspected source imports `turtle` and `random`, both standard-library modules. Record any platform graphics prerequisites separately; do not report Tk as a third-party Python package dependency without checking the environment.
+
+## 08. Launch-path evidence
+
+Record the exact launch command and working directory used for a manual run. If the launch procedure differs between Windows, Linux, or a remote shell, keep separate evidence rather than presenting one command as universally portable.
