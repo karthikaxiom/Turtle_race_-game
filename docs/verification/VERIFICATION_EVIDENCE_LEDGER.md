@@ -5,3 +5,7 @@ A structured reference for collecting, describing, and reviewing evidence about 
 ## 01. Purpose and scope
 
 This ledger gives maintainers a consistent way to record evidence for claims about the Turtle Race project. It is a review aid, not a test report and not a substitute for inspecting the implementation. Complete only the entries that apply to a change; leave unsupported items explicitly unknown.
+
+## 02. Evidence vocabulary
+
+Use four labels consistently: observed means directly seen during a check; source-confirmed means visible in the inspected implementation; inferred means reasoned from evidence but not directly exercised; proposed means future work. Do not mix these categories in a single unqualified claim.
