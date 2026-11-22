@@ -25,3 +25,7 @@ Record the operating system, Python version, desktop session, and availability o
 ## 06. Interpreter provenance
 
 Capture which Python executable ran the program and how its version was obtained. Avoid assuming that the `python` command resolves to the same interpreter across shells, virtual environments, and operating systems.
+
+## 07. Dependency evidence
+
+The inspected source imports `turtle` and `random`, both standard-library modules. Record any platform graphics prerequisites separately; do not report Tk as a third-party Python package dependency without checking the environment.
