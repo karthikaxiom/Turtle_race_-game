@@ -49,3 +49,7 @@ When explaining startup, follow the actual statement order: screen setup, input 
 ## 12. Describe input precisely
 
 Document the input as it is implemented. The current program compares the lowercased answer with the winning color; it does not trim surrounding whitespace or validate the answer against the configured palette. Do not describe stricter validation unless code is added and tested.
+
+## 13. Handle cancellation carefully
+
+An empty or cancelled input produces a false race-state value, so the movement loop is skipped. The screen shutdown call still follows. Distinguish this path from a completed race and from an unsupported non-empty guess.
