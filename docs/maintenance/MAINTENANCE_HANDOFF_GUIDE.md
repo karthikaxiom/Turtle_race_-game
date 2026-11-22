@@ -53,3 +53,7 @@ Document the input as it is implemented. The current program compares the lowerc
 ## 13. Handle cancellation carefully
 
 An empty or cancelled input produces a false race-state value, so the movement loop is skipped. The screen shutdown call still follows. Distinguish this path from a completed race and from an unsupported non-empty guess.
+
+## 14. Keep participant configuration aligned
+
+The six configured colors and six vertical positions are paired by list index during turtle creation. If either list changes, verify that their lengths and intended correspondence remain aligned. Describe the current ordering from source rather than relying on a screenshot.
