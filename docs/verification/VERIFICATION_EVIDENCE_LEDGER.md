@@ -129,3 +129,7 @@ Randomized movement means that repeated manual runs may produce different winner
 ## 32. Manual test boundaries
 
 A manual run is useful for checking that the application launches and responds, but it does not exhaustively test random movement, all possible input strings, or every possible same-pass finish combination.
+
+## 33. Controlled test harnesses
+
+If a harness controls random values or substitutes turtle objects, label its results as harness evidence. State which production behaviors are simulated and which were exercised with the actual GUI.
