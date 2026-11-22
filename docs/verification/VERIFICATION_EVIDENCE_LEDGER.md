@@ -141,3 +141,7 @@ For each screenshot, record the application revision, environment, test input, a
 ## 35. Negative evidence
 
 If an expected event did not occur, record how many attempts were made and the conditions. Absence in one randomized run is not proof that a behavior is impossible.
+
+## 36. Documentation consistency
+
+Compare new claims with the lifecycle, input, movement, threshold, termination, and output pages. When a canonical page already covers a behavior, update it rather than creating a competing explanation.
