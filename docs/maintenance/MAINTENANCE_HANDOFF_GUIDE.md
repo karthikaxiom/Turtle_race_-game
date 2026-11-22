@@ -37,3 +37,7 @@ Document the input as it is implemented. The current program compares the lowerc
 ## 09. Confirm the launch environment
 
 Check the Python interpreter and whether a graphical desktop session is available. The program uses the standard-library `turtle` and `random` modules, while the graphics stack depends on the host's Tk support. A successful import alone does not prove that a window can be displayed.
+
+## 10. Record launch instructions
+
+Use the repository's current setup instructions and verify them against the present source. Keep commands minimal and platform-aware. If a command has only been tested on one operating system or desktop environment, state that limitation rather than implying universal support.
