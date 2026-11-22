@@ -65,3 +65,7 @@ Each participant begins at the same horizontal coordinate and receives its own c
 ## 16. Explain movement bounds
 
 Each loop visit requests a random integer from zero through ten, inclusive, and moves that turtle forward by the returned amount. Do not claim a fixed speed, equal distance per turn, or deterministic winner.
+
+## 17. Preserve check-before-move semantics
+
+The finish comparison is evaluated before the current visit's movement. A turtle that crosses the threshold during a movement is not reported until its next visit. This timing is a meaningful observable detail and should not be simplified into an after-move check.
