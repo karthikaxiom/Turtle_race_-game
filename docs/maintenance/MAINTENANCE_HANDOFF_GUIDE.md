@@ -133,3 +133,7 @@ Date historical maintenance records and keep them distinct from current behavior
 ## 33. Use a proportionate review checklist
 
 Before handoff, verify source alignment, setup clarity, accurate edge-case descriptions, valid links, scoped changes, and a clean final diff. Do not add process overhead that is disproportionate to a small documentation-only change.
+
+## 34. Close the handoff with ownership
+
+Identify who will own follow-up work, where issues should be recorded, and which revision was reviewed. If ownership is not yet assigned, state that explicitly instead of implying that a task has been accepted.
