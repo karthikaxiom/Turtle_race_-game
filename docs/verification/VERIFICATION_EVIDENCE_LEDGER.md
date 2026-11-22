@@ -69,3 +69,7 @@ Record the color list in source order and verify that any documentation or scree
 ## 17. Lane mapping
 
 The current vertical-position list is paired with the color list by index. A change to either list should trigger a review of list lengths, order, and the intended participant-to-lane mapping.
+
+## 18. Initial coordinates
+
+Verify the configured horizontal starting coordinate and each vertical lane directly from source. If a screenshot is used as evidence, identify it as a visual observation rather than the authoritative numeric specification.
