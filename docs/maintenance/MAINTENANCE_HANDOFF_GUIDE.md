@@ -25,3 +25,7 @@ Check the Python interpreter and whether a graphical desktop session is availabl
 ## 06. Record launch instructions
 
 Use the repository's current setup instructions and verify them against the present source. Keep commands minimal and platform-aware. If a command has only been tested on one operating system or desktop environment, state that limitation rather than implying universal support.
+
+## 07. Capture startup order
+
+When explaining startup, follow the actual statement order: screen setup, input dialog, turtle construction, race-state initialization, loop, and shutdown. Ordering matters because the dialog occurs before participant construction and the input result determines whether the loop runs.
