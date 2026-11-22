@@ -61,3 +61,7 @@ The six configured colors and six vertical positions are paired by list index du
 ## 15. Explain initial placement
 
 Each participant begins at the same horizontal coordinate and receives its own configured vertical lane. The pen is lifted before placement, so initialization does not draw a trail. A visual description should distinguish initial placement from later movement.
+
+## 16. Explain movement bounds
+
+Each loop visit requests a random integer from zero through ten, inclusive, and moves that turtle forward by the returned amount. Do not claim a fixed speed, equal distance per turn, or deterministic winner.
