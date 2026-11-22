@@ -113,3 +113,7 @@ The win/loss branch compares the detected turtle's pen color with the lowercased
 ## 28. Output destination
 
 The current result messages are printed to the terminal. Do not describe them as graphical labels, dialogs, persistent records, or an in-window scoreboard unless implementation evidence supports that change.
+
+## 29. Message wording
+
+When documenting exact output, copy the current format from source and distinguish literal punctuation from explanatory paraphrase. Avoid promising output text that has not been verified against the inspected revision.
