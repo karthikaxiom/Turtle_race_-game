@@ -57,3 +57,7 @@ An empty or cancelled input produces a false race-state value, so the movement l
 ## 14. Keep participant configuration aligned
 
 The six configured colors and six vertical positions are paired by list index during turtle creation. If either list changes, verify that their lengths and intended correspondence remain aligned. Describe the current ordering from source rather than relying on a screenshot.
+
+## 15. Explain initial placement
+
+Each participant begins at the same horizontal coordinate and receives its own configured vertical lane. The pen is lifted before placement, so initialization does not draw a trail. A visual description should distinguish initial placement from later movement.
