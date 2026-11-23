@@ -33,3 +33,7 @@ For startup changes, review screen creation, screen configuration, the input dia
 ## 08. Trace input dependencies
 
 For input changes, inspect how the dialog value is obtained, tested for truthiness, normalized, validated, and later compared. Do not assume that lowercasing also trims whitespace or validates membership.
+
+## 09. Trace configuration dependencies
+
+The participant colors and vertical positions are paired by list index. Any change to participant count, color order, or lane positions should review the lengths and alignment of all related configuration.
