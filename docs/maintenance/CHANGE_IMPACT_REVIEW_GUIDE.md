@@ -25,3 +25,7 @@ Inspect the relevant source statements in context, including surrounding control
 ## 06. Separate behavior from presentation
 
 Determine whether the request changes program behavior, documentation presentation, or both. A wording change should not accidentally imply a runtime change; a runtime change may require several documentation updates.
+
+## 07. Trace startup dependencies
+
+For startup changes, review screen creation, screen configuration, the input dialog, turtle construction, and race-state initialization in execution order. Reordering these steps can change what the user sees and when.
