@@ -137,3 +137,7 @@ Review all changed paths for accidental edits, duplicated material, formatting e
 ## 34. Prepare rollback reasoning
 
 Identify the smallest safe unit to revert if the change causes a regression. Documentation-only changes should remain separable from runtime modifications whenever practical.
+
+## 35. Write the review conclusion
+
+Summarize the requested outcome, impacted surfaces, evidence collected, unresolved risks, and decision. A reviewer should understand the conclusion without reconstructing every intermediate step.
