@@ -125,3 +125,7 @@ Update the existing focused page when a behavior is already documented. Avoid cr
 ## 31. Review navigation changes
 
 If a new documentation page is added, add one clear index entry with a concise description. Verify the relative link and avoid adding duplicate navigation entries.
+
+## 32. Review claim strength
+
+Use precise language such as source-confirmed, manually observed, inferred, or proposed. Avoid absolute guarantees when the evidence is a single randomized run or a limited environment check.
