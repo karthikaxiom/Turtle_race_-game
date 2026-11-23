@@ -101,3 +101,7 @@ For numeric conditions, test equality, just below, and just above the boundary. 
 ## 25. Consider empty and unsupported input
 
 Review empty, cancelled, case-varied, whitespace-padded, and unsupported non-empty answers where applicable. Distinguish current behavior from any proposed validation policy.
+
+## 26. Plan focused verification
+
+Choose checks that directly exercise the changed behavior. A narrow change should have a narrow, relevant test plan rather than a generic claim that the whole application was tested.
