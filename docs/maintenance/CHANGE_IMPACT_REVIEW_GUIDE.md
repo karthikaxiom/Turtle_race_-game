@@ -65,3 +65,7 @@ Current win/loss messages are printed to the terminal. If output is moved or dup
 ## 16. Trace shutdown behavior
 
 The current program calls `screen.exitonclick()` after the race loop. Any change to shutdown should consider both a completed race and the path where input causes the loop to be skipped.
+
+## 17. List observable changes
+
+Write down what a player would notice before and after the proposed change. Include dialogs, participant appearance, movement, finish timing, messages, and window closure only where affected.
