@@ -93,3 +93,7 @@ Changing the number or order of random calls can alter outcomes even if the move
 ## 23. Consider ordering effects
 
 Changing participant traversal order can alter which finish conditions are observed first and the order of printed messages. Review order-sensitive behavior explicitly.
+
+## 24. Consider boundary conditions
+
+For numeric conditions, test equality, just below, and just above the boundary. Preserve strict versus inclusive comparisons accurately in code review notes and documentation.
