@@ -129,3 +129,7 @@ If a new documentation page is added, add one clear index entry with a concise d
 ## 32. Review claim strength
 
 Use precise language such as source-confirmed, manually observed, inferred, or proposed. Avoid absolute guarantees when the evidence is a single randomized run or a limited environment check.
+
+## 33. Inspect the complete diff
+
+Review all changed paths for accidental edits, duplicated material, formatting errors, broken links, and unrelated changes. Confirm the diff matches the declared scope and intended outcome.
