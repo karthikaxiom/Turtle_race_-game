@@ -29,3 +29,7 @@ Determine whether the request changes program behavior, documentation presentati
 ## 07. Trace startup dependencies
 
 For startup changes, review screen creation, screen configuration, the input dialog, turtle construction, and race-state initialization in execution order. Reordering these steps can change what the user sees and when.
+
+## 08. Trace input dependencies
+
+For input changes, inspect how the dialog value is obtained, tested for truthiness, normalized, validated, and later compared. Do not assume that lowercasing also trims whitespace or validates membership.
