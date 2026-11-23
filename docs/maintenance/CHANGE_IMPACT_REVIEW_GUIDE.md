@@ -49,3 +49,7 @@ The current movement request is randomized from zero through ten inclusive. If m
 ## 12. Trace finish detection
 
 The current source checks whether a turtle's horizontal coordinate is strictly greater than 370 before its movement for that visit. Any threshold or ordering change affects detection timing and boundary behavior.
+
+## 13. Trace loop termination
+
+The race flag controls the outer loop, while the inner participant loop continues through its current pass. Review both loops before describing a change as an immediate stop or a single-winner event.
