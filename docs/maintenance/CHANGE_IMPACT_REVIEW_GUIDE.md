@@ -133,3 +133,7 @@ Use precise language such as source-confirmed, manually observed, inferred, or p
 ## 33. Inspect the complete diff
 
 Review all changed paths for accidental edits, duplicated material, formatting errors, broken links, and unrelated changes. Confirm the diff matches the declared scope and intended outcome.
+
+## 34. Prepare rollback reasoning
+
+Identify the smallest safe unit to revert if the change causes a regression. Documentation-only changes should remain separable from runtime modifications whenever practical.
