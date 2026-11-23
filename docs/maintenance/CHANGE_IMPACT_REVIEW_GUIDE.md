@@ -109,3 +109,7 @@ Choose checks that directly exercise the changed behavior. A narrow change shoul
 ## 27. Plan regression verification
 
 Select adjacent behaviors that could be unintentionally changed. For example, a change to the finish condition should also review movement ordering, loop continuation, and result output.
+
+## 28. Distinguish manual and harness evidence
+
+Record whether checks used the actual GUI, source inspection, or a controlled test harness. If randomness or turtle objects were substituted, state which parts were simulated.
