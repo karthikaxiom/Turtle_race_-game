@@ -53,3 +53,7 @@ The current source checks whether a turtle's horizontal coordinate is strictly g
 ## 13. Trace loop termination
 
 The race flag controls the outer loop, while the inner participant loop continues through its current pass. Review both loops before describing a change as an immediate stop or a single-winner event.
+
+## 14. Trace result selection
+
+The current result branch compares the detected turtle's pen color with the lowercased guess. Changes to accepted input or participant identity must be traced through this comparison.
