@@ -141,3 +141,7 @@ Identify the smallest safe unit to revert if the change causes a regression. Doc
 ## 35. Write the review conclusion
 
 Summarize the requested outcome, impacted surfaces, evidence collected, unresolved risks, and decision. A reviewer should understand the conclusion without reconstructing every intermediate step.
+
+## 36. Define follow-up ownership
+
+For unresolved work, identify the next action and its owner if known. If no owner is assigned, state that plainly; do not imply that an unassigned follow-up has been accepted.
