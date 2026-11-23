@@ -121,3 +121,7 @@ List platform combinations, inputs, or edge cases that were not checked. Do not 
 ## 30. Update canonical documentation
 
 Update the existing focused page when a behavior is already documented. Avoid creating parallel pages that repeat lifecycle, input, movement, threshold, or output explanations.
+
+## 31. Review navigation changes
+
+If a new documentation page is added, add one clear index entry with a concise description. Verify the relative link and avoid adding duplicate navigation entries.
