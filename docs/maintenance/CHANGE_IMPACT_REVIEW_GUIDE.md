@@ -81,3 +81,7 @@ Consider whether existing launch commands, Python versions, graphical environmen
 ## 20. Check standard-library assumptions
 
 The current source imports `turtle` and `random`. If a proposal adds dependencies, identify installation, version, platform, and packaging implications before treating the change as low risk.
+
+## 21. Assess GUI environment risks
+
+The turtle interface relies on a graphical environment and Tk support. A source-level change may be correct while remaining untestable in a headless or restricted remote session; record that limitation.
