@@ -97,3 +97,7 @@ Changing participant traversal order can alter which finish conditions are obser
 ## 24. Consider boundary conditions
 
 For numeric conditions, test equality, just below, and just above the boundary. Preserve strict versus inclusive comparisons accurately in code review notes and documentation.
+
+## 25. Consider empty and unsupported input
+
+Review empty, cancelled, case-varied, whitespace-padded, and unsupported non-empty answers where applicable. Distinguish current behavior from any proposed validation policy.
