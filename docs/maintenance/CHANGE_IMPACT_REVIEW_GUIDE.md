@@ -117,3 +117,7 @@ Record whether checks used the actual GUI, source inspection, or a controlled te
 ## 29. Record untested conditions
 
 List platform combinations, inputs, or edge cases that were not checked. Do not convert missing evidence into a statement that the change is safe or universally supported.
+
+## 30. Update canonical documentation
+
+Update the existing focused page when a behavior is already documented. Avoid creating parallel pages that repeat lifecycle, input, movement, threshold, or output explanations.
