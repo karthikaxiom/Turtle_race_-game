@@ -21,3 +21,7 @@ Capture the branch and full commit SHA before review. Record whether the working
 ## 05. Read the current implementation
 
 Inspect the relevant source statements in context, including surrounding control flow. Avoid basing impact decisions on isolated lines, old screenshots, or descriptions copied from earlier revisions.
+
+## 06. Separate behavior from presentation
+
+Determine whether the request changes program behavior, documentation presentation, or both. A wording change should not accidentally imply a runtime change; a runtime change may require several documentation updates.
