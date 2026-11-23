@@ -45,5 +45,6 @@ This directory explains the behavior of the current implementation in `main.py`.
 - [Maintainer change review worksheet](maintenance/CHANGE_REVIEW_WORKSHEET.md) — a pre-merge checklist for change impact, evidence, scope, and documentation quality.
 - [Maintenance handoff guide](maintenance/MAINTENANCE_HANDOFF_GUIDE.md) — a source-led handoff reference covering environment checks, behavior evidence, review scope, and maintainer ownership.
 - [Verification evidence ledger](verification/VERIFICATION_EVIDENCE_LEDGER.md) — a structured reference for recording source facts, manual observations, test limitations, and review evidence.
+- [Change impact review guide](maintenance/CHANGE_IMPACT_REVIEW_GUIDE.md) — a source-led method for tracing proposed changes through runtime behavior, verification, compatibility, and documentation.
 
 When pages overlap, prefer the maintained overview linked above and check `main.py` before treating any statement as current. Reference notes are supplementary, and dated maintenance records are historical rather than behavioral specifications.
