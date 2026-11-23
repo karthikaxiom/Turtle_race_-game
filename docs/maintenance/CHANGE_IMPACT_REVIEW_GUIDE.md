@@ -45,3 +45,7 @@ Review where turtle objects are constructed, configured, positioned, stored, tra
 ## 11. Trace movement behavior
 
 The current movement request is randomized from zero through ten inclusive. If movement changes, assess its range, frequency, ordering, and whether the change affects repeatability or expected race duration.
+
+## 12. Trace finish detection
+
+The current source checks whether a turtle's horizontal coordinate is strictly greater than 370 before its movement for that visit. Any threshold or ordering change affects detection timing and boundary behavior.
