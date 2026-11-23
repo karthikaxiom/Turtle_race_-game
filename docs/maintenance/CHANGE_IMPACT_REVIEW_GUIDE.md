@@ -17,3 +17,7 @@ List the files and runtime surfaces that could be affected: startup, input, part
 ## 04. Record the baseline revision
 
 Capture the branch and full commit SHA before review. Record whether the working tree is clean. A change-impact analysis without a baseline cannot reliably distinguish existing behavior from proposed behavior.
+
+## 05. Read the current implementation
+
+Inspect the relevant source statements in context, including surrounding control flow. Avoid basing impact decisions on isolated lines, old screenshots, or descriptions copied from earlier revisions.
