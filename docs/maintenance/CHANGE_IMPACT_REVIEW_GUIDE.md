@@ -145,3 +145,7 @@ Summarize the requested outcome, impacted surfaces, evidence collected, unresolv
 ## 36. Define follow-up ownership
 
 For unresolved work, identify the next action and its owner if known. If no owner is assigned, state that plainly; do not imply that an unassigned follow-up has been accepted.
+
+## 37. Keep the review proportional
+
+Scale review effort to the change's risk and reach. A wording correction does not need the same evidence as a change to input handling or loop termination, but every change still deserves a clear diff and accurate description.
