@@ -41,3 +41,7 @@ The participant colors and vertical positions are paired by list index. Any chan
 ## 10. Trace object lifecycle
 
 Review where turtle objects are constructed, configured, positioned, stored, traversed, and queried. A change to construction or storage can affect later movement and result detection.
+
+## 11. Trace movement behavior
+
+The current movement request is randomized from zero through ten inclusive. If movement changes, assess its range, frequency, ordering, and whether the change affects repeatability or expected race duration.
