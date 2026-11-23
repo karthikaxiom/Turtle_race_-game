@@ -69,3 +69,7 @@ The current program calls `screen.exitonclick()` after the race loop. Any change
 ## 17. List observable changes
 
 Write down what a player would notice before and after the proposed change. Include dialogs, participant appearance, movement, finish timing, messages, and window closure only where affected.
+
+## 18. List non-observable changes
+
+Some changes affect maintainability without changing runtime behavior, such as comments or documentation organization. State explicitly when the player-facing behavior is intended to remain identical.
