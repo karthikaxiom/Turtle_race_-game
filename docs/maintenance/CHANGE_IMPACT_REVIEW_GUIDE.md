@@ -77,3 +77,7 @@ Some changes affect maintainability without changing runtime behavior, such as c
 ## 19. Identify compatibility risks
 
 Consider whether existing launch commands, Python versions, graphical environments, or user expectations may be affected. Do not claim compatibility across platforms without evidence.
+
+## 20. Check standard-library assumptions
+
+The current source imports `turtle` and `random`. If a proposal adds dependencies, identify installation, version, platform, and packaging implications before treating the change as low risk.
