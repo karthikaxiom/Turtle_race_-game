@@ -73,3 +73,7 @@ Write down what a player would notice before and after the proposed change. Incl
 ## 18. List non-observable changes
 
 Some changes affect maintainability without changing runtime behavior, such as comments or documentation organization. State explicitly when the player-facing behavior is intended to remain identical.
+
+## 19. Identify compatibility risks
+
+Consider whether existing launch commands, Python versions, graphical environments, or user expectations may be affected. Do not claim compatibility across platforms without evidence.
