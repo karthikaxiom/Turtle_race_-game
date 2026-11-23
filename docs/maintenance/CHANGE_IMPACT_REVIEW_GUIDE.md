@@ -113,3 +113,7 @@ Select adjacent behaviors that could be unintentionally changed. For example, a 
 ## 28. Distinguish manual and harness evidence
 
 Record whether checks used the actual GUI, source inspection, or a controlled test harness. If randomness or turtle objects were substituted, state which parts were simulated.
+
+## 29. Record untested conditions
+
+List platform combinations, inputs, or edge cases that were not checked. Do not convert missing evidence into a statement that the change is safe or universally supported.
