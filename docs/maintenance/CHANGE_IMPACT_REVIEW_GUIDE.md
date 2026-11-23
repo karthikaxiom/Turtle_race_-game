@@ -61,3 +61,7 @@ The current result branch compares the detected turtle's pen color with the lowe
 ## 15. Trace output destinations
 
 Current win/loss messages are printed to the terminal. If output is moved or duplicated, review terminal behavior, graphics behavior, message ordering, and whether persistent state is actually introduced.
+
+## 16. Trace shutdown behavior
+
+The current program calls `screen.exitonclick()` after the race loop. Any change to shutdown should consider both a completed race and the path where input causes the loop to be skipped.
