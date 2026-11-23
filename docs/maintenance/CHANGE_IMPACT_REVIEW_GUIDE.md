@@ -13,3 +13,7 @@ Rewrite the change request as a concrete outcome before inspecting files. Separa
 ## 03. Identify the affected surface
 
 List the files and runtime surfaces that could be affected: startup, input, participant setup, movement, finish detection, output, and shutdown. Keep the initial list broad, then narrow it with source evidence.
+
+## 04. Record the baseline revision
+
+Capture the branch and full commit SHA before review. Record whether the working tree is clean. A change-impact analysis without a baseline cannot reliably distinguish existing behavior from proposed behavior.
