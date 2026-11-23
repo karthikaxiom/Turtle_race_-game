@@ -89,3 +89,7 @@ The turtle interface relies on a graphical environment and Tk support. A source-
 ## 22. Consider random-sequence effects
 
 Changing the number or order of random calls can alter outcomes even if the movement range stays the same. Describe such changes as changes to random progression, not merely cosmetic refactoring.
+
+## 23. Consider ordering effects
+
+Changing participant traversal order can alter which finish conditions are observed first and the order of printed messages. Review order-sensitive behavior explicitly.
