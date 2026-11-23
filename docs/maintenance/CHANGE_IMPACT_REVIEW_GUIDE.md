@@ -57,3 +57,7 @@ The race flag controls the outer loop, while the inner participant loop continue
 ## 14. Trace result selection
 
 The current result branch compares the detected turtle's pen color with the lowercased guess. Changes to accepted input or participant identity must be traced through this comparison.
+
+## 15. Trace output destinations
+
+Current win/loss messages are printed to the terminal. If output is moved or duplicated, review terminal behavior, graphics behavior, message ordering, and whether persistent state is actually introduced.
