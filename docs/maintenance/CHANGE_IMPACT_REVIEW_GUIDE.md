@@ -85,3 +85,7 @@ The current source imports `turtle` and `random`. If a proposal adds dependencie
 ## 21. Assess GUI environment risks
 
 The turtle interface relies on a graphical environment and Tk support. A source-level change may be correct while remaining untestable in a headless or restricted remote session; record that limitation.
+
+## 22. Consider random-sequence effects
+
+Changing the number or order of random calls can alter outcomes even if the movement range stays the same. Describe such changes as changes to random progression, not merely cosmetic refactoring.
