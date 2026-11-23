@@ -9,3 +9,7 @@ This guide helps reviewers trace the impact of a proposed change through the sma
 ## 02. Start from the requested outcome
 
 Rewrite the change request as a concrete outcome before inspecting files. Separate the user-visible problem from a proposed implementation, because the requested outcome may be achievable without changing the production entrypoint.
+
+## 03. Identify the affected surface
+
+List the files and runtime surfaces that could be affected: startup, input, participant setup, movement, finish detection, output, and shutdown. Keep the initial list broad, then narrow it with source evidence.
