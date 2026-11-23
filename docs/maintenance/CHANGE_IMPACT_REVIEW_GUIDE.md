@@ -105,3 +105,7 @@ Review empty, cancelled, case-varied, whitespace-padded, and unsupported non-emp
 ## 26. Plan focused verification
 
 Choose checks that directly exercise the changed behavior. A narrow change should have a narrow, relevant test plan rather than a generic claim that the whole application was tested.
+
+## 27. Plan regression verification
+
+Select adjacent behaviors that could be unintentionally changed. For example, a change to the finish condition should also review movement ordering, loop continuation, and result output.
