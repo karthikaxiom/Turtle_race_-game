@@ -119,7 +119,7 @@ For a practical review of the current input paths, movement order, result output
 
 ## Possible Extensions
 
-- Add a restart control
+- Add a restart control button
 - Add sound effects
 - Track scores across multiple races
 - Introduce optional speed-boost mechanics
