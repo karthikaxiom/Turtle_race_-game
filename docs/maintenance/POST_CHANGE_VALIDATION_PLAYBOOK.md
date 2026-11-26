@@ -79,3 +79,7 @@ Separate fixed configuration from randomized outcomes. Stable colors and coordin
 ## 20. Check documentation links
 
 Open every new or modified relative link from the documentation index. Confirm capitalization, extension, directory, and target existence.
+
+## 21. Check terminology
+
+Use consistent terms for guess, participant, turn, finish threshold, winner, terminal output, and screen shutdown. Avoid using one term for two different events.
