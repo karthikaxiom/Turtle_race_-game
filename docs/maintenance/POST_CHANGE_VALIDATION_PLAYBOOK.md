@@ -27,3 +27,7 @@ Check how the dialog result is represented, including empty and cancelled values
 ## 7. Check participant configuration
 
 Verify the six configured colors and their order against the turtle creation loop. Changes to the collection should be reviewed together with any documentation that describes participant identity.
+
+## 8. Check lane placement
+
+Confirm each turtle receives the intended starting coordinate and that `penup()` precedes positioning. Look for accidental movement traces or lane overlap introduced by edits.
