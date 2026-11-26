@@ -43,3 +43,7 @@ Trace one complete participant iteration: finish threshold check first, then mov
 ## 11. Check threshold semantics
 
 Verify whether the finish comparison is strict or inclusive and whether it runs before or after movement. Boundary wording should match the actual comparison operator.
+
+## 12. Check loop continuation
+
+Inspect both the inner participant loop and outer race loop. Setting a loop flag does not itself break the inner loop; document any same-pass work that remains possible.
