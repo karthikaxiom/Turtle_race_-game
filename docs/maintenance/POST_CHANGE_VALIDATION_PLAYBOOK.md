@@ -107,3 +107,7 @@ Use source tracing or a controlled test double to examine multiple participants 
 ## 27. Separate evidence types
 
 Label source inspection, automated checks, manual GUI observations, and assumptions separately. Each supports a different strength of conclusion.
+
+## 28. Review regression risk
+
+Compare the changed behavior with the baseline and identify neighboring code paths that may be affected. Keep unrelated cleanup out of a narrowly scoped change.
