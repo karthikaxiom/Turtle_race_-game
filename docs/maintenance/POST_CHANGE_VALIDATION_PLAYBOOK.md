@@ -55,3 +55,7 @@ Confirm how the winning color is obtained and how the user's guess is compared. 
 ## 14. Check output channels
 
 Identify which information appears in the terminal and which appears in the turtle window. Keep print output distinct from GUI rendering and dialog behavior.
+
+## 15. Check shutdown behavior
+
+Verify the final screen-close call and the conditions under which execution reaches it. Do not describe automatic closure or replay behavior unless implemented.
