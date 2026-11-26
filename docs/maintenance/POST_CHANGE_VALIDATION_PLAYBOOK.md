@@ -75,3 +75,7 @@ Check whether the change depends on a desktop display, Tk support, filesystem pa
 ## 19. Check deterministic facts
 
 Separate fixed configuration from randomized outcomes. Stable colors and coordinates can be asserted directly; race order and finish timing cannot be predicted from a single random run.
+
+## 20. Check documentation links
+
+Open every new or modified relative link from the documentation index. Confirm capitalization, extension, directory, and target existence.
