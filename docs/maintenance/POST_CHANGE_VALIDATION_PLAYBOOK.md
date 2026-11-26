@@ -19,3 +19,7 @@ Write each expected result as an observable statement. Avoid vague goals such as
 ## 5. Check startup order
 
 Trace initialization from imports through screen creation, window configuration, and the input dialog. Confirm that a change does not accidentally reorder steps or add hidden startup dependencies.
+
+## 6. Review input handling
+
+Check how the dialog result is represented, including empty and cancelled values. Do not claim validation, trimming, or normalization unless the implementation actually performs it.
