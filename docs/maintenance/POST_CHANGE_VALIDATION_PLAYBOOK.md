@@ -95,3 +95,7 @@ List the environment, launch command, test input, expected observation, and clea
 ## 24. Cover input variants
 
 Where safe to test, consider each configured color, mixed-case input, whitespace, unsupported text, empty input, and dialog cancellation. Record actual outcomes separately.
+
+## 25. Cover movement boundaries
+
+Review behavior immediately before, at, and beyond the finish threshold. Account for the fact that movement is random and detection occurs on a later participant visit.
