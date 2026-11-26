@@ -39,3 +39,7 @@ Review the random movement range and its inclusive endpoints. Confirm that docum
 ## 10. Check turn ordering
 
 Trace one complete participant iteration: finish threshold check first, then movement. This ordering affects when a crossing is detected and should be stated precisely.
+
+## 11. Check threshold semantics
+
+Verify whether the finish comparison is strict or inclusive and whether it runs before or after movement. Boundary wording should match the actual comparison operator.
