@@ -59,3 +59,7 @@ Identify which information appears in the terminal and which appears in the turt
 ## 15. Check shutdown behavior
 
 Verify the final screen-close call and the conditions under which execution reaches it. Do not describe automatic closure or replay behavior unless implemented.
+
+## 16. Review error paths
+
+Consider missing GUI support, unavailable display sessions, and runtime exceptions. Record these as environment or execution limitations rather than inventing application-level recovery.
