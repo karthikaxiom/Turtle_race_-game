@@ -99,3 +99,7 @@ Where safe to test, consider each configured color, mixed-case input, whitespace
 ## 25. Cover movement boundaries
 
 Review behavior immediately before, at, and beyond the finish threshold. Account for the fact that movement is random and detection occurs on a later participant visit.
+
+## 26. Check multi-finish behavior
+
+Use source tracing or a controlled test double to examine multiple participants already beyond the threshold during one pass. Do not assume the first detection ends the inner loop.
