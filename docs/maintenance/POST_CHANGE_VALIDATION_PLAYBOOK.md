@@ -71,3 +71,7 @@ Compare imports and runtime requirements with the source. Avoid adding third-par
 ## 18. Review platform assumptions
 
 Check whether the change depends on a desktop display, Tk support, filesystem paths, or platform-specific behavior. State the supported environment only when evidence exists.
+
+## 19. Check deterministic facts
+
+Separate fixed configuration from randomized outcomes. Stable colors and coordinates can be asserted directly; race order and finish timing cannot be predicted from a single random run.
