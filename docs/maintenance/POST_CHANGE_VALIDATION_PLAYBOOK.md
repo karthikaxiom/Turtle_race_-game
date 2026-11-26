@@ -47,3 +47,7 @@ Verify whether the finish comparison is strict or inclusive and whether it runs 
 ## 12. Check loop continuation
 
 Inspect both the inner participant loop and outer race loop. Setting a loop flag does not itself break the inner loop; document any same-pass work that remains possible.
+
+## 13. Check result selection
+
+Confirm how the winning color is obtained and how the user's guess is compared. Do not imply that unsupported guesses are rejected unless explicit validation exists.
