@@ -35,3 +35,7 @@ Confirm each turtle receives the intended starting coordinate and that `penup()`
 ## 9. Check movement bounds
 
 Review the random movement range and its inclusive endpoints. Confirm that documentation distinguishes a per-turn movement amount from total race distance.
+
+## 10. Check turn ordering
+
+Trace one complete participant iteration: finish threshold check first, then movement. This ordering affects when a crossing is detected and should be stated precisely.
