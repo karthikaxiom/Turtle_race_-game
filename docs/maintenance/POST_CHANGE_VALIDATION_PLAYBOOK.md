@@ -15,3 +15,7 @@ Before editing, note the current branch, commit, working-tree state, and relevan
 ## 4. State expected behavior
 
 Write each expected result as an observable statement. Avoid vague goals such as 'works better'; identify the input, action, and visible or terminal outcome.
+
+## 5. Check startup order
+
+Trace initialization from imports through screen creation, window configuration, and the input dialog. Confirm that a change does not accidentally reorder steps or add hidden startup dependencies.
