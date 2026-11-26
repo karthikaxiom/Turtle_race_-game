@@ -63,3 +63,7 @@ Verify the final screen-close call and the conditions under which execution reac
 ## 16. Review error paths
 
 Consider missing GUI support, unavailable display sessions, and runtime exceptions. Record these as environment or execution limitations rather than inventing application-level recovery.
+
+## 17. Review dependencies
+
+Compare imports and runtime requirements with the source. Avoid adding third-party dependency claims when the implementation uses only standard-library modules.
