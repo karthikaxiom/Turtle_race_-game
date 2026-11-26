@@ -51,3 +51,7 @@ Inspect both the inner participant loop and outer race loop. Setting a loop flag
 ## 13. Check result selection
 
 Confirm how the winning color is obtained and how the user's guess is compared. Do not imply that unsupported guesses are rejected unless explicit validation exists.
+
+## 14. Check output channels
+
+Identify which information appears in the terminal and which appears in the turtle window. Keep print output distinct from GUI rendering and dialog behavior.
