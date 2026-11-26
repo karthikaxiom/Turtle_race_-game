@@ -111,3 +111,7 @@ Label source inspection, automated checks, manual GUI observations, and assumpti
 ## 28. Review regression risk
 
 Compare the changed behavior with the baseline and identify neighboring code paths that may be affected. Keep unrelated cleanup out of a narrowly scoped change.
+
+## 29. Record limitations and sign-off
+
+Summarize what changed, what was verified, what remains unverified, and who reviewed it. A clear limitation is more useful than an unsupported claim of complete testing.
