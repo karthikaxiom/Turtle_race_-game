@@ -87,3 +87,7 @@ Use consistent terms for guess, participant, turn, finish threshold, winner, ter
 ## 22. Check examples
 
 Ensure examples use configured colors and accurately represent the program's prompts and messages. Label hypothetical examples so they are not mistaken for captured test output.
+
+## 23. Plan manual verification
+
+List the environment, launch command, test input, expected observation, and cleanup step for each manual check. Do not report a test as passed if it was only planned.
