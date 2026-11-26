@@ -67,3 +67,7 @@ Consider missing GUI support, unavailable display sessions, and runtime exceptio
 ## 17. Review dependencies
 
 Compare imports and runtime requirements with the source. Avoid adding third-party dependency claims when the implementation uses only standard-library modules.
+
+## 18. Review platform assumptions
+
+Check whether the change depends on a desktop display, Tk support, filesystem paths, or platform-specific behavior. State the supported environment only when evidence exists.
