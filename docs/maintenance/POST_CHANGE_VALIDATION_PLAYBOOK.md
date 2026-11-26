@@ -103,3 +103,7 @@ Review behavior immediately before, at, and beyond the finish threshold. Account
 ## 26. Check multi-finish behavior
 
 Use source tracing or a controlled test double to examine multiple participants already beyond the threshold during one pass. Do not assume the first detection ends the inner loop.
+
+## 27. Separate evidence types
+
+Label source inspection, automated checks, manual GUI observations, and assumptions separately. Each supports a different strength of conclusion.
