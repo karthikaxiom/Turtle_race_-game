@@ -23,3 +23,7 @@ Trace initialization from imports through screen creation, window configuration,
 ## 6. Review input handling
 
 Check how the dialog result is represented, including empty and cancelled values. Do not claim validation, trimming, or normalization unless the implementation actually performs it.
+
+## 7. Check participant configuration
+
+Verify the six configured colors and their order against the turtle creation loop. Changes to the collection should be reviewed together with any documentation that describes participant identity.
