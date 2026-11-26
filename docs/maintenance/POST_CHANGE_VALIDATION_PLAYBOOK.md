@@ -83,3 +83,7 @@ Open every new or modified relative link from the documentation index. Confirm c
 ## 21. Check terminology
 
 Use consistent terms for guess, participant, turn, finish threshold, winner, terminal output, and screen shutdown. Avoid using one term for two different events.
+
+## 22. Check examples
+
+Ensure examples use configured colors and accurately represent the program's prompts and messages. Label hypothetical examples so they are not mistaken for captured test output.
