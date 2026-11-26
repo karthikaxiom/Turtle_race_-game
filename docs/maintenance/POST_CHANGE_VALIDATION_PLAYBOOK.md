@@ -11,3 +11,7 @@ Record the exact files, functions, constants, and user-visible behaviors intende
 ## 3. Capture the baseline
 
 Before editing, note the current branch, commit, working-tree state, and relevant file hashes. A baseline makes it possible to identify unrelated changes and verify protected files.
+
+## 4. State expected behavior
+
+Write each expected result as an observable statement. Avoid vague goals such as 'works better'; identify the input, action, and visible or terminal outcome.
