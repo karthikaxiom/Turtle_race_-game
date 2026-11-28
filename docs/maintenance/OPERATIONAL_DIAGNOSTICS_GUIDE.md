@@ -80,3 +80,7 @@ The source uses a strict greater-than comparison against 370. Reaching exactly 3
 ## 20. Understand same-pass activity
 
 Changing the outer race flag does not break the current participant loop. Remaining turtles in that pass can still be checked and moved.
+
+## 21. Investigate multiple result lines
+
+If multiple turtles satisfy the threshold during one pass, more than one result message may be printed. The order follows the participant list and loop execution.
