@@ -60,3 +60,7 @@ Confirm that six turtle objects are created and appended in configured color ord
 ## 15. Check window dimensions
 
 Compare the observed window setup with the configured 800 by 400 dimensions. Window-manager decorations and display scaling can affect the apparent outer size.
+
+## 16. Check initial positions
+
+Compare each turtle's starting x-coordinate and lane y-coordinate with the configured values. Look for accidental edits to the position list or creation loop.
