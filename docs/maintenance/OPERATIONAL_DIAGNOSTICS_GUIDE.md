@@ -36,3 +36,7 @@ Verify that the machine has a usable graphical display and the Tk support requir
 ## 9. Observe startup sequence
 
 Note whether the window appears, whether the prompt appears, and which event happens first. Compare the observed order with the source initialization sequence.
+
+## 10. Diagnose a missing prompt
+
+Check whether the script reached the text-input call and whether a GUI dialog was hidden behind another window. Do not assume the prompt is terminal input.
