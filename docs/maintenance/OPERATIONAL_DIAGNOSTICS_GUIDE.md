@@ -32,3 +32,7 @@ Confirm that the intended Python interpreter launches and can import the standar
 ## 8. Check GUI prerequisites
 
 Verify that the machine has a usable graphical display and the Tk support required by Python's turtle module. A headless shell may not be able to open a turtle window.
+
+## 9. Observe startup sequence
+
+Note whether the window appears, whether the prompt appears, and which event happens first. Compare the observed order with the source initialization sequence.
