@@ -88,3 +88,7 @@ If multiple turtles satisfy the threshold during one pass, more than one result 
 ## 22. Check winner identification
 
 The winning color is read from the turtle's pen color. Compare this with the configured color list rather than relying on screen position or visual assumptions.
+
+## 23. Locate result output
+
+Win and loss messages are printed to the terminal from which the script was launched. They are not rendered as labels inside the turtle window.
