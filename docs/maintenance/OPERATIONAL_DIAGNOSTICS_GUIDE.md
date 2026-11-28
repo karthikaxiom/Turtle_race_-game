@@ -92,3 +92,7 @@ The winning color is read from the turtle's pen color. Compare this with the con
 ## 23. Locate result output
 
 Win and loss messages are printed to the terminal from which the script was launched. They are not rendered as labels inside the turtle window.
+
+## 24. Investigate apparent freezing
+
+Determine whether the program is waiting for the input dialog, continuing the animation, or waiting for a click on the window. These are distinct states with different expected interactions.
