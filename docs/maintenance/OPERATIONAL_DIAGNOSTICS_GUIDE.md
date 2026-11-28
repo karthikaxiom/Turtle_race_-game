@@ -84,3 +84,7 @@ Changing the outer race flag does not break the current participant loop. Remain
 ## 21. Investigate multiple result lines
 
 If multiple turtles satisfy the threshold during one pass, more than one result message may be printed. The order follows the participant list and loop execution.
+
+## 22. Check winner identification
+
+The winning color is read from the turtle's pen color. Compare this with the configured color list rather than relying on screen position or visual assumptions.
