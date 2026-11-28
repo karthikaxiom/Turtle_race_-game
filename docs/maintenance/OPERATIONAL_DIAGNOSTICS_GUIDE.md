@@ -44,3 +44,7 @@ Check whether the script reached the text-input call and whether a GUI dialog wa
 ## 11. Interpret an empty response
 
 An empty or cancelled dialog result is falsey, so the race loop is skipped. The final screen click handler is still reached by normal control flow.
+
+## 12. Interpret an unsupported guess
+
+Any nonempty response enables the race loop. The source does not validate the entered text against the configured colors before starting.
