@@ -40,3 +40,7 @@ Note whether the window appears, whether the prompt appears, and which event hap
 ## 10. Diagnose a missing prompt
 
 Check whether the script reached the text-input call and whether a GUI dialog was hidden behind another window. Do not assume the prompt is terminal input.
+
+## 11. Interpret an empty response
+
+An empty or cancelled dialog result is falsey, so the race loop is skipped. The final screen click handler is still reached by normal control flow.
