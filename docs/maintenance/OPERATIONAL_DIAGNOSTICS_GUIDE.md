@@ -108,3 +108,7 @@ Write down the exact input, launch command, environment, observed sequence, and 
 ## 27. Separate defects from environment issues
 
 Classify the evidence as source logic, interpreter setup, GUI/display support, launch-path confusion, or user interaction. Keep the diagnosis provisional until verified.
+
+## 28. Choose a proportionate verification
+
+Use source inspection for deterministic control-flow claims and a real GUI run for visual behavior. Do not claim a GUI test passed when only static inspection was performed.
