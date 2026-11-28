@@ -68,3 +68,7 @@ Compare each turtle's starting x-coordinate and lane y-coordinate with the confi
 ## 17. Investigate movement variability
 
 Movement is selected randomly for each participant visit from an inclusive integer range of zero through ten. Different runs can therefore finish at different times.
+
+## 18. Investigate delayed finish detection
+
+The finish check occurs before movement. A turtle that crosses the threshold during a move is not recognized until its next turn through the participant loop.
