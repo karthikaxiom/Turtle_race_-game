@@ -112,3 +112,7 @@ Classify the evidence as source logic, interpreter setup, GUI/display support, l
 ## 28. Choose a proportionate verification
 
 Use source inspection for deterministic control-flow claims and a real GUI run for visual behavior. Do not claim a GUI test passed when only static inspection was performed.
+
+## 29. Record resolution and residual risk
+
+Document the confirmed cause, corrective action, verification evidence, and any remaining uncertainty. Link the report to the exact revision that was examined.
