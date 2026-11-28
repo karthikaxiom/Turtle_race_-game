@@ -104,3 +104,7 @@ After the race loop completes or is skipped, the program calls the screen click-
 ## 26. Capture a useful reproduction
 
 Write down the exact input, launch command, environment, observed sequence, and whether the issue repeats. Avoid changing multiple variables between attempts.
+
+## 27. Separate defects from environment issues
+
+Classify the evidence as source logic, interpreter setup, GUI/display support, launch-path confusion, or user interaction. Keep the diagnosis provisional until verified.
