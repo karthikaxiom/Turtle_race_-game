@@ -16,3 +16,7 @@ Record operating system, Python version, display session, terminal, and launch m
 ## 4. Confirm the launch target
 
 Check the current directory and the exact script path used to launch the program. A similarly named copy can produce behavior that does not match the repository's current source.
+
+## 5. Verify the source revision
+
+Record the checked-out branch and commit identifier. Confirm that the file being executed belongs to the expected revision before comparing observed behavior with documentation.
