@@ -20,3 +20,7 @@ Check the current directory and the exact script path used to launch the program
 ## 5. Verify the source revision
 
 Record the checked-out branch and commit identifier. Confirm that the file being executed belongs to the expected revision before comparing observed behavior with documentation.
+
+## 6. Check working-tree changes
+
+Inspect uncommitted modifications before diagnosing a defect. Local edits can change behavior without appearing in the committed source history.
