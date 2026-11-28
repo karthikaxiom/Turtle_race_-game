@@ -49,4 +49,6 @@ This directory explains the behavior of the current implementation in `main.py`.
 
 - [Post-change validation playbook](maintenance/POST_CHANGE_VALIDATION_PLAYBOOK.md) — a practical source-led checklist for reviewing scope, runtime behavior, evidence, regressions, and sign-off.
 
+- [Operational diagnostics guide](maintenance/OPERATIONAL_DIAGNOSTICS_GUIDE.md) — a source-led guide to investigating startup, GUI, input, movement, output, and shutdown symptoms.
+
 When pages overlap, prefer the maintained overview linked above and check `main.py` before treating any statement as current. Reference notes are supplementary, and dated maintenance records are historical rather than behavioral specifications.
