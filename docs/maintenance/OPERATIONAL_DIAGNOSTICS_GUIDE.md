@@ -48,3 +48,7 @@ An empty or cancelled dialog result is falsey, so the race loop is skipped. The 
 ## 12. Interpret an unsupported guess
 
 Any nonempty response enables the race loop. The source does not validate the entered text against the configured colors before starting.
+
+## 13. Check case handling
+
+The entered guess is converted to lowercase for comparison. This supports case-insensitive matching but does not remove surrounding whitespace.
