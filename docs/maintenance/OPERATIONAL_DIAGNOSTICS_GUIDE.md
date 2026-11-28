@@ -72,3 +72,7 @@ Movement is selected randomly for each participant visit from an inclusive integ
 ## 18. Investigate delayed finish detection
 
 The finish check occurs before movement. A turtle that crosses the threshold during a move is not recognized until its next turn through the participant loop.
+
+## 19. Investigate threshold confusion
+
+The source uses a strict greater-than comparison against 370. Reaching exactly 370 does not satisfy the finish condition.
