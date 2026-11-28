@@ -64,3 +64,7 @@ Compare the observed window setup with the configured 800 by 400 dimensions. Win
 ## 16. Check initial positions
 
 Compare each turtle's starting x-coordinate and lane y-coordinate with the configured values. Look for accidental edits to the position list or creation loop.
+
+## 17. Investigate movement variability
+
+Movement is selected randomly for each participant visit from an inclusive integer range of zero through ten. Different runs can therefore finish at different times.
