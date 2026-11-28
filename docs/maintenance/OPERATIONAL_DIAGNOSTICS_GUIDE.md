@@ -24,3 +24,7 @@ Record the checked-out branch and commit identifier. Confirm that the file being
 ## 6. Check working-tree changes
 
 Inspect uncommitted modifications before diagnosing a defect. Local edits can change behavior without appearing in the committed source history.
+
+## 7. Validate Python availability
+
+Confirm that the intended Python interpreter launches and can import the standard-library modules used by the application. Distinguish interpreter selection problems from application logic.
