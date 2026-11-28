@@ -28,3 +28,7 @@ Inspect uncommitted modifications before diagnosing a defect. Local edits can ch
 ## 7. Validate Python availability
 
 Confirm that the intended Python interpreter launches and can import the standard-library modules used by the application. Distinguish interpreter selection problems from application logic.
+
+## 8. Check GUI prerequisites
+
+Verify that the machine has a usable graphical display and the Tk support required by Python's turtle module. A headless shell may not be able to open a turtle window.
