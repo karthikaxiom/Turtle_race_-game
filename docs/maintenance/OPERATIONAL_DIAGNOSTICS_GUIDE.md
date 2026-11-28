@@ -56,3 +56,7 @@ The entered guess is converted to lowercase for comparison. This supports case-i
 ## 14. Check turtle creation
 
 Confirm that six turtle objects are created and appended in configured color order. If fewer appear, inspect the loop and any exception raised during object construction.
+
+## 15. Check window dimensions
+
+Compare the observed window setup with the configured 800 by 400 dimensions. Window-manager decorations and display scaling can affect the apparent outer size.
