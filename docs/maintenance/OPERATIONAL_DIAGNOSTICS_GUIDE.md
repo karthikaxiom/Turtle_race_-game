@@ -52,3 +52,7 @@ Any nonempty response enables the race loop. The source does not validate the en
 ## 13. Check case handling
 
 The entered guess is converted to lowercase for comparison. This supports case-insensitive matching but does not remove surrounding whitespace.
+
+## 14. Check turtle creation
+
+Confirm that six turtle objects are created and appended in configured color order. If fewer appear, inspect the loop and any exception raised during object construction.
