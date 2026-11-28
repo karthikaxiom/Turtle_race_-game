@@ -100,3 +100,7 @@ Determine whether the program is waiting for the input dialog, continuing the an
 ## 25. Check shutdown interaction
 
 After the race loop completes or is skipped, the program calls the screen click-to-exit handler. The window may remain open until the user clicks it.
+
+## 26. Capture a useful reproduction
+
+Write down the exact input, launch command, environment, observed sequence, and whether the issue repeats. Avoid changing multiple variables between attempts.
