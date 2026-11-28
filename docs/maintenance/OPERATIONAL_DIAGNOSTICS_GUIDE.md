@@ -96,3 +96,7 @@ Win and loss messages are printed to the terminal from which the script was laun
 ## 24. Investigate apparent freezing
 
 Determine whether the program is waiting for the input dialog, continuing the animation, or waiting for a click on the window. These are distinct states with different expected interactions.
+
+## 25. Check shutdown interaction
+
+After the race loop completes or is skipped, the program calls the screen click-to-exit handler. The window may remain open until the user clicks it.
