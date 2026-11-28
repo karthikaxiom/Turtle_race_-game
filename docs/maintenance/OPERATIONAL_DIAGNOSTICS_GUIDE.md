@@ -76,3 +76,7 @@ The finish check occurs before movement. A turtle that crosses the threshold dur
 ## 19. Investigate threshold confusion
 
 The source uses a strict greater-than comparison against 370. Reaching exactly 370 does not satisfy the finish condition.
+
+## 20. Understand same-pass activity
+
+Changing the outer race flag does not break the current participant loop. Remaining turtles in that pass can still be checked and moved.
