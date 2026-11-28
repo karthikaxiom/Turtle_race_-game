@@ -12,3 +12,7 @@ Describe exactly what appeared, what action preceded it, and whether the program
 ## 3. Capture the environment
 
 Record operating system, Python version, display session, terminal, and launch method. Turtle graphics depends on a functioning desktop GUI environment.
+
+## 4. Confirm the launch target
+
+Check the current directory and the exact script path used to launch the program. A similarly named copy can produce behavior that does not match the repository's current source.
